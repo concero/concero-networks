@@ -7,7 +7,7 @@ export type DeploymentAddress = `0x${string}`
 
 export type Chain = {
     id: number;
-    selector: number;
+    chainSelector: number;
     name: string;
     isTestnet: boolean;
     finalityConfirmations: number;

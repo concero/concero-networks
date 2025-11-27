@@ -65,7 +65,7 @@ export const pipeRelayerLibDeployments = (envText: string, deployments: Record<s
     buildExtractPipe(envText, /CONCERO_RELAYER_LIB_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
 
 const main = async () => {
-    const chains: Record<Chain['selector'], Chain> = {}
+    const chains: Record<Chain['chainSelector'], Chain> = {}
 
     const [
         {data: mainnetDeployments},
@@ -100,7 +100,7 @@ const main = async () => {
         chains[network.chainSelector] = {
             id: network.chainId,
             isTestnet: false,
-            selector: network.chainSelector,
+            chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
@@ -114,7 +114,7 @@ const main = async () => {
         chains[network.chainSelector] = {
             id: network.chainId,
             isTestnet: true,
-            selector: network.chainSelector,
+            chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
