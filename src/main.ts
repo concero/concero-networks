@@ -64,6 +64,10 @@ export const pipeRouterDeployments = (envText: string, deployments: Record<strin
 export const pipeRelayerLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
     buildExtractPipe(envText, /CONCERO_RELAYER_LIB_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
 
+export const pipeValidatorLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
+    buildExtractPipe(envText, /CONCERO_CRE_VALIDATOR_LIB_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.ValidatorLib, deployments)
+
+
 const main = async () => {
     const chains: Record<Chain['chainSelector'], Chain> = {}
 
@@ -92,8 +96,10 @@ const main = async () => {
     ])
 
     const deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>> = {}
-    pipeRouterDeployments(mainnetDeployments + testnetDeployments, deployments)
-    pipeRelayerLibDeployments(mainnetDeployments + testnetDeployments , deployments)
+    const fullDeploymentsEnv = mainnetDeployments + testnetDeployments
+    pipeRouterDeployments(fullDeploymentsEnv, deployments)
+    pipeRelayerLibDeployments(fullDeploymentsEnv , deployments)
+    pipeValidatorLibDeployments(fullDeploymentsEnv, deployments)
 
     Object.values(mainnetNetworks).map(network => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
