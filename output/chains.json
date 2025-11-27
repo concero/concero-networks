@@ -106,7 +106,10 @@
     "selector": 81,
     "name": "astarShibuya",
     "rpcUrls": [
-      "https://evm.shibuya.astar.network"
+      "https://evm.shibuya.astar.network",
+      "https://evm.shibuya.astar.network",
+      "https://shibuya.public.blastapi.io",
+      "https://shibuya-rpc.dwellir.com"
     ],
     "nativeCurrency": {
       "name": "Astar",
@@ -482,7 +485,8 @@
     "selector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
-      "https://testnet-rpc.irys.xyz/v1/execution-rpc"
+      "https://testnet-rpc.irys.xyz/v1/execution-rpc",
+      "testnet-rpc.irys.xyz"
     ],
     "nativeCurrency": {
       "name": "mIRYS",
@@ -574,6 +578,7 @@
     "selector": 2021,
     "name": "roninSaigon",
     "rpcUrls": [
+      "https://saigon-testnet.roninchain.com/rpc",
       "https://saigon-testnet.roninchain.com/rpc"
     ],
     "nativeCurrency": {
@@ -894,6 +899,8 @@
     "name": "expchainTestnet",
     "rpcUrls": [
       "https://rpc1-testnet.expchain.ai",
+      "https://expchain.polyhedra.network/rpc0-testnet",
+      "https://expchain.polyhedra.network/rpc1-testnet",
       "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc1-testnet"
     ],

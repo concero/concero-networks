@@ -11,6 +11,7 @@ type OldNetwork = {
     name: string,
     chainId: number,
     chainSelector: number,
+    rpcUrls: [],
     blockExplorers:  {
         name: string,
         url: string,
@@ -95,21 +96,21 @@ const main = async () => {
     pipeRelayerLibDeployments(mainnetDeployments + testnetDeployments , deployments)
 
     Object.values(mainnetNetworks).map(network => {
-        const rpcUrls = mainnetRPCs?.[network.name]?.rpcUrls || []
-            chains[network.chainSelector] = {
-                id: network.chainId,
-                isTestnet: false,
-                selector: network.chainSelector,
-                name: network.name,
-                rpcUrls,
-                nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
-                blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
-                finalityConfirmations: network.finalityConfirmations,
-                deployments: deployments[network.name] ?? {}
-            }
+        const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
+        chains[network.chainSelector] = {
+            id: network.chainId,
+            isTestnet: false,
+            selector: network.chainSelector,
+            name: network.name,
+            rpcUrls,
+            nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
+            blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
+            finalityConfirmations: network.finalityConfirmations,
+            deployments: deployments[network.name] ?? {}
+        }
     })
     Object.values(testnetNetworks).map(network => {
-        const rpcUrls = testnetRPCs?.[network.name]?.rpcUrls || []
+        const rpcUrls = [...testnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
         chains[network.chainSelector] = {
             id: network.chainId,
             isTestnet: true,
