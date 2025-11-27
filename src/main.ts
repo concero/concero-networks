@@ -98,7 +98,7 @@ const main = async () => {
     Object.values(mainnetNetworks).map(network => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
         chains[network.chainSelector] = {
-            id: network.chainId,
+            id: network.chainId.toString(),
             isTestnet: false,
             chainSelector: network.chainSelector,
             name: network.name,
@@ -112,7 +112,7 @@ const main = async () => {
     Object.values(testnetNetworks).map(network => {
         const rpcUrls = [...testnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
         chains[network.chainSelector] = {
-            id: network.chainId,
+            id: network.chainId.toString(),
             isTestnet: true,
             chainSelector: network.chainSelector,
             name: network.name,

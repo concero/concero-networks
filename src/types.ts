@@ -6,7 +6,7 @@ export enum DeploymentType {
 export type DeploymentAddress = `0x${string}`
 
 export type Chain = {
-    id: number;
+    id: string;
     chainSelector: number;
     name: string;
     isTestnet: boolean;
