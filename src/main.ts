@@ -3,7 +3,7 @@ import fs from "fs";
 import * as process from "process";
 import {Chain, DeploymentAddress, DeploymentType} from "./types";
 
-const v2ContractsBranch = 'feature/v3/dev'
+const v2ContractsBranch = 'feature/v3/cre'
 const rpcsBranch = 'master'
 const networksBranch = 'master'
 
@@ -49,7 +49,7 @@ function buildExtractPipe(
         const [, chainRaw, address] = match;
 
         const chainName = toCamelCaseKey(chainRaw);
-
+        console.log(deploymentType, chainName, address)
         deployments[chainName] = {
             ...deployments[chainName],
             [deploymentType]: address as DeploymentAddress,
@@ -70,7 +70,7 @@ export const pipeValidatorLibDeployments = (envText: string, deployments: Record
 
 const main = async () => {
     const chains: Record<Chain['chainSelector'], Chain> = {}
-
+    console.log(`https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.mainnet`)
     const [
         {data: mainnetDeployments},
         {data: testnetDeployments},
@@ -131,9 +131,10 @@ const main = async () => {
     })
 
 
-    fs.writeFile(process.cwd() + '/output/' + 'chains.json', JSON.stringify(chains, null, 2), () => {})
-    fs.writeFile(process.cwd() + '/output/' + 'chains.minified.json', JSON.stringify(chains), () => {})
-    console.log({mainnetDeployments, testnetDeployments, mainnetRPCs, testnetRPCs, mainnetNetworks, testnetNetworks})
+    fs.writeFile(`${process.cwd()}/output/chains.json`, JSON.stringify(chains, null, 2), () => {})
+    fs.writeFile(`${process.cwd()}/output/chains.minified.json`, JSON.stringify(chains), () => {})
+
+    console.log({deployments,})
 }
 
 main()
