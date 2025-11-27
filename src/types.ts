@@ -1,0 +1,26 @@
+export enum DeploymentType {
+    Router = 'router',
+    ValidatorLib = 'validatorLib',
+    RelayerLib = 'relayerLib',
+}
+export type DeploymentAddress = `0x${string}`
+
+export type Chain = {
+    id: number;
+    selector: number;
+    name: string;
+    isTestnet: boolean;
+    finalityConfirmations: number;
+    rpcUrls: string[];
+    blockExplorers: {
+        name: string;
+        url: string;
+        apiUrl: string;
+    }[];
+    nativeCurrency: {
+        name: string;
+        symbol: string;
+        decimals: number;
+    };
+    deployments: Partial<Record<DeploymentType, DeploymentAddress>>;
+};

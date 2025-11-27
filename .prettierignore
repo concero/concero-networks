@@ -1,0 +1,19 @@
+**/node_modules/**
+**/generated/**
+core/
+**/dist/**
+**/artifacts/**
+**/public/**
+**/build/**
+pnpm-lock.yaml
+coverage
+cache
+node_modules
+**/vendor
+
+# Ignore TS definition and map files
+**/**.d.ts
+**/**.d.ts.map
+
+docs/
+venv/

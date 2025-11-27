@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json.schemastore.org/prettierrc",
+    "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+    "arrowParens": "avoid",
+    "printWidth": 100,
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "overrides": [
+        {
+            "files": ["**/*.ts"],
+            "options": {
+                "importOrder": [
+                    "^\\.\\/utils\\/configureDotEnv$",
+                    "^.*[eE][nN][vV].*$",
+
+                    "",
+
+                    "<BUILTIN_MODULES>",
+                    "^(viem|ethers|hardhat)(/.*)?$",
+                    "^@concero(/.*)?$",
+                    "^@lanca(/.*)?$",
+                    "<THIRD_PARTY_MODULES>",
+
+                    "",
+
+                    "^src/.*$",
+                    "^\\.\\.(?!/?$)",
+                    "^\\.\\./?$",
+                    "^\\./(?=.*/)",
+                    "^\\./?$"
+                ],
+
+                "importOrderSafeSideEffects": [
+                    "^\\.\\/utils\\/configureDotEnv$",
+                    "^.*[eE][nN][vV].*$"
+                ]
+            }
+        }
+    ]
+}
