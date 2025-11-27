@@ -109,7 +109,7 @@ const main = async () => {
             }
     })
     Object.values(testnetNetworks).map(network => {
-        const rpcUrls = mainnetRPCs?.[network.name]?.rpcUrls || []
+        const rpcUrls = testnetRPCs?.[network.name]?.rpcUrls || []
         chains[network.chainSelector] = {
             id: network.chainId,
             isTestnet: true,
