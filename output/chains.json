@@ -1209,7 +1209,7 @@
     "deployments": {
       "router": "0xE2E94C32beeB98F1b4D96F0E30a5a92af8f09108",
       "relayerLib": "0x47EfF953e7d2706cF0cbDD10f7AfCa8B4080864a",
-      "validatorLib": "0x47EfF953e7d2706cF0cbDD10f7AfCa8B4080864a"
+      "validatorLib": "0x0A4bB63B7c1638DA9f19A1E9D0E40F4629474a4F"
     }
   },
   "80069": {
@@ -1347,7 +1347,7 @@
     "deployments": {
       "router": "0x678a1Ea07428ddCA98a854Fdf45FE7d52E1a103D",
       "relayerLib": "0x4DaA1219536b2d019E052E750d668A8dC24C581a",
-      "validatorLib": "0x4DaA1219536b2d019E052E750d668A8dC24C581a"
+      "validatorLib": "0xE7802241E6C3e46260E49b518B00cE4C27902751"
     }
   },
   "534351": {
