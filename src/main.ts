@@ -3,7 +3,7 @@ import fs from "fs";
 import * as process from "process";
 import {Chain, DeploymentAddress, DeploymentType} from "./types";
 
-const v2ContractsBranch = 'feature/v3/cre'
+const v2ContractsBranch = 'feature/v3/dev'
 const rpcsBranch = 'master'
 const networksBranch = 'master'
 
@@ -62,7 +62,7 @@ export const pipeRouterDeployments = (envText: string, deployments: Record<strin
     buildExtractPipe(envText, /CONCERO_ROUTER_PROXY_(?!ADMIN_)([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.Router, deployments)
 
 export const pipeRelayerLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
-    buildExtractPipe(envText, /CONCERO_RELAYER_LIB_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
+    buildExtractPipe(envText, /CONCERO_RELAYER_LIB_PROXY_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
 
 export const pipeValidatorLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
     buildExtractPipe(envText, /CONCERO_CRE_VALIDATOR_LIB_PROXY_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.ValidatorLib, deployments)
