@@ -1543,7 +1543,11 @@
       }
     ],
     "finalityConfirmations": 75,
-    "deployments": {}
+    "deployments": {
+      "router": "0xDf8840477B11edfC2a75C74aE9bC2a5b1EB5963b",
+      "relayerLib": "0xd1D330527Cd8ccee0300BBde5CD9deC740560464",
+      "validatorLib": "0x232bD228C800c806c8dee2DB1EFdE29011EC68f7"
+    }
   },
   "11155420": {
     "id": "11155420",
