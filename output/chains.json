@@ -1181,7 +1181,7 @@
         "apiUrl": "https://api-amoy.polygonscan.com/api"
       }
     ],
-    "finalityConfirmations": 55,
+    "finalityConfirmations": 500,
     "deployments": {
       "router": "0x64261dafc172DFfD4069Cb4FF5dF236c54eA80EB",
       "relayerLib": "0x182CEbd02e3d64971cdb5700D106C01510cb3D12",
