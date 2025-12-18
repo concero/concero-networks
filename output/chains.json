@@ -5,45 +5,44 @@
     "chainSelector": 1,
     "name": "ethereum",
     "rpcUrls": [
-      "https://go.getblock.io/aefd01aa907c4805ba3c00a9e5b48c6b",
-      "https://eth.api.onfinality.io/public",
-      "https://ethereum-mainnet.gateway.tatum.io",
-      "https://rpc.poolz.finance/eth",
-      "https://rpc.flashbots.net/fast",
-      "https://api-ethereum-mainnet-reth.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://eth1.lava.build",
-      "https://ethereum.rpc.subquery.network/public",
-      "https://eth.blockrazor.xyz",
-      "https://ethereum-public.nodies.app",
-      "https://singapore.rpc.blxrbdn.com",
-      "https://0xrpc.io/eth",
-      "https://virginia.rpc.blxrbdn.com",
       "https://cloudflare-eth.com",
-      "https://uk.rpc.blxrbdn.com",
-      "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
-      "https://ethereum-json-rpc.stakely.io",
-      "https://rpc.mevblocker.io/fullprivacy",
-      "https://rpc.eth.gateway.fm",
-      "https://rpc.mevblocker.io/noreverts",
-      "https://rpc.payload.de",
       "https://eth.drpc.org",
-      "https://mainnet.gateway.tenderly.co",
-      "https://public-eth.nownodes.io",
-      "https://eth.meowrpc.com",
-      "https://rpc.mevblocker.io/fast",
-      "https://rpc.flashbots.net",
-      "https://gateway.tenderly.co/public/mainnet",
       "https://ethereum-rpc.publicnode.com",
-      "https://eth.rpc.grove.city/v1/01fdb492",
-      "https://ethereum.public.blockpi.network/v1/rpc/public",
+      "https://gateway.tenderly.co/public/mainnet",
+      "https://public-eth.nownodes.io",
+      "https://ethereum-public.nodies.app",
       "https://eth-mainnet.public.blastapi.io",
-      "https://eth.rpc.blxrbdn.com",
-      "https://eth-mainnet.g.alchemy.com/v2/demo",
-      "https://eth.llamarpc.com",
-      "https://eth.merkle.io",
+      "https://rpc.mevblocker.io/fast",
+      "https://eth.meowrpc.com",
+      "https://0xrpc.io/eth",
       "https://rpc.mevblocker.io",
-      "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7",
+      "https://eth.llamarpc.com",
+      "https://ethereum-mainnet.gateway.tatum.io",
+      "https://mainnet.gateway.tenderly.co",
+      "https://eth.merkle.io",
+      "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
+      "https://rpc.eth.gateway.fm",
+      "https://eth.blockrazor.xyz",
+      "https://rpc.poolz.finance/eth",
+      "https://rpc.fullsend.to",
+      "https://rpc.mevblocker.io/noreverts",
+      "https://rpc.mevblocker.io/fullprivacy",
+      "https://go.getblock.io/aefd01aa907c4805ba3c00a9e5b48c6b",
+      "https://1rpc.io/eth",
+      "https://ethereum.public.blockpi.network/v1/rpc/public",
+      "https://rpc.flashbots.net/fast",
+      "https://uk.rpc.blxrbdn.com",
+      "https://eth.rpc.blxrbdn.com",
+      "https://virginia.rpc.blxrbdn.com",
+      "https://rpc.flashbots.net",
+      "https://eth1.lava.build",
+      "https://eth.api.pocket.network",
+      "https://singapore.rpc.blxrbdn.com",
       "https://core.gashawk.io/rpc",
+      "https://eth.api.onfinality.io/public",
+      "https://ethereum-json-rpc.stakely.io",
+      "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7",
+      "https://ethereum.rpc.subquery.network/public",
       "https://openapi.bitstack.com/v1/wNFxbiJyQsSeLrX8RRCHi7NpRxrlErZk/DjShIqLishPCTB9HiMkPHXjUM9CNM9Na/ETH/mainnet"
     ],
     "nativeCurrency": {
@@ -67,22 +66,18 @@
     "chainSelector": 10,
     "name": "optimism",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/optimism",
-      "https://opt-mainnet.g.alchemy.com/v2/demo",
-      "https://go.getblock.io/e8a75f8dcf614861becfbcb185be6eb4",
-      "https://0xrpc.io/op",
-      "https://mainnet.optimism.io",
       "https://optimism.drpc.org",
+      "https://gateway.tenderly.co/public/optimism",
+      "https://mainnet.optimism.io",
       "https://optimism-rpc.publicnode.com",
+      "https://optimism-public.nodies.app",
       "https://optimism-mainnet.gateway.tatum.io",
       "https://optimism.gateway.tenderly.co",
-      "https://optimism-public.nodies.app",
-      "https://optimism.meowrpc.com",
-      "https://public-op-mainnet.fastnode.io",
-      "https://api-optimism-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://optimism.api.onfinality.io/public",
-      "https://optimism.rpc.grove.city/v1/01fdb492",
       "https://optimism.public.blockpi.network/v1/rpc/public",
+      "https://api-optimism-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "https://go.getblock.io/e8a75f8dcf614861becfbcb185be6eb4",
+      "https://1rpc.io/op",
+      "https://optimism.api.onfinality.io/public",
       "https://optimism.rpc.subquery.network/public"
     ],
     "nativeCurrency": {
@@ -132,15 +127,15 @@
     "chainSelector": 97,
     "name": "bnbTestnet",
     "rpcUrls": [
-      "https://bnb-testnet.api.onfinality.io/public",
       "https://bsc-testnet-rpc.publicnode.com",
       "https://bsc-testnet.drpc.org",
-      "https://data-seed-prebsc-1-s1.bnbchain.org:8545",
+      "https://bnb-testnet.api.onfinality.io/public",
       "https://data-seed-prebsc-2-s2.bnbchain.org:8545",
+      "https://data-seed-prebsc-2-s3.bnbchain.org:8545",
       "https://data-seed-prebsc-1-s2.bnbchain.org:8545",
       "https://data-seed-prebsc-1-s3.bnbchain.org:8545",
       "https://data-seed-prebsc-2-s1.bnbchain.org:8545",
-      "https://data-seed-prebsc-2-s3.bnbchain.org:8545"
+      "https://data-seed-prebsc-1-s1.bnbchain.org:8545"
     ],
     "nativeCurrency": {
       "name": "BNB",
@@ -155,7 +150,11 @@
       }
     ],
     "finalityConfirmations": 7,
-    "deployments": {}
+    "deployments": {
+      "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
+      "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
+      "validatorLib": "0xAEBaacfa9CaC6B8486Ae77843728c863c909E7d0"
+    }
   },
   "133": {
     "id": "133",
@@ -184,24 +183,23 @@
     "chainSelector": 137,
     "name": "polygon",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/polygon",
-      "https://go.getblock.io/02667b699f05444ab2c64f9bff28f027",
       "https://rpc.poolz.finance/polygon",
-      "https://polygon.meowrpc.com",
-      "https://polygon-mainnet.g.alchemy.com/v2/demo",
-      "https://polygon-rpc.com",
-      "https://polygon-bor-rpc.publicnode.com",
-      "https://polygon.gateway.tenderly.co",
-      "https://polygon.api.onfinality.io/public",
-      "https://polygon-public.nodies.app",
-      "https://polygon-mainnet.gateway.tatum.io",
+      "https://gateway.tenderly.co/public/polygon",
       "https://polygon.lava.build",
+      "https://polygon-bor-rpc.publicnode.com",
+      "https://polygon-public.nodies.app",
+      "https://polygon.gateway.tenderly.co",
+      "https://polygon.meowrpc.com",
       "https://polygon-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
+      "https://polygon-mainnet.gateway.tatum.io",
       "https://polygon.drpc.org",
+      "https://1rpc.io/matic",
+      "https://polygon-rpc.com",
+      "https://poly.api.pocket.network",
+      "https://polygon.api.onfinality.io/public",
+      "https://rpc-mainnet.matic.quiknode.pro",
       "https://polygon.rpc.subquery.network/public",
-      "https://api-polygon-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://poly.rpc.grove.city/v1/01fdb492",
-      "https://rpc-mainnet.matic.quiknode.pro"
+      "https://go.getblock.io/02667b699f05444ab2c64f9bff28f027"
     ],
     "nativeCurrency": {
       "name": "POL",
@@ -239,16 +237,18 @@
       }
     ],
     "finalityConfirmations": 60,
-    "deployments": {}
+    "deployments": {
+      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
+      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
+      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
+    }
   },
   "195": {
     "id": "195",
     "isTestnet": true,
     "chainSelector": 195,
     "name": "xlayerSepolia",
-    "rpcUrls": [
-      "https://xlayer-testnet.drpc.org"
-    ],
+    "rpcUrls": [],
     "nativeCurrency": {
       "name": "OKB",
       "decimals": 18,
@@ -270,7 +270,8 @@
     "chainSelector": 296,
     "name": "hederaTestnet",
     "rpcUrls": [
-      "https://testnet.hashio.io/api"
+      "https://testnet.hashio.io/api",
+      "https://296.rpc.thirdweb.com"
     ],
     "nativeCurrency": {
       "name": "HBAR",
@@ -287,8 +288,9 @@
     "chainSelector": 300,
     "name": "zksyncSepolia",
     "rpcUrls": [
+      "https://sepolia.era.zksync.dev",
       "https://zksync-sepolia.drpc.org",
-      "https://sepolia.era.zksync.dev"
+      "https://rpc.ankr.com/zksync_era_sepolia"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -306,7 +308,6 @@
     "name": "cronosTestnet",
     "rpcUrls": [
       "https://cronos-testnet.drpc.org",
-      "https://cro-testnet.gateway.tatum.io",
       "https://evm-t3.cronos.org"
     ],
     "nativeCurrency": {
@@ -339,7 +340,11 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "deployments": {}
+    "deployments": {
+      "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
+      "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
+      "validatorLib": "0xAEBaacfa9CaC6B8486Ae77843728c863c909E7d0"
+    }
   },
   "919": {
     "id": "919",
@@ -372,8 +377,8 @@
     "name": "pulsechainTestnet",
     "rpcUrls": [
       "https://pulsechain-testnet-rpc.publicnode.com",
-      "https://rpc.v4.testnet.pulsechain.com",
-      "https://rpc-testnet-pulsechain.g4mm4.io"
+      "https://rpc-testnet-pulsechain.g4mm4.io",
+      "https://rpc.v4.testnet.pulsechain.com"
     ],
     "nativeCurrency": {
       "name": "V4 Pulse",
@@ -382,7 +387,11 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "deployments": {}
+    "deployments": {
+      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
+      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
+      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
+    }
   },
   "1001": {
     "id": "1001",
@@ -390,8 +399,9 @@
     "chainSelector": 1001,
     "name": "kaiaKairos",
     "rpcUrls": [
-      "https://rpc.ankr.com/kaia_testnet",
+      "https://klaytn-baobab.drpc.org",
       "https://public-en-kairos.node.kaia.io",
+      "https://rpc.ankr.com/kaia_testnet",
       "https://kaia-kairos.blockpi.network/v1/rpc/public",
       "https://responsive-green-emerald.kaia-kairos.quiknode.pro"
     ],
@@ -443,7 +453,11 @@
       }
     ],
     "finalityConfirmations": 7,
-    "deployments": {}
+    "deployments": {
+      "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
+      "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
+      "validatorLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a"
+    }
   },
   "1123": {
     "id": "1123",
@@ -505,8 +519,8 @@
     "rpcUrls": [
       "https://unichain-sepolia-rpc.publicnode.com",
       "https://unichain-sepolia.drpc.org",
-      "https://sepolia.unichain.org",
-      "https://unichain-sepolia.api.onfinality.io/public"
+      "https://unichain-sepolia.api.onfinality.io/public",
+      "https://sepolia.unichain.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -521,7 +535,11 @@
       }
     ],
     "finalityConfirmations": 1440,
-    "deployments": {}
+    "deployments": {
+      "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
+      "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
+      "validatorLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a"
+    }
   },
   "1328": {
     "id": "1328",
@@ -529,8 +547,8 @@
     "chainSelector": 1328,
     "name": "seiTestnet",
     "rpcUrls": [
-      "https://evm-rpc-testnet.sei-apis.com",
       "https://sei-testnet-public.nodies.app",
+      "https://evm-rpc-testnet.sei-apis.com",
       "https://sei-testnet.drpc.org"
     ],
     "nativeCurrency": {
@@ -546,7 +564,11 @@
       }
     ],
     "finalityConfirmations": 3,
-    "deployments": {}
+    "deployments": {
+      "router": "0x122947C8c3529DCa006aeE65832D3C3fED6bf3C0",
+      "relayerLib": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
+      "validatorLib": "0xB708D151D18e5aB3506934B39375D00EE1e0C882"
+    }
   },
   "1946": {
     "id": "1946",
@@ -594,7 +616,11 @@
       }
     ],
     "finalityConfirmations": 4,
-    "deployments": {}
+    "deployments": {
+      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
+      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
+      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
+    }
   },
   "2221": {
     "id": "2221",
@@ -650,8 +676,8 @@
     "chainSelector": 3636,
     "name": "botanixTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/botanix_testnet",
-      "https://node.botanixlabs.dev"
+      "https://node.botanixlabs.dev",
+      "https://rpc.ankr.com/botanix_testnet"
     ],
     "nativeCurrency": {
       "name": "Botanix",
@@ -674,8 +700,9 @@
     "chainSelector": 4801,
     "name": "worldchainTestnet",
     "rpcUrls": [
-      "https://worldchain-sepolia.drpc.org",
+      "https://4801.rpc.thirdweb.com",
       "https://worldchain-sepolia.gateway.tenderly.co",
+      "https://worldchain-sepolia.drpc.org",
       "https://worldchain-sepolia.g.alchemy.com/public"
     ],
     "nativeCurrency": {
@@ -685,7 +712,11 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 1200,
-    "deployments": {}
+    "deployments": {
+      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
+      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
+      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
+    }
   },
   "5003": {
     "id": "5003",
@@ -735,9 +766,10 @@
     "name": "opbnbTestnet",
     "rpcUrls": [
       "https://opbnb-testnet-rpc.publicnode.com",
+      "https://opbnb-testnet.drpc.org",
+      "https://opbnb-testnet-rpc.bnbchain.org",
       "https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
-      "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
-      "https://opbnb-testnet-rpc.bnbchain.org"
+      "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3"
     ],
     "nativeCurrency": {
       "name": "tBNB",
@@ -792,21 +824,24 @@
     "chainSelector": 8453,
     "name": "base",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/base",
-      "https://base-rpc.publicnode.com",
-      "https://base.meowrpc.com",
-      "https://base.rpc.subquery.network/public",
-      "https://base.public.blockpi.network/v1/rpc/public",
       "https://base.drpc.org",
-      "https://base-public.nodies.app",
-      "https://base.gateway.tenderly.co",
-      "https://base-mainnet.public.blastapi.io",
       "https://base.lava.build",
-      "https://base.llamarpc.com",
-      "https://base.rpc.grove.city/v1/01fdb492",
+      "https://gateway.tenderly.co/public/base",
+      "https://rpc.poolz.finance/base",
       "https://mainnet.base.org",
+      "https://base-rpc.publicnode.com",
+      "https://base-public.nodies.app",
+      "https://base-mainnet.public.blastapi.io",
+      "https://base.public.blockpi.network/v1/rpc/public",
+      "https://base.gateway.tenderly.co",
+      "https://base.meowrpc.com",
+      "https://base.llamarpc.com",
+      "https://1rpc.io/base",
       "https://developer-access-mainnet.base.org",
-      "https://base.api.onfinality.io/public"
+      "https://api-base-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "https://base.rpc.subquery.network/public",
+      "https://base.rpc.blxrbdn.com",
+      "https://base.api.pocket.network"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -829,9 +864,11 @@
     "chainSelector": 10143,
     "name": "monadTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/monad_testnet",
+      "https://rpc-testnet.monadinfra.com",
+      "https://monad-testnet.drpc.org",
       "https://testnet-rpc.monad.xyz",
-      "https://monad-testnet.drpc.org"
+      "https://monad-testnet.api.onfinality.io/public",
+      "https://rpc.ankr.com/monad_testnet"
     ],
     "nativeCurrency": {
       "name": "Testnet MON Token",
@@ -854,10 +891,10 @@
     "chainSelector": 10200,
     "name": "gnosisChiado",
     "rpcUrls": [
-      "https://rpc.chiado.gnosis.gateway.fm",
-      "https://gnosis-chiado-rpc.publicnode.com",
       "https://rpc.chiadochain.net",
-      "https://gnosis-chiado.drpc.org"
+      "https://gnosis-chiado-rpc.publicnode.com",
+      "https://gnosis-chiado.drpc.org",
+      "https://rpc.chiado.gnosis.gateway.fm"
     ],
     "nativeCurrency": {
       "name": "Gnosis",
@@ -872,7 +909,11 @@
       }
     ],
     "finalityConfirmations": 35,
-    "deployments": {}
+    "deployments": {
+      "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
+      "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
+      "validatorLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a"
+    }
   },
   "11124": {
     "id": "11124",
@@ -880,8 +921,8 @@
     "chainSelector": 11124,
     "name": "abstractSepolia",
     "rpcUrls": [
-      "https://abstract-sepolia.drpc.org",
-      "https://api.testnet.abs.xyz"
+      "https://api.testnet.abs.xyz",
+      "https://abstract-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -899,8 +940,8 @@
     "name": "expchainTestnet",
     "rpcUrls": [
       "https://rpc1-testnet.expchain.ai",
-      "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc1-testnet",
+      "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc1-testnet"
     ],
@@ -928,7 +969,11 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "deployments": {}
+    "deployments": {
+      "router": "0xcc9D0438ac3b90fB8291f4f3C1c420E215f36585",
+      "relayerLib": "0x8510C780097cA53aeF8e3527a5107C4629b21f0C",
+      "validatorLib": "0xb31EED4695De3eCE4381a40fA638d9a63904882b"
+    }
   },
   "33111": {
     "id": "33111",
@@ -937,8 +982,8 @@
     "name": "apechainCurtis",
     "rpcUrls": [
       "https://apechain-curtis.drpc.org",
-      "https://rpc.curtis.apechain.com",
-      "https://curtis.rpc.caldera.xyz/http"
+      "https://curtis.rpc.caldera.xyz/http",
+      "https://rpc.curtis.apechain.com"
     ],
     "nativeCurrency": {
       "name": "APE",
@@ -979,20 +1024,22 @@
     "chainSelector": 42161,
     "name": "arbitrum",
     "rpcUrls": [
-      "https://rpc.poolz.finance/arbitrum",
-      "https://arbitrum.meowrpc.com",
-      "https://arbitrum-one-rpc.publicnode.com",
-      "https://arbitrum.rpc.subquery.network/public",
-      "https://arbitrum-one-public.nodies.app",
-      "https://arb1.lava.build",
       "https://arbitrum.drpc.org",
-      "https://arbitrum.gateway.tenderly.co",
+      "https://arb1.lava.build",
+      "https://rpc.poolz.finance/arbitrum",
+      "https://arbitrum-one-rpc.publicnode.com",
+      "https://arbitrum.meowrpc.com",
+      "https://arbitrum-one-public.nodies.app",
       "https://arbitrum.public.blockpi.network/v1/rpc/public",
       "https://arbitrum-one.public.blastapi.io",
-      "https://arb-mainnet.g.alchemy.com/v2/demo",
+      "https://arbitrum.gateway.tenderly.co",
+      "https://arb1.arbitrum.io/rpc",
+      "https://1rpc.io/arb",
+      "https://api-arbitrum-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "https://public-arb-mainnet.fastnode.io",
-      "https://arbitrum.api.onfinality.io/public",
-      "https://arb1.arbitrum.io/rpc"
+      "https://arb-one.api.pocket.network",
+      "https://arbitrum.rpc.subquery.network/public",
+      "https://arbitrum.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -1032,7 +1079,11 @@
       }
     ],
     "finalityConfirmations": 2,
-    "deployments": {}
+    "deployments": {
+      "router": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
+      "relayerLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a",
+      "validatorLib": "0x246892c38a2314c30E56490ADf1bcf3470DCAE6A"
+    }
   },
   "43114": {
     "id": "43114",
@@ -1040,16 +1091,18 @@
     "chainSelector": 43114,
     "name": "avalanche",
     "rpcUrls": [
-      "https://rpc.poolz.finance/avalanche",
-      "https://0xrpc.io/avax",
       "https://api.avax.network/ext/bc/C/rpc",
+      "https://rpc.poolz.finance/avalanche",
       "https://avalanche-c-chain-rpc.publicnode.com",
-      "https://avalanche-mainnet.gateway.tenderly.co",
-      "https://avalanche.drpc.org",
-      "https://avax.meowrpc.com",
       "https://avalanche-public.nodies.app/ext/bc/C/rpc",
-      "https://avax.rpc.grove.city/v1/01fdb492",
-      "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc"
+      "https://avax.meowrpc.com",
+      "https://avalanche.drpc.org",
+      "https://1rpc.io/avax/c",
+      "https://avalanche-mainnet.gateway.tenderly.co",
+      "https://spectrum-01.simplystaking.xyz/avalanche-mn-rpc/ext/bc/C/rpc",
+      "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
+      "https://avax.api.pocket.network",
+      "https://0xrpc.io/avax"
     ],
     "nativeCurrency": {
       "name": "Avalanche",
@@ -1117,8 +1170,8 @@
     "chainSelector": 57054,
     "name": "sonicBlaze",
     "rpcUrls": [
-      "https://sonic-testnet.drpc.org",
       "https://sonic-blaze-rpc.publicnode.com",
+      "https://sonic-testnet.drpc.org",
       "https://rpc.blaze.soniclabs.com"
     ],
     "nativeCurrency": {
@@ -1134,7 +1187,11 @@
       }
     ],
     "finalityConfirmations": 10,
-    "deployments": {}
+    "deployments": {
+      "router": "0xAEBaacfa9CaC6B8486Ae77843728c863c909E7d0",
+      "relayerLib": "0x13187bb1d2f100F84770a848A1374bf745Ea4cF6",
+      "validatorLib": "0x90D7e742746Abf405036aA21981C835F3E842DA4"
+    }
   },
   "59141": {
     "id": "59141",
@@ -1167,8 +1224,8 @@
     "chainSelector": 59902,
     "name": "metisSepolia",
     "rpcUrls": [
-      "https://metis-sepolia.gateway.tenderly.co",
       "https://metis-sepolia-rpc.publicnode.com",
+      "https://metis-sepolia.gateway.tenderly.co",
       "https://sepolia.metisdevops.link"
     ],
     "nativeCurrency": {
@@ -1187,11 +1244,11 @@
     "name": "polygonAmoy",
     "rpcUrls": [
       "https://rpc-amoy.polygon.technology",
-      "https://polygon-amoy.gateway.tenderly.co",
-      "https://polygon-amoy-public.nodies.app",
       "https://polygon-amoy-bor-rpc.publicnode.com",
-      "https://polygon-amoy.api.onfinality.io/public",
-      "https://polygon-amoy.drpc.org"
+      "https://polygon-amoy-public.nodies.app",
+      "https://polygon-amoy.gateway.tenderly.co",
+      "https://polygon-amoy.drpc.org",
+      "https://polygon-amoy.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "POL",
@@ -1205,11 +1262,11 @@
         "apiUrl": "https://api-amoy.polygonscan.com/api"
       }
     ],
-    "finalityConfirmations": 55,
+    "finalityConfirmations": 500,
     "deployments": {
-      "router": "0xE649E7E7e2011004718c5105E5eB8d8950Ee4a4d",
-      "relayerLib": "0x9f97dBcBB4cf553EeD6A265dc51D87D066816F4E",
-      "validatorLib": "0xf94aa4BE3cC03FF742d0892630020FEe13343519"
+      "router": "0x6FF322BC8da39bC87A056d4052aa763f7BDeE836",
+      "relayerLib": "0x81365cc081dF5fdF6cbD47a34fF4acBcA2B35F0d",
+      "validatorLib": "0x99542DdB261186F818974e579e4aBF3BFb44819e"
     }
   },
   "80069": {
@@ -1227,7 +1284,11 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 4,
-    "deployments": {}
+    "deployments": {
+      "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
+      "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
+      "validatorLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a"
+    }
   },
   "84532": {
     "id": "84532",
@@ -1235,13 +1296,12 @@
     "chainSelector": 84532,
     "name": "baseSepolia",
     "rpcUrls": [
-      "https://base-sepolia.api.onfinality.io/public",
-      "https://base-sepolia.gateway.tenderly.co",
-      "https://base-sepolia-public.nodies.app",
-      "https://base-sepolia.drpc.org",
-      "https://base-sepolia-rpc.publicnode.com",
       "https://sepolia.base.org",
-      "https://base-testnet.rpc.grove.city/v1/01fdb492"
+      "https://base-sepolia-public.nodies.app",
+      "https://base-sepolia-rpc.publicnode.com",
+      "https://base-sepolia.gateway.tenderly.co",
+      "https://base-sepolia.drpc.org",
+      "https://base-sepolia.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -1261,7 +1321,11 @@
       }
     ],
     "finalityConfirmations": 540,
-    "deployments": {}
+    "deployments": {
+      "router": "0xE3d861a49bc5903499fB5Bb411B83d980422c31B",
+      "relayerLib": "0x429E6875Ba6A13cc015e9Eba594e8b42936244C4",
+      "validatorLib": "0x67BE79Df5A37d2a89384D32C2A066d2a7354eD2B"
+    }
   },
   "167009": {
     "id": "167009",
@@ -1285,8 +1349,8 @@
     "name": "bitlayerTestnet",
     "rpcUrls": [
       "https://rpc.ankr.com/bitlayer_testnet",
-      "https://testnet-rpc.bitlayer.org",
-      "https://testnet-rpc.bitlayer-rpc.com"
+      "https://testnet-rpc.bitlayer-rpc.com",
+      "https://testnet-rpc.bitlayer.org"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
@@ -1309,6 +1373,7 @@
     "chainSelector": 344100,
     "name": "mantapacificSepolia",
     "rpcUrls": [
+      "https://manta-sepolia.rpc.caldera.xyz/http",
       "https://pacific-rpc.sepolia-testnet.manta.network/http"
     ],
     "nativeCurrency": {
@@ -1326,10 +1391,12 @@
     "chainSelector": 421614,
     "name": "arbitrumSepolia",
     "rpcUrls": [
-      "https://arbitrum-sepolia.gateway.tenderly.co",
       "https://arbitrum-sepolia-rpc.publicnode.com",
+      "https://arbitrum-sepolia.gateway.tenderly.co",
+      "https://sepolia-rollup.arbitrum.io/rpc",
       "https://arbitrum-sepolia.drpc.org",
-      "https://sepolia-rollup.arbitrum.io/rpc"
+      "https://arbitrum-sepolia-testnet.api.pocket.network",
+      "https://arbitrum-sepolia.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -1345,9 +1412,9 @@
     ],
     "finalityConfirmations": 4080,
     "deployments": {
-      "router": "0xdF5893aB68254b897b799F5bbc7A91FdBcf30Ce0",
-      "relayerLib": "0xD5B19458Ddd36f75Cb8309B0e3bfB607Ccc04EB6",
-      "validatorLib": "0x33B1b635DaEBC1C8523693c8D3b0A2c9DE9e82EE"
+      "router": "0x6c99cC0FCC985fF175787BD2565AfD15781C99d0",
+      "relayerLib": "0x622b5FeBf5Fd44Ab2E7636398F2621FC4E956304",
+      "validatorLib": "0x7F445E3DE6B46cD36887B9f136DBe13298517C1F"
     }
   },
   "534351": {
@@ -1356,9 +1423,9 @@
     "chainSelector": 534351,
     "name": "scrollSepolia",
     "rpcUrls": [
-      "https://scroll-sepolia-rpc.publicnode.com",
       "https://sepolia-rpc.scroll.io",
       "https://scroll-sepolia-public.nodies.app",
+      "https://scroll-sepolia-rpc.publicnode.com",
       "https://scroll-sepolia.drpc.org"
     ],
     "nativeCurrency": {
@@ -1374,7 +1441,11 @@
       }
     ],
     "finalityConfirmations": 720,
-    "deployments": {}
+    "deployments": {
+      "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
+      "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
+      "validatorLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a"
+    }
   },
   "688689": {
     "id": "688689",
@@ -1494,9 +1565,9 @@
     "chainSelector": 1685877,
     "name": "blastSepolia",
     "rpcUrls": [
-      "https://rpc.ankr.com/blast_testnet_sepolia",
       "https://blast-testnet-public.nodies.app",
       "https://blast-sepolia.drpc.org",
+      "https://rpc.ankr.com/blast_testnet_sepolia",
       "https://sepolia.blast.io"
     ],
     "nativeCurrency": {
@@ -1520,15 +1591,17 @@
     "chainSelector": 11155111,
     "name": "ethereumSepolia",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/sepolia",
-      "https://eth-sepolia.g.alchemy.com/v2/demo",
-      "https://0xrpc.io/sep",
-      "https://ethereum-sepolia-public.nodies.app",
-      "https://eth-sepolia.api.onfinality.io/public",
       "https://sepolia.drpc.org",
-      "https://sepolia.gateway.tenderly.co",
+      "https://gateway.tenderly.co/public/sepolia",
+      "https://ethereum-sepolia.gateway.tatum.io",
+      "https://ethereum-sepolia-public.nodies.app",
       "https://ethereum-sepolia-rpc.publicnode.com",
-      "https://ethereum-sepolia.rpc.subquery.network/public"
+      "https://sepolia.gateway.tenderly.co",
+      "https://1rpc.io/sepolia",
+      "https://eth-sepolia-testnet.api.pocket.network",
+      "https://eth-sepolia.api.onfinality.io/public",
+      "https://ethereum-sepolia.rpc.subquery.network/public",
+      "https://0xrpc.io/sep"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -1544,9 +1617,9 @@
     ],
     "finalityConfirmations": 75,
     "deployments": {
-      "router": "0xDf8840477B11edfC2a75C74aE9bC2a5b1EB5963b",
-      "relayerLib": "0xd1D330527Cd8ccee0300BBde5CD9deC740560464",
-      "validatorLib": "0x232bD228C800c806c8dee2DB1EFdE29011EC68f7"
+      "router": "0x3E0aAA63fFb51169B9aE9b7Dc3616b43362124D6",
+      "relayerLib": "0x8338A0B9c83C0d7E67C267432DF4C8b7cA98e11C",
+      "validatorLib": "0x1A808aa4F1E874763E114AB4fD170460D84A8D54"
     }
   },
   "11155420": {
@@ -1556,10 +1629,10 @@
     "name": "optimismSepolia",
     "rpcUrls": [
       "https://sepolia.optimism.io",
-      "https://optimism-sepolia.gateway.tenderly.co",
       "https://optimism-sepolia-public.nodies.app",
-      "https://optimism-sepolia.api.onfinality.io/public",
-      "https://optimism-sepolia.drpc.org"
+      "https://optimism-sepolia.gateway.tenderly.co",
+      "https://optimism-sepolia.drpc.org",
+      "https://optimism-sepolia.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -1574,7 +1647,11 @@
       }
     ],
     "finalityConfirmations": 600,
-    "deployments": {}
+    "deployments": {
+      "router": "0x25c2037546Bf5B525DfAfe85A662DB519c07bDdB",
+      "relayerLib": "0x6E0b96885Ab0A58e82f2D1ce4df29AF6F5a40089",
+      "validatorLib": "0x0C12fAdDb045bB71C256E36662D56b4b22f1bD58"
+    }
   },
   "11155931": {
     "id": "11155931",
