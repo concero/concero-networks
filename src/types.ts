@@ -11,6 +11,7 @@ export type Chain = {
     name: string;
     isTestnet: boolean;
     finalityConfirmations: number;
+    minBlockConformations: number;
     rpcUrls: string[];
     blockExplorers: {
         name: string;

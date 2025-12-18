@@ -112,6 +112,7 @@ const main = async () => {
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
             blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
             finalityConfirmations: network.finalityConfirmations,
+            minBlockConformations: 1,
             deployments: deployments[network.name] ?? {}
         }
     })
@@ -126,6 +127,7 @@ const main = async () => {
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
             blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
             finalityConfirmations: network.finalityConfirmations,
+            minBlockConformations: 1,
             deployments: deployments[network.name] ?? {}
         }
     })
