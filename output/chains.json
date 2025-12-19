@@ -1,7 +1,8 @@
 {
   "1": {
     "id": "1",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1,
     "name": "ethereum",
     "rpcUrls": [
@@ -59,12 +60,13 @@
       }
     ],
     "finalityConfirmations": 75,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "10": {
     "id": "10",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 10,
     "name": "optimism",
     "rpcUrls": [
@@ -97,12 +99,13 @@
       }
     ],
     "finalityConfirmations": 50,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "81": {
     "id": "81",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 81,
     "name": "astarShibuya",
     "rpcUrls": [
@@ -124,12 +127,13 @@
       }
     ],
     "finalityConfirmations": 6,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "97": {
     "id": "97",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 97,
     "name": "bnbTestnet",
     "rpcUrls": [
@@ -156,7 +160,7 @@
       }
     ],
     "finalityConfirmations": 7,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
       "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
@@ -166,6 +170,7 @@
   "133": {
     "id": "133",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 133,
     "name": "hashkeyTestnet",
     "rpcUrls": [],
@@ -182,12 +187,13 @@
       }
     ],
     "finalityConfirmations": 1800,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "137": {
     "id": "137",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 137,
     "name": "polygon",
     "rpcUrls": [
@@ -221,12 +227,13 @@
       }
     ],
     "finalityConfirmations": 128,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "157": {
     "id": "157",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 157,
     "name": "shibariumPuppynet",
     "rpcUrls": [
@@ -245,7 +252,7 @@
       }
     ],
     "finalityConfirmations": 60,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -255,6 +262,7 @@
   "195": {
     "id": "195",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 195,
     "name": "xlayerSepolia",
     "rpcUrls": [],
@@ -271,12 +279,13 @@
       }
     ],
     "finalityConfirmations": 3600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "296": {
     "id": "296",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 296,
     "name": "hederaTestnet",
     "rpcUrls": [
@@ -290,12 +299,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "300": {
     "id": "300",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 300,
     "name": "zksyncSepolia",
     "rpcUrls": [
@@ -310,12 +320,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 1200,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "338": {
     "id": "338",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 338,
     "name": "cronosTestnet",
     "rpcUrls": [
@@ -336,12 +347,13 @@
       }
     ],
     "finalityConfirmations": 2,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "545": {
     "id": "545",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 545,
     "name": "flowTestnet",
     "rpcUrls": [
@@ -354,7 +366,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
       "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
@@ -364,6 +376,7 @@
   "919": {
     "id": "919",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 919,
     "name": "modeTestnet",
     "rpcUrls": [
@@ -383,12 +396,13 @@
       }
     ],
     "finalityConfirmations": 1110,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "943": {
     "id": "943",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 943,
     "name": "pulsechainTestnet",
     "rpcUrls": [
@@ -403,7 +417,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -413,6 +427,7 @@
   "1001": {
     "id": "1001",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1001,
     "name": "kaiaKairos",
     "rpcUrls": [
@@ -429,12 +444,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1112": {
     "id": "1112",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1112,
     "name": "wemixTestnet",
     "rpcUrls": [
@@ -448,12 +464,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 2,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1114": {
     "id": "1114",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1114,
     "name": "coreTestnet",
     "rpcUrls": [
@@ -472,7 +489,7 @@
       }
     ],
     "finalityConfirmations": 7,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -482,6 +499,7 @@
   "1123": {
     "id": "1123",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1123,
     "name": "b2Testnet",
     "rpcUrls": [
@@ -494,12 +512,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1174": {
     "id": "1174",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1174,
     "name": "litheumTestnet",
     "rpcUrls": [
@@ -512,12 +531,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1270": {
     "id": "1270",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
@@ -531,12 +551,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 6,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1301": {
     "id": "1301",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1301,
     "name": "unichainSepolia",
     "rpcUrls": [
@@ -558,7 +579,7 @@
       }
     ],
     "finalityConfirmations": 1440,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -568,6 +589,7 @@
   "1328": {
     "id": "1328",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1328,
     "name": "seiTestnet",
     "rpcUrls": [
@@ -588,7 +610,7 @@
       }
     ],
     "finalityConfirmations": 3,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x122947C8c3529DCa006aeE65832D3C3fED6bf3C0",
       "relayerLib": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
@@ -598,6 +620,7 @@
   "1946": {
     "id": "1946",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1946,
     "name": "soneiumMinato",
     "rpcUrls": [
@@ -617,12 +640,13 @@
       }
     ],
     "finalityConfirmations": 810,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "2021": {
     "id": "2021",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 2021,
     "name": "roninSaigon",
     "rpcUrls": [
@@ -642,7 +666,7 @@
       }
     ],
     "finalityConfirmations": 4,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -652,6 +676,7 @@
   "2221": {
     "id": "2221",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 2221,
     "name": "kavaTestnet",
     "rpcUrls": [
@@ -665,12 +690,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "2522": {
     "id": "2522",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 2522,
     "name": "fraxtalHolesky",
     "rpcUrls": [],
@@ -681,12 +707,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 900,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "2810": {
     "id": "2810",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 2810,
     "name": "morphHolesky",
     "rpcUrls": [],
@@ -697,12 +724,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "3636": {
     "id": "3636",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 3636,
     "name": "botanixTestnet",
     "rpcUrls": [
@@ -722,12 +750,13 @@
       }
     ],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "4801": {
     "id": "4801",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 4801,
     "name": "worldchainTestnet",
     "rpcUrls": [
@@ -743,7 +772,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 1200,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -753,6 +782,7 @@
   "5003": {
     "id": "5003",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 5003,
     "name": "mantleSepolia",
     "rpcUrls": [
@@ -772,12 +802,13 @@
       }
     ],
     "finalityConfirmations": 840,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "5124": {
     "id": "5124",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 5124,
     "name": "seismicDevnet",
     "rpcUrls": [
@@ -790,12 +821,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "5611": {
     "id": "5611",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 5611,
     "name": "opbnbTestnet",
     "rpcUrls": [
@@ -812,12 +844,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "6342": {
     "id": "6342",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 6342,
     "name": "megaethTestnet",
     "rpcUrls": [],
@@ -834,12 +867,13 @@
       }
     ],
     "finalityConfirmations": 900,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "8408": {
     "id": "8408",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 8408,
     "name": "zenchainTestnet",
     "rpcUrls": [
@@ -852,12 +886,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "8453": {
     "id": "8453",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 8453,
     "name": "base",
     "rpcUrls": [
@@ -893,12 +928,13 @@
       }
     ],
     "finalityConfirmations": 50,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "10143": {
     "id": "10143",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 10143,
     "name": "monadTestnet",
     "rpcUrls": [
@@ -921,12 +957,13 @@
       }
     ],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "10200": {
     "id": "10200",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 10200,
     "name": "gnosisChiado",
     "rpcUrls": [
@@ -948,7 +985,7 @@
       }
     ],
     "finalityConfirmations": 35,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -958,6 +995,7 @@
   "11124": {
     "id": "11124",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 11124,
     "name": "abstractSepolia",
     "rpcUrls": [
@@ -971,12 +1009,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "18880": {
     "id": "18880",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 18880,
     "name": "expchainTestnet",
     "rpcUrls": [
@@ -993,12 +1032,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "23295": {
     "id": "23295",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 23295,
     "name": "oasissapphireTestnet",
     "rpcUrls": [
@@ -1011,7 +1051,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xcc9D0438ac3b90fB8291f4f3C1c420E215f36585",
       "relayerLib": "0x8510C780097cA53aeF8e3527a5107C4629b21f0C",
@@ -1021,6 +1061,7 @@
   "33111": {
     "id": "33111",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 33111,
     "name": "apechainCurtis",
     "rpcUrls": [
@@ -1041,12 +1082,13 @@
       }
     ],
     "finalityConfirmations": 3000,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "37111": {
     "id": "37111",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 37111,
     "name": "lensSepolia",
     "rpcUrls": [
@@ -1060,12 +1102,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "42161": {
     "id": "42161",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 42161,
     "name": "arbitrum",
     "rpcUrls": [
@@ -1098,12 +1141,13 @@
       }
     ],
     "finalityConfirmations": 4080,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "43113": {
     "id": "43113",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 43113,
     "name": "avalancheFuji",
     "rpcUrls": [
@@ -1124,7 +1168,7 @@
       }
     ],
     "finalityConfirmations": 2,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
       "relayerLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a",
@@ -1133,7 +1177,8 @@
   },
   "43114": {
     "id": "43114",
-    "isTestnet": false,
+    "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 43114,
     "name": "avalanche",
     "rpcUrls": [
@@ -1163,12 +1208,13 @@
       }
     ],
     "finalityConfirmations": 1,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "44787": {
     "id": "44787",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 44787,
     "name": "celoAlfajores",
     "rpcUrls": [],
@@ -1185,12 +1231,13 @@
       }
     ],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "48899": {
     "id": "48899",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 48899,
     "name": "zircuitTestnet",
     "rpcUrls": [
@@ -1210,12 +1257,13 @@
       }
     ],
     "finalityConfirmations": 630,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "57054": {
     "id": "57054",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 57054,
     "name": "sonicBlaze",
     "rpcUrls": [
@@ -1236,7 +1284,7 @@
       }
     ],
     "finalityConfirmations": 10,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xAEBaacfa9CaC6B8486Ae77843728c863c909E7d0",
       "relayerLib": "0x13187bb1d2f100F84770a848A1374bf745Ea4cF6",
@@ -1246,6 +1294,7 @@
   "59141": {
     "id": "59141",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 59141,
     "name": "lineaSepolia",
     "rpcUrls": [
@@ -1266,12 +1315,13 @@
       }
     ],
     "finalityConfirmations": 600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "59902": {
     "id": "59902",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 59902,
     "name": "metisSepolia",
     "rpcUrls": [
@@ -1286,12 +1336,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 360,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "80002": {
     "id": "80002",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 80002,
     "name": "polygonAmoy",
     "rpcUrls": [
@@ -1315,7 +1366,7 @@
       }
     ],
     "finalityConfirmations": 500,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x6FF322BC8da39bC87A056d4052aa763f7BDeE836",
       "relayerLib": "0x81365cc081dF5fdF6cbD47a34fF4acBcA2B35F0d",
@@ -1325,6 +1376,7 @@
   "80069": {
     "id": "80069",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 80069,
     "name": "berachainBepolia",
     "rpcUrls": [
@@ -1337,7 +1389,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 4,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -1347,6 +1399,7 @@
   "84532": {
     "id": "84532",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 84532,
     "name": "baseSepolia",
     "rpcUrls": [
@@ -1375,7 +1428,7 @@
       }
     ],
     "finalityConfirmations": 540,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xE3d861a49bc5903499fB5Bb411B83d980422c31B",
       "relayerLib": "0x429E6875Ba6A13cc015e9Eba594e8b42936244C4",
@@ -1385,6 +1438,7 @@
   "167009": {
     "id": "167009",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 167009,
     "name": "taikoTestnet",
     "rpcUrls": [],
@@ -1395,12 +1449,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 20,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "200810": {
     "id": "200810",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 200810,
     "name": "bitlayerTestnet",
     "rpcUrls": [
@@ -1421,12 +1476,13 @@
       }
     ],
     "finalityConfirmations": 21,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "344100": {
     "id": "3441006",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 344100,
     "name": "mantapacificSepolia",
     "rpcUrls": [
@@ -1441,12 +1497,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "421614": {
     "id": "421614",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 421614,
     "name": "arbitrumSepolia",
     "rpcUrls": [
@@ -1469,7 +1526,7 @@
       }
     ],
     "finalityConfirmations": 4080,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x6c99cC0FCC985fF175787BD2565AfD15781C99d0",
       "relayerLib": "0x622b5FeBf5Fd44Ab2E7636398F2621FC4E956304",
@@ -1479,6 +1536,7 @@
   "534351": {
     "id": "534351",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 534351,
     "name": "scrollSepolia",
     "rpcUrls": [
@@ -1500,7 +1558,7 @@
       }
     ],
     "finalityConfirmations": 720,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -1510,6 +1568,7 @@
   "688689": {
     "id": "688689",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 688689,
     "name": "pharosTestnet",
     "rpcUrls": [
@@ -1522,12 +1581,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "763373": {
     "id": "763373",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 763373,
     "name": "inkSepolia",
     "rpcUrls": [
@@ -1547,12 +1607,13 @@
       }
     ],
     "finalityConfirmations": 3600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "808813": {
     "id": "808813",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 808813,
     "name": "bobSepolia",
     "rpcUrls": [
@@ -1566,12 +1627,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 3600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1000101": {
     "id": "1000101",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1000101,
     "name": "xomarketTestnet",
     "rpcUrls": [
@@ -1585,12 +1647,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 2,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1234200": {
     "id": "123420001114",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1234200,
     "name": "campv2Testnet",
     "rpcUrls": [
@@ -1603,12 +1666,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1313161": {
     "id": "1313161555",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1313161,
     "name": "auroraTestnet",
     "rpcUrls": [
@@ -1622,12 +1686,13 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1685877": {
     "id": "168587773",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 1685877,
     "name": "blastSepolia",
     "rpcUrls": [
@@ -1649,12 +1714,13 @@
       }
     ],
     "finalityConfirmations": 600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   },
   "11155111": {
     "id": "11155111",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 11155111,
     "name": "ethereumSepolia",
     "rpcUrls": [
@@ -1683,7 +1749,7 @@
       }
     ],
     "finalityConfirmations": 75,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x3E0aAA63fFb51169B9aE9b7Dc3616b43362124D6",
       "relayerLib": "0x8338A0B9c83C0d7E67C267432DF4C8b7cA98e11C",
@@ -1693,6 +1759,7 @@
   "11155420": {
     "id": "11155420",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 11155420,
     "name": "optimismSepolia",
     "rpcUrls": [
@@ -1715,7 +1782,7 @@
       }
     ],
     "finalityConfirmations": 600,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x25c2037546Bf5B525DfAfe85A662DB519c07bDdB",
       "relayerLib": "0x6E0b96885Ab0A58e82f2D1ce4df29AF6F5a40089",
@@ -1725,6 +1792,7 @@
   "11155931": {
     "id": "11155931",
     "isTestnet": true,
+    "finalityTagEnabled": false,
     "chainSelector": 11155931,
     "name": "riseTestnet",
     "rpcUrls": [
@@ -1737,7 +1805,7 @@
     },
     "blockExplorers": [],
     "finalityConfirmations": 0,
-    "minBlockConformations": 1,
+    "minBlockConfirmations": 1,
     "deployments": {}
   }
 }

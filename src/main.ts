@@ -2,6 +2,7 @@ import axios from "axios";
 import fs from "fs";
 import * as process from "process";
 import {Chain, DeploymentAddress, DeploymentType} from "./types";
+import { calcHash } from './hash';
 
 const v2ContractsBranch = 'feature/v3/dev'
 const rpcsBranch = 'master'
@@ -25,7 +26,7 @@ type OldNetwork = {
     finalityConfirmations: number
 }
 type OldRPCs = {
-    rpcUrls: string[], chainSelector: number, chainId: string
+    rpcUrls: string[], chainSelector: number, chainId: string, finalityTagEnabled?: boolean
 }
 
 
@@ -49,7 +50,6 @@ function buildExtractPipe(
         const [, chainRaw, address] = match;
 
         const chainName = toCamelCaseKey(chainRaw);
-        console.log(deploymentType, chainName, address)
         deployments[chainName] = {
             ...deployments[chainName],
             [deploymentType]: address as DeploymentAddress,
@@ -70,7 +70,10 @@ export const pipeValidatorLibDeployments = (envText: string, deployments: Record
 
 const main = async () => {
     const chains: Record<Chain['chainSelector'], Chain> = {}
-    console.log(`https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.mainnet`)
+    const enrich = (chainSelector: Chain['chainSelector'], chain: Chain) => {
+        chains[chainSelector] = chain
+    }
+
     const [
         {data: mainnetDeployments},
         {data: testnetDeployments},
@@ -103,9 +106,11 @@ const main = async () => {
 
     Object.values(mainnetNetworks).map(network => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
-        chains[network.chainSelector] = {
+        const finalityTagEnabled = mainnetRPCs?.[network.name]?.finalityTagEnabled ?? false
+        enrich(network.chainSelector, {
             id: network.chainId.toString(),
-            isTestnet: false,
+            isTestnet: true,
+            finalityTagEnabled,
             chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,
@@ -114,13 +119,16 @@ const main = async () => {
             finalityConfirmations: network.finalityConfirmations,
             minBlockConfirmations: 1,
             deployments: deployments[network.name] ?? {}
-        }
+        })
     })
     Object.values(testnetNetworks).map(network => {
         const rpcUrls = [...testnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
-        chains[network.chainSelector] = {
+        const finalityTagEnabled = testnetRPCs?.[network.name]?.finalityTagEnabled ?? false
+
+        enrich(network.chainSelector, {
             id: network.chainId.toString(),
             isTestnet: true,
+            finalityTagEnabled,
             chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,
@@ -129,14 +137,11 @@ const main = async () => {
             finalityConfirmations: network.finalityConfirmations,
             minBlockConfirmations: 1,
             deployments: deployments[network.name] ?? {}
-        }
+        })
     })
-
 
     fs.writeFile(`${process.cwd()}/output/chains.json`, JSON.stringify(chains, null, 2), () => {})
     fs.writeFile(`${process.cwd()}/output/chains.minified.json`, JSON.stringify(chains), () => {})
-
-    console.log({deployments,})
 }
 
-main()
+main().then(() => calcHash())
