@@ -23,7 +23,8 @@ type OldNetwork = {
         symbol: string,
         decimals: number
     },
-    finalityConfirmations: number
+    finalityConfirmations: number,
+    finalityTagEnabled?: boolean
 }
 type OldRPCs = {
     rpcUrls: string[], chainSelector: number, chainId: string, finalityTagEnabled?: boolean
@@ -106,11 +107,10 @@ const main = async () => {
 
     Object.values(mainnetNetworks).map(network => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
-        const finalityTagEnabled = mainnetRPCs?.[network.name]?.finalityTagEnabled ?? false
         enrich(network.chainSelector, {
             id: network.chainId.toString(),
             isTestnet: true,
-            finalityTagEnabled,
+            ...(testnetNetworks?.[network.name]?.finalityTagEnabled && {finalityTagEnabled: true} ),
             chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,
@@ -121,14 +121,13 @@ const main = async () => {
             deployments: deployments[network.name] ?? {}
         })
     })
+
     Object.values(testnetNetworks).map(network => {
         const rpcUrls = [...testnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
-        const finalityTagEnabled = testnetRPCs?.[network.name]?.finalityTagEnabled ?? false
-
         enrich(network.chainSelector, {
             id: network.chainId.toString(),
             isTestnet: true,
-            finalityTagEnabled,
+            ...(testnetNetworks?.[network.name]?.finalityTagEnabled && {finalityTagEnabled: true} ),
             chainSelector: network.chainSelector,
             name: network.name,
             rpcUrls,

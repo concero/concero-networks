@@ -2,7 +2,6 @@
   "1": {
     "id": "1",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1,
     "name": "ethereum",
     "rpcUrls": [
@@ -66,7 +65,6 @@
   "10": {
     "id": "10",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 10,
     "name": "optimism",
     "rpcUrls": [
@@ -105,7 +103,6 @@
   "81": {
     "id": "81",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 81,
     "name": "astarShibuya",
     "rpcUrls": [
@@ -133,7 +130,6 @@
   "97": {
     "id": "97",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 97,
     "name": "bnbTestnet",
     "rpcUrls": [
@@ -170,7 +166,6 @@
   "133": {
     "id": "133",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 133,
     "name": "hashkeyTestnet",
     "rpcUrls": [],
@@ -193,7 +188,6 @@
   "137": {
     "id": "137",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 137,
     "name": "polygon",
     "rpcUrls": [
@@ -233,7 +227,6 @@
   "157": {
     "id": "157",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 157,
     "name": "shibariumPuppynet",
     "rpcUrls": [
@@ -262,7 +255,6 @@
   "195": {
     "id": "195",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 195,
     "name": "xlayerSepolia",
     "rpcUrls": [],
@@ -285,7 +277,6 @@
   "296": {
     "id": "296",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 296,
     "name": "hederaTestnet",
     "rpcUrls": [
@@ -305,7 +296,6 @@
   "300": {
     "id": "300",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 300,
     "name": "zksyncSepolia",
     "rpcUrls": [
@@ -326,7 +316,6 @@
   "338": {
     "id": "338",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 338,
     "name": "cronosTestnet",
     "rpcUrls": [
@@ -353,7 +342,6 @@
   "545": {
     "id": "545",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 545,
     "name": "flowTestnet",
     "rpcUrls": [
@@ -376,7 +364,6 @@
   "919": {
     "id": "919",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 919,
     "name": "modeTestnet",
     "rpcUrls": [
@@ -402,7 +389,6 @@
   "943": {
     "id": "943",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 943,
     "name": "pulsechainTestnet",
     "rpcUrls": [
@@ -427,7 +413,6 @@
   "1001": {
     "id": "1001",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1001,
     "name": "kaiaKairos",
     "rpcUrls": [
@@ -450,7 +435,6 @@
   "1112": {
     "id": "1112",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1112,
     "name": "wemixTestnet",
     "rpcUrls": [
@@ -470,7 +454,6 @@
   "1114": {
     "id": "1114",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1114,
     "name": "coreTestnet",
     "rpcUrls": [
@@ -499,7 +482,7 @@
   "1123": {
     "id": "1123",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 1123,
     "name": "b2Testnet",
     "rpcUrls": [
@@ -511,14 +494,12 @@
       "symbol": "BTC"
     },
     "blockExplorers": [],
-    "finalityConfirmations": 600,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1174": {
     "id": "1174",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1174,
     "name": "litheumTestnet",
     "rpcUrls": [
@@ -537,7 +518,6 @@
   "1270": {
     "id": "1270",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
@@ -557,7 +537,6 @@
   "1301": {
     "id": "1301",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1301,
     "name": "unichainSepolia",
     "rpcUrls": [
@@ -589,7 +568,6 @@
   "1328": {
     "id": "1328",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1328,
     "name": "seiTestnet",
     "rpcUrls": [
@@ -620,7 +598,6 @@
   "1946": {
     "id": "1946",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1946,
     "name": "soneiumMinato",
     "rpcUrls": [
@@ -646,7 +623,6 @@
   "2021": {
     "id": "2021",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 2021,
     "name": "roninSaigon",
     "rpcUrls": [
@@ -676,7 +652,6 @@
   "2221": {
     "id": "2221",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 2221,
     "name": "kavaTestnet",
     "rpcUrls": [
@@ -696,7 +671,6 @@
   "2522": {
     "id": "2522",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 2522,
     "name": "fraxtalHolesky",
     "rpcUrls": [],
@@ -713,7 +687,6 @@
   "2810": {
     "id": "2810",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 2810,
     "name": "morphHolesky",
     "rpcUrls": [],
@@ -730,7 +703,6 @@
   "3636": {
     "id": "3636",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 3636,
     "name": "botanixTestnet",
     "rpcUrls": [
@@ -756,7 +728,6 @@
   "4801": {
     "id": "4801",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 4801,
     "name": "worldchainTestnet",
     "rpcUrls": [
@@ -782,7 +753,6 @@
   "5003": {
     "id": "5003",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 5003,
     "name": "mantleSepolia",
     "rpcUrls": [
@@ -808,7 +778,6 @@
   "5124": {
     "id": "5124",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 5124,
     "name": "seismicDevnet",
     "rpcUrls": [
@@ -827,7 +796,6 @@
   "5611": {
     "id": "5611",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 5611,
     "name": "opbnbTestnet",
     "rpcUrls": [
@@ -850,7 +818,6 @@
   "6342": {
     "id": "6342",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 6342,
     "name": "megaethTestnet",
     "rpcUrls": [],
@@ -873,7 +840,6 @@
   "8408": {
     "id": "8408",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 8408,
     "name": "zenchainTestnet",
     "rpcUrls": [
@@ -892,7 +858,6 @@
   "8453": {
     "id": "8453",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 8453,
     "name": "base",
     "rpcUrls": [
@@ -934,7 +899,6 @@
   "10143": {
     "id": "10143",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 10143,
     "name": "monadTestnet",
     "rpcUrls": [
@@ -963,7 +927,6 @@
   "10200": {
     "id": "10200",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 10200,
     "name": "gnosisChiado",
     "rpcUrls": [
@@ -995,7 +958,7 @@
   "11124": {
     "id": "11124",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 11124,
     "name": "abstractSepolia",
     "rpcUrls": [
@@ -1008,14 +971,12 @@
       "symbol": "ETH"
     },
     "blockExplorers": [],
-    "finalityConfirmations": 0,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "18880": {
     "id": "18880",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 18880,
     "name": "expchainTestnet",
     "rpcUrls": [
@@ -1038,7 +999,6 @@
   "23295": {
     "id": "23295",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 23295,
     "name": "oasissapphireTestnet",
     "rpcUrls": [
@@ -1061,7 +1021,7 @@
   "33111": {
     "id": "33111",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 33111,
     "name": "apechainCurtis",
     "rpcUrls": [
@@ -1081,14 +1041,12 @@
         "apiUrl": "https://curtis-explorer.apechain.io/api"
       }
     ],
-    "finalityConfirmations": 3000,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "37111": {
     "id": "37111",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 37111,
     "name": "lensSepolia",
     "rpcUrls": [
@@ -1108,7 +1066,6 @@
   "42161": {
     "id": "42161",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 42161,
     "name": "arbitrum",
     "rpcUrls": [
@@ -1147,7 +1104,7 @@
   "43113": {
     "id": "43113",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 43113,
     "name": "avalancheFuji",
     "rpcUrls": [
@@ -1167,7 +1124,6 @@
         "apiUrl": "https://api-testnet.snowtrace.io/api"
       }
     ],
-    "finalityConfirmations": 2,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
@@ -1178,7 +1134,6 @@
   "43114": {
     "id": "43114",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 43114,
     "name": "avalanche",
     "rpcUrls": [
@@ -1214,7 +1169,6 @@
   "44787": {
     "id": "44787",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 44787,
     "name": "celoAlfajores",
     "rpcUrls": [],
@@ -1237,7 +1191,6 @@
   "48899": {
     "id": "48899",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 48899,
     "name": "zircuitTestnet",
     "rpcUrls": [
@@ -1263,7 +1216,6 @@
   "57054": {
     "id": "57054",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 57054,
     "name": "sonicBlaze",
     "rpcUrls": [
@@ -1294,7 +1246,6 @@
   "59141": {
     "id": "59141",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 59141,
     "name": "lineaSepolia",
     "rpcUrls": [
@@ -1321,7 +1272,6 @@
   "59902": {
     "id": "59902",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 59902,
     "name": "metisSepolia",
     "rpcUrls": [
@@ -1342,7 +1292,6 @@
   "80002": {
     "id": "80002",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 80002,
     "name": "polygonAmoy",
     "rpcUrls": [
@@ -1376,7 +1325,6 @@
   "80069": {
     "id": "80069",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 80069,
     "name": "berachainBepolia",
     "rpcUrls": [
@@ -1388,7 +1336,7 @@
       "symbol": "BERA"
     },
     "blockExplorers": [],
-    "finalityConfirmations": 4,
+    "finalityConfirmations": 1,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
@@ -1399,7 +1347,7 @@
   "84532": {
     "id": "84532",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 84532,
     "name": "baseSepolia",
     "rpcUrls": [
@@ -1427,7 +1375,6 @@
         "apiUrl": "https://base-sepolia.blockscout.com/api"
       }
     ],
-    "finalityConfirmations": 540,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xE3d861a49bc5903499fB5Bb411B83d980422c31B",
@@ -1438,7 +1385,6 @@
   "167009": {
     "id": "167009",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 167009,
     "name": "taikoTestnet",
     "rpcUrls": [],
@@ -1455,7 +1401,6 @@
   "200810": {
     "id": "200810",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 200810,
     "name": "bitlayerTestnet",
     "rpcUrls": [
@@ -1482,7 +1427,6 @@
   "344100": {
     "id": "3441006",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 344100,
     "name": "mantapacificSepolia",
     "rpcUrls": [
@@ -1503,7 +1447,7 @@
   "421614": {
     "id": "421614",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 421614,
     "name": "arbitrumSepolia",
     "rpcUrls": [
@@ -1525,7 +1469,6 @@
         "apiUrl": "https://api-sepolia.arbiscan.io/api"
       }
     ],
-    "finalityConfirmations": 4080,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x6c99cC0FCC985fF175787BD2565AfD15781C99d0",
@@ -1536,7 +1479,6 @@
   "534351": {
     "id": "534351",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 534351,
     "name": "scrollSepolia",
     "rpcUrls": [
@@ -1568,7 +1510,6 @@
   "688689": {
     "id": "688689",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 688689,
     "name": "pharosTestnet",
     "rpcUrls": [
@@ -1587,7 +1528,6 @@
   "763373": {
     "id": "763373",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 763373,
     "name": "inkSepolia",
     "rpcUrls": [
@@ -1613,7 +1553,6 @@
   "808813": {
     "id": "808813",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 808813,
     "name": "bobSepolia",
     "rpcUrls": [
@@ -1633,7 +1572,6 @@
   "1000101": {
     "id": "1000101",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1000101,
     "name": "xomarketTestnet",
     "rpcUrls": [
@@ -1653,7 +1591,6 @@
   "1234200": {
     "id": "123420001114",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1234200,
     "name": "campv2Testnet",
     "rpcUrls": [
@@ -1672,7 +1609,7 @@
   "1313161": {
     "id": "1313161555",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 1313161,
     "name": "auroraTestnet",
     "rpcUrls": [
@@ -1685,14 +1622,12 @@
       "symbol": "ETH"
     },
     "blockExplorers": [],
-    "finalityConfirmations": 0,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1685877": {
     "id": "168587773",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 1685877,
     "name": "blastSepolia",
     "rpcUrls": [
@@ -1720,7 +1655,7 @@
   "11155111": {
     "id": "11155111",
     "isTestnet": true,
-    "finalityTagEnabled": false,
+    "finalityTagEnabled": true,
     "chainSelector": 11155111,
     "name": "ethereumSepolia",
     "rpcUrls": [
@@ -1748,7 +1683,6 @@
         "apiUrl": "https://api-sepolia.etherscan.io/api"
       }
     ],
-    "finalityConfirmations": 75,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0x3E0aAA63fFb51169B9aE9b7Dc3616b43362124D6",
@@ -1759,7 +1693,6 @@
   "11155420": {
     "id": "11155420",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 11155420,
     "name": "optimismSepolia",
     "rpcUrls": [
@@ -1792,7 +1725,6 @@
   "11155931": {
     "id": "11155931",
     "isTestnet": true,
-    "finalityTagEnabled": false,
     "chainSelector": 11155931,
     "name": "riseTestnet",
     "rpcUrls": [
