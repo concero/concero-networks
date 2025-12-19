@@ -62,10 +62,10 @@ export const pipeRouterDeployments = (envText: string, deployments: Record<strin
     buildExtractPipe(envText, /CONCERO_ROUTER_PROXY_(?!ADMIN_)([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.Router, deployments)
 
 export const pipeRelayerLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
-    buildExtractPipe(envText, /CONCERO_RELAYER_LIB_PROXY_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
+    buildExtractPipe(envText, /CONCERO_RELAYER_LIB_PROXY_(?!ADMIN_)([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.RelayerLib, deployments)
 
 export const pipeValidatorLibDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
-    buildExtractPipe(envText, /CONCERO_CRE_VALIDATOR_LIB_PROXY_([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.ValidatorLib, deployments)
+    buildExtractPipe(envText, /CONCERO_CRE_VALIDATOR_LIB_PROXY_(?!ADMIN_)([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.ValidatorLib, deployments)
 
 
 const main = async () => {
