@@ -58,7 +58,6 @@ function buildExtractPipe(
     }
 }
 
-
 export const pipeRouterDeployments = (envText: string, deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>>) =>
     buildExtractPipe(envText, /CONCERO_ROUTER_PROXY_(?!ADMIN_)([A-Z0-9_]+)\s*=\s*(0x[a-fA-F0-9]{40})/g, DeploymentType.Router, deployments)
 
@@ -70,9 +69,15 @@ export const pipeValidatorLibDeployments = (envText: string, deployments: Record
 
 
 const main = async () => {
-    const chains: Record<Chain['chainSelector'], Chain> = {}
+    const mainnetChains: Record<Chain['chainSelector'], Chain> = {}
+    const testnetChains: Record<Chain['chainSelector'], Chain> = {}
+
     const enrich = (chainSelector: Chain['chainSelector'], chain: Chain) => {
-        chains[chainSelector] = chain
+        if (chain.isTestnet) {
+            testnetChains[chainSelector] = chain
+        } else {
+            mainnetChains[chainSelector] = chain
+        }
     }
 
     const [
@@ -109,7 +114,6 @@ const main = async () => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
         enrich(network.chainSelector, {
             id: network.chainId.toString(),
-            isTestnet: true,
             ...(testnetNetworks?.[network.name]?.finalityTagEnabled && {finalityTagEnabled: true} ),
             chainSelector: network.chainSelector,
             name: network.name,
@@ -139,8 +143,13 @@ const main = async () => {
         })
     })
 
-    fs.writeFile(`${process.cwd()}/output/chains.json`, JSON.stringify(chains, null, 2), () => {})
-    fs.writeFile(`${process.cwd()}/output/chains.minified.json`, JSON.stringify(chains), () => {})
+    fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.json`, JSON.stringify(mainnetChains, null, 2))
+    fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.minified.json`, JSON.stringify(mainnetChains))
+
+    fs.writeFileSync(`${process.cwd()}/output/chains.testnet.json`, JSON.stringify(testnetChains, null, 2))
+    fs.writeFileSync(`${process.cwd()}/output/chains.testnet.minified.json`, JSON.stringify(testnetChains))
+
+
 }
 
 main().then(() => calcHash())

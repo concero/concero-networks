@@ -8,7 +8,7 @@
   "packageManager": "bun",
   "scripts": {
     "build": "esbuild src/main.ts --bundle --platform=node --target=node22 --outdir=dist --format=esm --packages=external",
-    "start": "bun run dist/main.js",
+    "start": "bun run src/main.js",
     "dev": "bun run src/main.ts"
   },
   "author": "",
