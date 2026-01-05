@@ -150,6 +150,8 @@ const main = async () => {
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.minified.json`, JSON.stringify(testnetChains))
 
 
+    fs.writeFileSync(`${process.cwd()}/output/chains.json`, JSON.stringify({...testnetChains, ...mainnetChains}, null, 2))
+    fs.writeFileSync(`${process.cwd()}/output/chains.minified.json`, JSON.stringify({...testnetChains, ...mainnetChains}))
 }
 
 main().then(() => calcHash())
