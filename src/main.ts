@@ -30,6 +30,7 @@ type OldRPCs = {
     rpcUrls: string[], chainSelector: number, chainId: string, finalityTagEnabled?: boolean
 }
 
+type ChainType = "testnet" | "mainnet" | "stage"
 
 const toCamelCaseKey = (raw: string) => raw
     .toLowerCase()
@@ -71,10 +72,13 @@ export const pipeValidatorLibDeployments = (envText: string, deployments: Record
 const main = async () => {
     const mainnetChains: Record<Chain['chainSelector'], Chain> = {}
     const testnetChains: Record<Chain['chainSelector'], Chain> = {}
+    const stageChains: Record<Chain['chainSelector'], Chain> = {}
 
-    const enrich = (chainSelector: Chain['chainSelector'], chain: Chain) => {
-        if (chain.isTestnet) {
+    const enrich = (chainSelector: Chain['chainSelector'], chain: Chain, type: ChainType) => {
+        if (type === "testnet") {
             testnetChains[chainSelector] = chain
+        } else if (type === "stage") {
+            stageChains[chainSelector] = chain
         } else {
             mainnetChains[chainSelector] = chain
         }
@@ -82,7 +86,7 @@ const main = async () => {
 
     const [
         {data: mainnetDeployments},
-        {data: testnetDeployments},
+        {data: testnetDeployments}, {data: stageDeployments},
         {data: mainnetRPCs},
         {data: testnetRPCs},
         {data: mainnetNetworks},
@@ -90,6 +94,7 @@ const main = async () => {
     ] = await Promise.all([
         axios.get<string>(`https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.mainnet`),
         axios.get<string>(`https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.testnet`),
+        axios.get<string>(`https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.stage`),
         axios.get<Record<string, OldRPCs>>(
         `https://raw.githubusercontent.com/concero/rpcs/refs/heads/${rpcsBranch}/output/mainnet.json`
         ),
@@ -110,8 +115,14 @@ const main = async () => {
     pipeRelayerLibDeployments(fullDeploymentsEnv , deployments)
     pipeValidatorLibDeployments(fullDeploymentsEnv, deployments)
 
+    const stageDeploymentsMap: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>> = {}
+    pipeRouterDeployments(stageDeployments, stageDeploymentsMap)
+    pipeRelayerLibDeployments(stageDeployments , stageDeploymentsMap)
+    pipeValidatorLibDeployments(stageDeployments, stageDeploymentsMap)
+
     Object.values(mainnetNetworks).map(network => {
         const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
+
         enrich(network.chainSelector, {
             id: network.chainId.toString(),
             ...(testnetNetworks?.[network.name]?.finalityTagEnabled && {finalityTagEnabled: true} ),
@@ -119,15 +130,17 @@ const main = async () => {
             name: network.name,
             rpcUrls,
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
-            blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
+            // blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
             finalityConfirmations: network.finalityConfirmations,
             minBlockConfirmations: 1,
             deployments: deployments[network.name] ?? {}
-        })
+        }, "mainnet")
     })
 
     Object.values(testnetNetworks).map(network => {
-        const rpcUrls = [...testnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls]
+        const rpcUrls = [...(testnetRPCs?.[network.name]?.rpcUrls ?? []), ...network?.rpcUrls]
+        if (!rpcUrls.length) return
+
         enrich(network.chainSelector, {
             id: network.chainId.toString(),
             isTestnet: true,
@@ -136,11 +149,31 @@ const main = async () => {
             name: network.name,
             rpcUrls,
             nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
-            blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
+            // (blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl}))),
             finalityConfirmations: network.finalityConfirmations,
             minBlockConfirmations: 1,
             deployments: deployments[network.name] ?? {}
-        })
+        }, "testnet")
+    })
+
+    Object.values(testnetNetworks).map(network => {
+        if (!stageDeploymentsMap[network.name]) return;
+        const rpcUrls = [...(testnetRPCs?.[network.name]?.rpcUrls ?? []), ...network?.rpcUrls]
+        if (!rpcUrls.length) return
+
+        enrich(network.chainSelector, {
+            id: network.chainId.toString(),
+            isTestnet: true,
+            ...(testnetNetworks?.[network.name]?.finalityTagEnabled && {finalityTagEnabled: true}),
+            chainSelector: network.chainSelector,
+            name: network.name,
+            rpcUrls,
+            nativeCurrency: {name: network.nativeCurrency.name, decimals: network.nativeCurrency.decimals, symbol: network.nativeCurrency.symbol},
+            // blockExplorers: network.blockExplorers.map(i => ({name: i.name, url: i.url, apiUrl: i.apiUrl})),
+            finalityConfirmations: network.finalityConfirmations,
+            minBlockConfirmations: 1,
+            deployments: stageDeploymentsMap[network.name]
+        }, "stage")
     })
 
     fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.json`, JSON.stringify(mainnetChains, null, 2))
@@ -149,6 +182,8 @@ const main = async () => {
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.json`, JSON.stringify(testnetChains, null, 2))
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.minified.json`, JSON.stringify(testnetChains))
 
+    fs.writeFileSync(`${process.cwd()}/output/chains.stage.json`, JSON.stringify(stageChains, null, 2));
+    fs.writeFileSync(`${process.cwd()}/output/chains.stage.minified.json`, JSON.stringify(stageChains))
 
     fs.writeFileSync(`${process.cwd()}/output/chains.json`, JSON.stringify({...testnetChains, ...mainnetChains}, null, 2))
     fs.writeFileSync(`${process.cwd()}/output/chains.minified.json`, JSON.stringify({...testnetChains, ...mainnetChains}))
