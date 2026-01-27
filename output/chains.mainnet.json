@@ -1,6 +1,8 @@
 {
   "1": {
     "id": "1",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1,
     "name": "ethereum",
     "rpcUrls": [
@@ -52,6 +54,8 @@
   },
   "10": {
     "id": "10",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 10,
     "name": "optimism",
     "rpcUrls": [
@@ -79,6 +83,8 @@
   },
   "14": {
     "id": "14",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 14,
     "name": "flareNetwork",
     "rpcUrls": [
@@ -117,6 +123,8 @@
   },
   "25": {
     "id": "25",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 25,
     "name": "cronos",
     "rpcUrls": [
@@ -138,6 +146,8 @@
   },
   "30": {
     "id": "30",
+    "finalityConfirmations": 120,
+    "isFinalitySupported": true,
     "chainSelector": 30,
     "name": "rootstock",
     "rpcUrls": [
@@ -150,7 +160,6 @@
       "decimals": 18,
       "symbol": "RBTC"
     },
-    "finalityConfirmations": 120,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -187,6 +196,8 @@
   },
   "50": {
     "id": "50",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 50,
     "name": "xdcNetwork",
     "rpcUrls": [
@@ -230,6 +241,8 @@
   },
   "56": {
     "id": "56",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 56,
     "name": "bsc",
     "rpcUrls": [
@@ -344,6 +357,8 @@
   },
   "100": {
     "id": "100",
+    "finalityConfirmations": 50,
+    "isFinalitySupported": true,
     "chainSelector": 100,
     "name": "gnosis",
     "rpcUrls": [
@@ -365,12 +380,13 @@
       "decimals": 18,
       "symbol": "XDAI"
     },
-    "finalityConfirmations": 50,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "109": {
     "id": "109",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 109,
     "name": "shibarium",
     "rpcUrls": [
@@ -404,6 +420,8 @@
   },
   "122": {
     "id": "122",
+    "finalityConfirmations": 200,
+    "isFinalitySupported": true,
     "chainSelector": 122,
     "name": "fuse",
     "rpcUrls": [
@@ -418,12 +436,13 @@
       "decimals": 18,
       "symbol": "FUSE"
     },
-    "finalityConfirmations": 200,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "130": {
     "id": "130",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 130,
     "name": "unichain",
     "rpcUrls": [
@@ -442,6 +461,8 @@
   },
   "137": {
     "id": "137",
+    "finalityConfirmations": 500,
+    "isFinalitySupported": true,
     "chainSelector": 137,
     "name": "polygon",
     "rpcUrls": [
@@ -465,12 +486,13 @@
       "decimals": 18,
       "symbol": "POL"
     },
-    "finalityConfirmations": 500,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "143": {
     "id": "143",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 143,
     "name": "monad",
     "rpcUrls": [
@@ -496,6 +518,8 @@
   },
   "146": {
     "id": "146",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 146,
     "name": "sonic",
     "rpcUrls": [
@@ -512,7 +536,6 @@
       "decimals": 18,
       "symbol": "S"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -539,6 +562,8 @@
   },
   "177": {
     "id": "177",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 177,
     "name": "hashkey",
     "rpcUrls": [
@@ -571,6 +596,8 @@
   },
   "196": {
     "id": "196",
+    "finalityConfirmations": 500,
+    "isFinalitySupported": true,
     "chainSelector": 196,
     "name": "xlayer",
     "rpcUrls": [
@@ -587,7 +614,6 @@
       "decimals": 18,
       "symbol": "OKB"
     },
-    "finalityConfirmations": 500,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -610,6 +636,8 @@
   },
   "204": {
     "id": "204",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 204,
     "name": "opBnb",
     "rpcUrls": [
@@ -646,6 +674,8 @@
   },
   "223": {
     "id": "223",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 223,
     "name": "bsquared",
     "rpcUrls": [
@@ -664,6 +694,8 @@
   },
   "232": {
     "id": "232",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 232,
     "name": "lens",
     "rpcUrls": [
@@ -712,6 +744,8 @@
   },
   "252": {
     "id": "252",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 252,
     "name": "fraxtal",
     "rpcUrls": [
@@ -731,6 +765,8 @@
   },
   "255": {
     "id": "255",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 255,
     "name": "kroma",
     "rpcUrls": [
@@ -761,6 +797,8 @@
   },
   "288": {
     "id": "288",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 288,
     "name": "bobaNetwork",
     "rpcUrls": [
@@ -796,6 +834,8 @@
   },
   "295": {
     "id": "295",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 295,
     "name": "hedera",
     "rpcUrls": [
@@ -808,12 +848,13 @@
       "decimals": 18,
       "symbol": "HBAR"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "314": {
     "id": "314",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 314,
     "name": "filecoin",
     "rpcUrls": [
@@ -835,6 +876,8 @@
   },
   "324": {
     "id": "324",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 324,
     "name": "zksync",
     "rpcUrls": [
@@ -853,7 +896,6 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -908,6 +950,8 @@
   },
   "480": {
     "id": "480",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 480,
     "name": "worldchain",
     "rpcUrls": [
@@ -943,6 +987,8 @@
   },
   "592": {
     "id": "592",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 592,
     "name": "astar",
     "rpcUrls": [
@@ -977,6 +1023,8 @@
   },
   "747": {
     "id": "747",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 747,
     "name": "flow",
     "rpcUrls": [
@@ -1037,6 +1085,8 @@
   },
   "988": {
     "id": "988",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 988,
     "name": "stable",
     "rpcUrls": [
@@ -1067,6 +1117,8 @@
   },
   "999": {
     "id": "999",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 999,
     "name": "hyperevm",
     "rpcUrls": [
@@ -1107,6 +1159,8 @@
   },
   "1088": {
     "id": "1088",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 1088,
     "name": "metis",
     "rpcUrls": [
@@ -1123,12 +1177,13 @@
       "decimals": 18,
       "symbol": "METIS"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1101": {
     "id": "1101",
+    "finalityConfirmations": 500,
+    "isFinalitySupported": true,
     "chainSelector": 1101,
     "name": "polygonZkevm",
     "rpcUrls": [
@@ -1142,12 +1197,13 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 500,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1111": {
     "id": "1111",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1111,
     "name": "wemix",
     "rpcUrls": [
@@ -1164,6 +1220,8 @@
   },
   "1116": {
     "id": "1116",
+    "finalityConfirmations": 27,
+    "isFinalitySupported": true,
     "chainSelector": 1116,
     "name": "core",
     "rpcUrls": [
@@ -1178,7 +1236,6 @@
       "decimals": 18,
       "symbol": "CORE"
     },
-    "finalityConfirmations": 27,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -1200,6 +1257,8 @@
   },
   "1135": {
     "id": "1135",
+    "finalityConfirmations": 510,
+    "isFinalitySupported": true,
     "chainSelector": 1135,
     "name": "lisk",
     "rpcUrls": [
@@ -1212,12 +1271,13 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 510,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "1284": {
     "id": "1284",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1284,
     "name": "moonbeam",
     "rpcUrls": [
@@ -1240,6 +1300,8 @@
   },
   "1329": {
     "id": "1329",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1329,
     "name": "sei",
     "rpcUrls": [
@@ -1259,6 +1321,8 @@
   },
   "1480": {
     "id": "1480",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1480,
     "name": "vana",
     "rpcUrls": [
@@ -1316,6 +1380,8 @@
   },
   "1625": {
     "id": "1625",
+    "finalityConfirmations": 1700,
+    "isFinalitySupported": true,
     "chainSelector": 1625,
     "name": "gravity",
     "rpcUrls": [
@@ -1327,7 +1393,6 @@
       "decimals": 18,
       "symbol": "G"
     },
-    "finalityConfirmations": 1700,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -1349,6 +1414,8 @@
   },
   "1868": {
     "id": "1868",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1868,
     "name": "soneium",
     "rpcUrls": [
@@ -1416,6 +1483,8 @@
   },
   "2020": {
     "id": "2020",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 2020,
     "name": "ronin",
     "rpcUrls": [
@@ -1449,6 +1518,8 @@
   },
   "2222": {
     "id": "2222",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 2222,
     "name": "kava",
     "rpcUrls": [
@@ -1501,6 +1572,8 @@
   },
   "2741": {
     "id": "2741",
+    "finalityConfirmations": 1200,
+    "isFinalitySupported": true,
     "chainSelector": 2741,
     "name": "abstract",
     "rpcUrls": [
@@ -1513,7 +1586,6 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 1200,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -1535,6 +1607,8 @@
   },
   "3637": {
     "id": "3637",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 3637,
     "name": "botanix",
     "rpcUrls": [
@@ -1582,6 +1656,8 @@
   },
   "4200": {
     "id": "4200",
+    "finalityConfirmations": 1000,
+    "isFinalitySupported": true,
     "chainSelector": 4200,
     "name": "merlin",
     "rpcUrls": [
@@ -1594,7 +1670,6 @@
       "decimals": 18,
       "symbol": "BTC"
     },
-    "finalityConfirmations": 1000,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -1634,6 +1709,8 @@
   },
   "5000": {
     "id": "5000",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 5000,
     "name": "mantle",
     "rpcUrls": [
@@ -1779,6 +1856,8 @@
   },
   "8217": {
     "id": "8217",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 8217,
     "name": "kaia",
     "rpcUrls": [
@@ -1797,7 +1876,6 @@
       "decimals": 18,
       "symbol": "KAIA"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -1818,6 +1896,8 @@
   },
   "8453": {
     "id": "8453",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 8453,
     "name": "base",
     "rpcUrls": [
@@ -1899,6 +1979,8 @@
   },
   "9745": {
     "id": "9745",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 9745,
     "name": "plasma",
     "rpcUrls": [
@@ -1979,6 +2061,8 @@
   },
   "13371": {
     "id": "13371",
+    "finalityConfirmations": 500,
+    "isFinalitySupported": true,
     "chainSelector": 13371,
     "name": "immutable",
     "rpcUrls": [
@@ -1994,7 +2078,6 @@
       "decimals": 18,
       "symbol": "IMX"
     },
-    "finalityConfirmations": 500,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -2080,6 +2163,8 @@
   },
   "33139": {
     "id": "33139",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 33139,
     "name": "apeChain",
     "rpcUrls": [
@@ -2111,6 +2196,8 @@
   },
   "34443": {
     "id": "34443",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 34443,
     "name": "mode",
     "rpcUrls": [
@@ -2175,6 +2262,8 @@
   },
   "42161": {
     "id": "42161",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 42161,
     "name": "arbitrum",
     "rpcUrls": [
@@ -2204,6 +2293,8 @@
   },
   "42220": {
     "id": "42220",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 42220,
     "name": "celo",
     "rpcUrls": [
@@ -2241,6 +2332,8 @@
   },
   "42793": {
     "id": "42793",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 42793,
     "name": "etherlink",
     "rpcUrls": [
@@ -2257,6 +2350,8 @@
   },
   "43111": {
     "id": "43111",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 43111,
     "name": "hemi",
     "rpcUrls": [
@@ -2273,6 +2368,8 @@
   },
   "43114": {
     "id": "43114",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 43114,
     "name": "avalanche",
     "rpcUrls": [
@@ -2297,6 +2394,8 @@
   },
   "48900": {
     "id": "48900",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 48900,
     "name": "zircuit",
     "rpcUrls": [
@@ -2312,6 +2411,8 @@
   },
   "50104": {
     "id": "50104",
+    "finalityConfirmations": 80,
+    "isFinalitySupported": true,
     "chainSelector": 50104,
     "name": "sophon",
     "rpcUrls": [
@@ -2323,7 +2424,6 @@
       "decimals": 18,
       "symbol": "SOPH"
     },
-    "finalityConfirmations": 80,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -2360,6 +2460,8 @@
   },
   "55244": {
     "id": "55244",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 55244,
     "name": "superposition",
     "rpcUrls": [
@@ -2373,21 +2475,10 @@
     "minBlockConfirmations": 1,
     "deployments": {}
   },
-  "56288": {
-    "id": "56288",
-    "chainSelector": 56288,
-    "name": "bobaBnb",
-    "rpcUrls": [],
-    "nativeCurrency": {
-      "name": "Boba Token",
-      "decimals": 18,
-      "symbol": "BOBA"
-    },
-    "minBlockConfirmations": 1,
-    "deployments": {}
-  },
   "57073": {
     "id": "57073",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 57073,
     "name": "ink",
     "rpcUrls": [
@@ -2407,6 +2498,8 @@
   },
   "59144": {
     "id": "59144",
+    "finalityConfirmations": 300,
+    "isFinalitySupported": true,
     "chainSelector": 59144,
     "name": "linea",
     "rpcUrls": [
@@ -2421,12 +2514,13 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 300,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "60808": {
     "id": "60808",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 60808,
     "name": "bob",
     "rpcUrls": [
@@ -2444,6 +2538,8 @@
   },
   "80094": {
     "id": "80094",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 80094,
     "name": "berachain",
     "rpcUrls": [
@@ -2458,12 +2554,13 @@
       "decimals": 18,
       "symbol": "BERA"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "81457": {
     "id": "81457",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 81457,
     "name": "blast",
     "rpcUrls": [
@@ -2502,6 +2599,8 @@
   },
   "98866": {
     "id": "98866",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 98866,
     "name": "plume",
     "rpcUrls": [
@@ -2518,6 +2617,8 @@
   },
   "167000": {
     "id": "167000",
+    "finalityConfirmations": 50,
+    "isFinalitySupported": true,
     "chainSelector": 167000,
     "name": "taiko",
     "rpcUrls": [
@@ -2535,12 +2636,13 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 50,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "200901": {
     "id": "200901",
+    "finalityConfirmations": 21,
+    "isFinalitySupported": true,
     "chainSelector": 200901,
     "name": "bitlayer",
     "rpcUrls": [
@@ -2554,7 +2656,6 @@
       "decimals": 18,
       "symbol": "BTC"
     },
-    "finalityConfirmations": 21,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
@@ -2599,6 +2700,8 @@
   },
   "534352": {
     "id": "534352",
+    "finalityConfirmations": 10,
+    "isFinalitySupported": true,
     "chainSelector": 534352,
     "name": "scroll",
     "rpcUrls": [
@@ -2614,12 +2717,13 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "finalityConfirmations": 10,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "747474": {
     "id": "747474",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 747474,
     "name": "katana",
     "rpcUrls": [
@@ -2684,6 +2788,8 @@
   },
   "1440000": {
     "id": "1440000",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
     "chainSelector": 1440000,
     "name": "xrplevm",
     "rpcUrls": [
@@ -2701,6 +2807,8 @@
   },
   "1666600": {
     "id": "1666600000",
+    "finalityConfirmations": 50,
+    "isFinalitySupported": true,
     "chainSelector": 1666600,
     "name": "harmony",
     "rpcUrls": [
@@ -2716,12 +2824,13 @@
       "decimals": 18,
       "symbol": "ONE"
     },
-    "finalityConfirmations": 50,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
   "2100000": {
     "id": "21000000",
+    "finalityConfirmations": 50,
+    "isFinalitySupported": true,
     "chainSelector": 2100000,
     "name": "corn",
     "rpcUrls": [
@@ -2734,7 +2843,6 @@
       "decimals": 18,
       "symbol": "BTCN"
     },
-    "finalityConfirmations": 50,
     "minBlockConfirmations": 1,
     "deployments": {}
   },
