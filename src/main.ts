@@ -99,35 +99,6 @@ const main = async () => {
     const testnetChains: Record<Chain['chainSelector'], Chain> = {};
     const stageChains: Record<Chain['chainSelector'], Chain> = {};
 
-    const enrich = (chainSelector: Chain['chainSelector'], rawChain: OldNetwork, type: ChainType) => {
-        const chain = {
-            id: rawChain.chainId.toString(),
-            ...(rawChain.finalityTagEnabled && { finalityTagEnabled: true }),
-            ...(rawChain.finalityConfirmations && { finalityConfirmations: rawChain.finalityConfirmations }),
-            ...((rawChain.finalityConfirmations !== undefined || rawChain.finalityTagEnabled) && {
-                isFinalitySupported: true,
-            }),
-            chainSelector: rawChain.chainSelector,
-            name: rawChain.name,
-            rpcUrls,
-            nativeCurrency: {
-                name: rawChain.nativeCurrency.name,
-                decimals: rawChain.nativeCurrency.decimals,
-                symbol: rawChain.nativeCurrency.symbol,
-            },
-            minBlockConfirmations: 1,
-            deployments: deployments[rawChain.name] ?? {},
-        };
-
-        if (type === 'testnet') {
-            testnetChains[chainSelector] = chain;
-        } else if (type === 'stage') {
-            stageChains[chainSelector] = chain;
-        } else {
-            mainnetChains[chainSelector] = chain;
-        }
-    };
-
     const [
         { data: mainnetDeployments },
         { data: testnetDeployments },
@@ -160,6 +131,42 @@ const main = async () => {
         ),
     ]);
 
+    const enrich = (chainSelector: Chain['chainSelector'], rawChain: OldNetwork, type: ChainType) => {
+        const rpcUrls = [
+            ...(mainnetRPCs?.[rawChain.name]?.rpcUrls?.length ? mainnetRPCs?.[rawChain.name]?.rpcUrls : []),
+            ...(testnetRPCs?.[rawChain.name]?.rpcUrls?.length ? testnetRPCs?.[rawChain.name]?.rpcUrls : []),
+            ...rawChain?.rpcUrls,
+        ];
+        if (!rpcUrls.length) return;
+
+        const chain = {
+            id: rawChain.chainId.toString(),
+            ...(rawChain.finalityTagEnabled && { finalityTagEnabled: true }),
+            ...(rawChain.finalityConfirmations && { finalityConfirmations: rawChain.finalityConfirmations }),
+            ...((rawChain.finalityConfirmations !== undefined || rawChain.finalityTagEnabled) && {
+                isFinalitySupported: true,
+            }),
+            chainSelector: rawChain.chainSelector,
+            name: rawChain.name,
+            rpcUrls,
+            nativeCurrency: {
+                name: rawChain.nativeCurrency.name,
+                decimals: rawChain.nativeCurrency.decimals,
+                symbol: rawChain.nativeCurrency.symbol,
+            },
+            minBlockConfirmations: 1,
+            deployments: deployments[rawChain.name] ?? {},
+        };
+
+        if (type === 'testnet') {
+            testnetChains[chainSelector] = chain;
+        } else if (type === 'stage') {
+            stageChains[chainSelector] = chain;
+        } else {
+            mainnetChains[chainSelector] = chain;
+        }
+    };
+
     const deployments: Record<string, Partial<Record<DeploymentType, DeploymentAddress>>> = {};
     const fullDeploymentsEnv = mainnetDeployments + testnetDeployments;
     pipeRouterDeployments(fullDeploymentsEnv, deployments);
@@ -172,83 +179,16 @@ const main = async () => {
     pipeValidatorLibDeployments(stageDeployments, stageDeploymentsMap);
 
     Object.values(mainnetNetworks).map(network => {
-        const rpcUrls = [...mainnetRPCs?.[network.name]?.rpcUrls, ...network?.rpcUrls];
-
-        enrich(
-            network.chainSelector,
-            {
-                id: network.chainId.toString(),
-                ...(network.finalityTagEnabled && { finalityTagEnabled: true }),
-                ...(network.finalityConfirmations && { finalityConfirmations: network.finalityConfirmations }),
-                ...((network.finalityConfirmations !== undefined || network.finalityTagEnabled) && {
-                    isFinalitySupported: true,
-                }),
-                chainSelector: network.chainSelector,
-                name: network.name,
-                rpcUrls,
-                nativeCurrency: {
-                    name: network.nativeCurrency.name,
-                    decimals: network.nativeCurrency.decimals,
-                    symbol: network.nativeCurrency.symbol,
-                },
-                minBlockConfirmations: 1,
-                deployments: deployments[network.name] ?? {},
-            },
-            'mainnet',
-        );
+        enrich(network.chainSelector, network, 'mainnet');
     });
 
     Object.values(testnetNetworks).map(network => {
-        const rpcUrls = [...(testnetRPCs?.[network.name]?.rpcUrls ?? []), ...network?.rpcUrls];
-        if (!rpcUrls.length) return;
-
-        enrich(
-            network.chainSelector,
-            {
-                id: network.chainId.toString(),
-                isTestnet: true,
-                ...(network.finalityTagEnabled && { finalityTagEnabled: true }),
-                chainSelector: network.chainSelector,
-                name: network.name,
-                rpcUrls,
-                nativeCurrency: {
-                    name: network.nativeCurrency.name,
-                    decimals: network.nativeCurrency.decimals,
-                    symbol: network.nativeCurrency.symbol,
-                },
-                ...(network.finalityConfirmations && { finalityConfirmations: network.finalityConfirmations }),
-                minBlockConfirmations: 1,
-                deployments: deployments[network.name] ?? {},
-            },
-            'testnet',
-        );
+        enrich(network.chainSelector, network, 'testnet');
     });
 
     Object.values(testnetNetworks).map(network => {
         if (!stageDeploymentsMap[network.name]) return;
-        const rpcUrls = [...(testnetRPCs?.[network.name]?.rpcUrls ?? []), ...network?.rpcUrls];
-        if (!rpcUrls.length) return;
-
-        enrich(
-            network.chainSelector,
-            {
-                id: network.chainId.toString(),
-                isTestnet: true,
-                ...(testnetNetworks?.[network.name]?.finalityTagEnabled && { finalityTagEnabled: true }),
-                chainSelector: network.chainSelector,
-                name: network.name,
-                rpcUrls,
-                nativeCurrency: {
-                    name: network.nativeCurrency.name,
-                    decimals: network.nativeCurrency.decimals,
-                    symbol: network.nativeCurrency.symbol,
-                },
-                ...(network.finalityConfirmations && { finalityConfirmations: network.finalityConfirmations }),
-                minBlockConfirmations: 1,
-                deployments: stageDeploymentsMap[network.name],
-            },
-            'stage',
-        );
+        enrich(network.chainSelector, network, 'stage');
     });
 
     fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.json`, JSON.stringify(mainnetChains, null, 2));
