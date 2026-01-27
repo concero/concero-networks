@@ -378,7 +378,6 @@
       "decimals": 18,
       "symbol": "v4PLS"
     },
-    "finalityConfirmations": 1,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
@@ -1208,7 +1207,6 @@
       "decimals": 18,
       "symbol": "TEST"
     },
-    "finalityConfirmations": 1,
     "minBlockConfirmations": 1,
     "deployments": {
       "router": "0xcc9D0438ac3b90fB8291f4f3C1c420E215f36585",
