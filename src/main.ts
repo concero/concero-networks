@@ -155,7 +155,7 @@ const main = async () => {
                 symbol: rawChain.nativeCurrency.symbol,
             },
             minBlockConfirmations: 1,
-            deployments: deployments[rawChain.name] ?? {},
+            deployments: type === 'stage' ? stageDeploymentsMap[rawChain.name] : (deployments[rawChain.name] ?? {}),
         };
 
         if (type === 'testnet') {
