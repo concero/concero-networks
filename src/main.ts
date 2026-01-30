@@ -140,6 +140,9 @@ const main = async () => {
         ];
         if (!rpcUrls.length) return;
 
+        const targetDeployments = type === 'stage' ? stageDeploymentsMap[rawChain.name] : deployments[rawChain.name];
+        if (!targetDeployments) return;
+
         const chain = {
             id: rawChain.chainId.toString(),
             ...(rawChain.finalityTagEnabled && { finalityTagEnabled: true }),
@@ -150,13 +153,14 @@ const main = async () => {
             chainSelector: rawChain.chainSelector,
             name: rawChain.name,
             rpcUrls,
-            nativeCurrency: {
-                name: rawChain.nativeCurrency.name,
-                decimals: rawChain.nativeCurrency.decimals,
-                symbol: rawChain.nativeCurrency.symbol,
-            },
+            // TODO: mb remove it
+            // nativeCurrency: {
+            //     name: rawChain.nativeCurrency.name,
+            //     decimals: rawChain.nativeCurrency.decimals,
+            //     symbol: rawChain.nativeCurrency.symbol,
+            // },
             ...(rawChain.minBlockConfirmations && { minBlockConfirmations: rawChain.minBlockConfirmations }),
-            deployments: type === 'stage' ? stageDeploymentsMap[rawChain.name] : (deployments[rawChain.name] ?? {}),
+            deployments: targetDeployments,
         };
 
         if (type === 'testnet') {
