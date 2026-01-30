@@ -4,7 +4,7 @@ import * as process from 'process';
 import { Chain, DeploymentAddress, DeploymentType } from './types';
 import { calcHash } from './hash';
 
-const v2ContractsBranch = 'feature/v3/dev';
+const v2ContractsBranch = 'master';
 const rpcsBranch = 'master';
 const networksBranch = 'master';
 
@@ -25,6 +25,7 @@ type OldNetwork = {
     };
     finalityConfirmations: number;
     finalityTagEnabled?: boolean;
+    minBlockConfirmations?: number;
 };
 type OldRPCs = {
     rpcUrls: string[];
@@ -154,7 +155,7 @@ const main = async () => {
                 decimals: rawChain.nativeCurrency.decimals,
                 symbol: rawChain.nativeCurrency.symbol,
             },
-            minBlockConfirmations: 1,
+            ...(rawChain.minBlockConfirmations && { minBlockConfirmations: rawChain.minBlockConfirmations }),
             deployments: type === 'stage' ? stageDeploymentsMap[rawChain.name] : (deployments[rawChain.name] ?? {}),
         };
 
