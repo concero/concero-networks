@@ -1,1 +1,70 @@
-{}
+{
+  "8453": {
+    "id": "8453",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
+    "chainSelector": 8453,
+    "name": "base",
+    "rpcUrls": [
+      "https://gateway.tenderly.co/public/base",
+      "https://1rpc.io/base",
+      "https://api-base-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "https://base.gateway.tenderly.co",
+      "https://base.public.blockpi.network/v1/rpc/public",
+      "https://base-mainnet.public.blastapi.io",
+      "https://base.lava.build",
+      "https://base.meowrpc.com",
+      "https://base-rpc.publicnode.com",
+      "https://base.drpc.org",
+      "https://base-public.nodies.app",
+      "https://base.api.pocket.network",
+      "https://base.rpc.subquery.network/public",
+      "https://developer-access-mainnet.base.org",
+      "https://mainnet.base.org",
+      "https://rpcbase.hairylabs.io/rpc",
+      "https://base.rpc.blxrbdn.com",
+      "https://base.llamarpc.com"
+    ],
+    "nativeCurrency": {
+      "name": "ETH",
+      "decimals": 18,
+      "symbol": "ETH"
+    },
+    "deployments": {
+      "router": "0x60858bc719c7136996505F35759BB7118321ff6a"
+    }
+  },
+  "42161": {
+    "id": "42161",
+    "finalityTagEnabled": true,
+    "isFinalitySupported": true,
+    "chainSelector": 42161,
+    "name": "arbitrum",
+    "rpcUrls": [
+      "https://api-arbitrum-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "https://arbitrum.gateway.tenderly.co",
+      "https://arb1.lava.build",
+      "https://arbitrum-one-public.nodies.app",
+      "https://arbitrum.drpc.org",
+      "https://arbitrum-one-rpc.publicnode.com",
+      "https://arbitrum-one.public.blastapi.io",
+      "https://arbitrum.public.blockpi.network/v1/rpc/public",
+      "https://public-arb-mainnet.fastnode.io",
+      "https://arb1.arbitrum.io/rpc",
+      "https://arbitrum.meowrpc.com",
+      "https://arbitrum.rpc.subquery.network/public",
+      "https://arb-one.api.pocket.network",
+      "https://arbitrum.api.onfinality.io/public",
+      "https://1rpc.io/arb"
+    ],
+    "nativeCurrency": {
+      "name": "ETH",
+      "decimals": 18,
+      "symbol": "ETH"
+    },
+    "minBlockConfirmations": 3,
+    "deployments": {
+      "router": "0x60858bc719c7136996505F35759BB7118321ff6a"
+    }
+  }
+}

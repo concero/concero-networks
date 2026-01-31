@@ -153,12 +153,11 @@ const main = async () => {
             chainSelector: rawChain.chainSelector,
             name: rawChain.name,
             rpcUrls,
-            // TODO: mb remove it
-            // nativeCurrency: {
-            //     name: rawChain.nativeCurrency.name,
-            //     decimals: rawChain.nativeCurrency.decimals,
-            //     symbol: rawChain.nativeCurrency.symbol,
-            // },
+            nativeCurrency: {
+                name: rawChain.nativeCurrency.name,
+                decimals: rawChain.nativeCurrency.decimals,
+                symbol: rawChain.nativeCurrency.symbol,
+            },
             ...(rawChain.minBlockConfirmations && { minBlockConfirmations: rawChain.minBlockConfirmations }),
             deployments: targetDeployments,
         };
