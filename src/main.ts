@@ -141,7 +141,7 @@ const main = async () => {
         if (!rpcUrls.length) return;
 
         const targetDeployments = type === 'stage' ? stageDeploymentsMap[rawChain.name] : deployments[rawChain.name];
-        if (!targetDeployments) return;
+        // if (!targetDeployments) return;
 
         const chain = {
             id: rawChain.chainId.toString(),
@@ -159,7 +159,7 @@ const main = async () => {
                 symbol: rawChain.nativeCurrency.symbol,
             },
             ...(rawChain.minBlockConfirmations && { minBlockConfirmations: rawChain.minBlockConfirmations }),
-            deployments: targetDeployments,
+            deployments: targetDeployments ?? {},
         };
 
         if (type === 'testnet') {
