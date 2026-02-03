@@ -1007,28 +1007,6 @@
     },
     "deployments": {}
   },
-  "250": {
-    "id": "250",
-    "chainSelector": 250,
-    "name": "fantom",
-    "rpcUrls": [
-      "https://fantom.drpc.org",
-      "https://fantom.api.onfinality.io/public",
-      "https://fantom.api.pocket.network",
-      "https://rpc2.fantom.network",
-      "https://rpcapi.fantom.network",
-      "https://fantom-public.nodies.app",
-      "https://1rpc.io/ftm",
-      "https://fantom-json-rpc.stakely.io",
-      "https://rpc3.fantom.network"
-    ],
-    "nativeCurrency": {
-      "name": "Fantom",
-      "decimals": 18,
-      "symbol": "FTM"
-    },
-    "deployments": {}
-  },
   "252": {
     "id": "252",
     "finalityTagEnabled": true,
