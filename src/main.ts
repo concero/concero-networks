@@ -136,7 +136,7 @@ const main = async () => {
         const rpcUrls = [
             ...(mainnetRPCs?.[rawChain.name]?.rpcUrls?.length ? mainnetRPCs?.[rawChain.name]?.rpcUrls : []),
             ...(testnetRPCs?.[rawChain.name]?.rpcUrls?.length ? testnetRPCs?.[rawChain.name]?.rpcUrls : []),
-            ...rawChain?.rpcUrls,
+            ...(rawChain?.rpcUrls ?? []),
         ];
         if (!rpcUrls.length) return;
 
