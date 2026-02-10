@@ -138,10 +138,11 @@ const main = async () => {
             ...(testnetRPCs?.[rawChain.name]?.rpcUrls?.length ? testnetRPCs?.[rawChain.name]?.rpcUrls : []),
             ...(rawChain?.rpcs ?? []),
         ];
-        if (!rpcUrls.length) return;
-
         const targetDeployments = type === 'stage' ? stageDeploymentsMap[rawChain.name] : deployments[rawChain.name];
-        // if (!targetDeployments) return;
+        if (!rpcUrls.length) {
+            if (targetDeployments) console.log(`No rpc found for live chain: ${rawChain.name} ${type}`);
+            return;
+        }
 
         const chain = {
             id: rawChain.chainId.toString(),
