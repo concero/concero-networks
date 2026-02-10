@@ -92,25 +92,6 @@
     },
     "deployments": {}
   },
-  "81": {
-    "id": "81",
-    "finalityTagEnabled": true,
-    "isFinalitySupported": true,
-    "chainSelector": 81,
-    "name": "astarShibuya",
-    "rpcUrls": [
-      "https://evm.shibuya.astar.network",
-      "https://shibuya.public.blastapi.io",
-      "https://shibuya-rpc.dwellir.com"
-    ],
-    "nativeCurrency": {
-      "name": "Astar",
-      "decimals": 18,
-      "symbol": "ASTR"
-    },
-    "minBlockConfirmations": 3,
-    "deployments": {}
-  },
   "89": {
     "id": "89",
     "chainSelector": 89,
@@ -471,8 +452,7 @@
     "chainSelector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
-      "https://testnet-rpc.irys.xyz/v1/execution-rpc",
-      "testnet-rpc.irys.xyz"
+      "https://testnet-rpc.irys.xyz/v1/execution-rpc"
     ],
     "nativeCurrency": {
       "name": "mIRYS",
@@ -625,27 +605,6 @@
       "symbol": "ETH"
     },
     "deployments": {}
-  },
-  "2021": {
-    "id": "2021",
-    "finalityTagEnabled": true,
-    "isFinalitySupported": true,
-    "chainSelector": 2021,
-    "name": "roninSaigon",
-    "rpcUrls": [
-      "https://saigon-testnet.roninchain.com/rpc"
-    ],
-    "nativeCurrency": {
-      "name": "RON",
-      "decimals": 18,
-      "symbol": "RON"
-    },
-    "minBlockConfirmations": 3,
-    "deployments": {
-      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
-      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
-      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
-    }
   },
   "2201": {
     "id": "2201",
@@ -985,9 +944,7 @@
     "name": "immutableTestnet",
     "rpcUrls": [
       "https://immutable-zkevm-testnet.drpc.org",
-      "https://rpc.testnet.immutable.com",
-      "https://rpc.testnet.immutable.com",
-      "https://immutable-zkevm-testnet.drpc.org"
+      "https://rpc.testnet.immutable.com"
     ],
     "nativeCurrency": {
       "name": "Test IMX",
@@ -1035,8 +992,6 @@
     "rpcUrls": [
       "https://expchain.polyhedra.network/rpc0-testnet",
       "https://rpc1-testnet.expchain.ai",
-      "https://expchain.polyhedra.network/rpc1-testnet",
-      "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc1-testnet"
     ],
     "nativeCurrency": {

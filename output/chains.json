@@ -1811,12 +1811,7 @@
       "https://mainnet-rpc4.areum.network",
       "https://mainnet-rpc5.areon.network",
       "https://mainnet-rpc4.areon.network",
-      "https://mainnet-rpc.areum.network",
-      "https://mainnet-rpc.areon.network",
-      "https://mainnet-rpc2.areon.network",
-      "https://mainnet-rpc3.areon.network",
-      "https://mainnet-rpc4.areon.network",
-      "https://mainnet-rpc5.areon.network"
+      "https://mainnet-rpc.areum.network"
     ],
     "nativeCurrency": {
       "name": "Areon",
@@ -2592,8 +2587,7 @@
     "chainSelector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
-      "https://testnet-rpc.irys.xyz/v1/execution-rpc",
-      "testnet-rpc.irys.xyz"
+      "https://testnet-rpc.irys.xyz/v1/execution-rpc"
     ],
     "nativeCurrency": {
       "name": "mIRYS",
@@ -3248,27 +3242,6 @@
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
   },
-  "2021": {
-    "id": "2021",
-    "finalityTagEnabled": true,
-    "isFinalitySupported": true,
-    "chainSelector": 2021,
-    "name": "roninSaigon",
-    "rpcUrls": [
-      "https://saigon-testnet.roninchain.com/rpc"
-    ],
-    "nativeCurrency": {
-      "name": "RON",
-      "decimals": 18,
-      "symbol": "RON"
-    },
-    "minBlockConfirmations": 3,
-    "deployments": {
-      "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
-      "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
-      "validatorLib": "0x39f311124745064935cB196AeE2a950cbbC11336"
-    }
-  },
   "2035": {
     "id": "2035",
     "chainSelector": 2035,
@@ -3564,6 +3537,7 @@
     },
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
+      "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
   },
@@ -4817,10 +4791,7 @@
     "rpcUrls": [
       "https://immutable-zkevm.drpc.org",
       "https://immutable.gateway.tenderly.co",
-      "https://rpc.immutable.com",
-      "https://rpc.immutable.com",
-      "https://immutable-zkevm.drpc.org",
-      "https://immutable.gateway.tenderly.co"
+      "https://rpc.immutable.com"
     ],
     "nativeCurrency": {
       "name": "IMX",
@@ -4842,9 +4813,7 @@
     "name": "immutableTestnet",
     "rpcUrls": [
       "https://immutable-zkevm-testnet.drpc.org",
-      "https://rpc.testnet.immutable.com",
-      "https://rpc.testnet.immutable.com",
-      "https://immutable-zkevm-testnet.drpc.org"
+      "https://rpc.testnet.immutable.com"
     ],
     "nativeCurrency": {
       "name": "Test IMX",
@@ -4928,8 +4897,6 @@
     "rpcUrls": [
       "https://expchain.polyhedra.network/rpc0-testnet",
       "https://rpc1-testnet.expchain.ai",
-      "https://expchain.polyhedra.network/rpc1-testnet",
-      "https://expchain.polyhedra.network/rpc0-testnet",
       "https://expchain.polyhedra.network/rpc1-testnet"
     ],
     "nativeCurrency": {
@@ -5313,6 +5280,20 @@
       "name": "Helios",
       "decimals": 18,
       "symbol": "HLS"
+    },
+    "deployments": {}
+  },
+  "42018": {
+    "id": "42018",
+    "chainSelector": 42018,
+    "name": "mythos",
+    "rpcUrls": [
+      "https://mythos-mainnet.g.alchemy.com/public/"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "decimals": 18,
+      "symbol": "ETH"
     },
     "deployments": {}
   },
@@ -6563,7 +6544,11 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "deployments": {}
+    "deployments": {
+      "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
+      "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
+      "validatorLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d"
+    }
   },
   "656476": {
     "id": "656476",

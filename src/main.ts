@@ -12,7 +12,7 @@ type OldNetwork = {
     name: string;
     chainId: number;
     chainSelector: number;
-    rpcUrls: [];
+    rpcs: [];
     blockExplorers: {
         name: string;
         url: string;
@@ -136,7 +136,7 @@ const main = async () => {
         const rpcUrls = [
             ...(mainnetRPCs?.[rawChain.name]?.rpcUrls?.length ? mainnetRPCs?.[rawChain.name]?.rpcUrls : []),
             ...(testnetRPCs?.[rawChain.name]?.rpcUrls?.length ? testnetRPCs?.[rawChain.name]?.rpcUrls : []),
-            ...(rawChain?.rpcUrls ?? []),
+            ...(rawChain?.rpcs ?? []),
         ];
         if (!rpcUrls.length) return;
 

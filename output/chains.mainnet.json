@@ -1540,12 +1540,7 @@
       "https://mainnet-rpc4.areum.network",
       "https://mainnet-rpc5.areon.network",
       "https://mainnet-rpc4.areon.network",
-      "https://mainnet-rpc.areum.network",
-      "https://mainnet-rpc.areon.network",
-      "https://mainnet-rpc2.areon.network",
-      "https://mainnet-rpc3.areon.network",
-      "https://mainnet-rpc4.areon.network",
-      "https://mainnet-rpc5.areon.network"
+      "https://mainnet-rpc.areum.network"
     ],
     "nativeCurrency": {
       "name": "Areon",
@@ -2871,6 +2866,7 @@
     },
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
+      "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
   },
@@ -3858,10 +3854,7 @@
     "rpcUrls": [
       "https://immutable-zkevm.drpc.org",
       "https://immutable.gateway.tenderly.co",
-      "https://rpc.immutable.com",
-      "https://rpc.immutable.com",
-      "https://immutable-zkevm.drpc.org",
-      "https://immutable.gateway.tenderly.co"
+      "https://rpc.immutable.com"
     ],
     "nativeCurrency": {
       "name": "IMX",
@@ -4139,6 +4132,20 @@
       "name": "EDU",
       "decimals": 18,
       "symbol": "EDU"
+    },
+    "deployments": {}
+  },
+  "42018": {
+    "id": "42018",
+    "chainSelector": 42018,
+    "name": "mythos",
+    "rpcUrls": [
+      "https://mythos-mainnet.g.alchemy.com/public/"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "decimals": 18,
+      "symbol": "ETH"
     },
     "deployments": {}
   },
@@ -4936,7 +4943,11 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "deployments": {}
+    "deployments": {
+      "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
+      "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
+      "validatorLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d"
+    }
   },
   "660279": {
     "id": "660279",
