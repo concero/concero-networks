@@ -199,6 +199,15 @@ const main = async () => {
     fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.json`, JSON.stringify(mainnetChains, null, 2));
     fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.minified.json`, JSON.stringify(mainnetChains));
 
+    const compressedMainnetChains = {};
+
+    for (const chain in mainnetChains) {
+        if (!mainnetChains[chain].deployments.router) continue;
+        compressedMainnetChains[chain] = { ...mainnetChains[chain], ...{ name: undefined, nativeCurrency: undefined } };
+    }
+
+    fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.compressed.json`, JSON.stringify(compressedMainnetChains));
+
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.json`, JSON.stringify(testnetChains, null, 2));
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.minified.json`, JSON.stringify(testnetChains));
 
