@@ -1789,9 +1789,9 @@
     },
     "deployments": {}
   },
-  "1313161": {
+  "1313162": {
     "id": "1313161555",
-    "chainSelector": 1313161,
+    "chainSelector": 1313162,
     "name": "auroraTestnet",
     "rpcUrls": [
       "https://aurora-testnet.drpc.org",

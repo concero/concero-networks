@@ -7022,6 +7022,21 @@
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
   },
+  "1313162": {
+    "id": "1313161555",
+    "chainSelector": 1313162,
+    "name": "auroraTestnet",
+    "rpcUrls": [
+      "https://aurora-testnet.drpc.org",
+      "https://testnet.aurora.dev"
+    ],
+    "nativeCurrency": {
+      "name": "ETH",
+      "decimals": 18,
+      "symbol": "ETH"
+    },
+    "deployments": {}
+  },
   "1440000": {
     "id": "1440000",
     "finalityTagEnabled": true,
