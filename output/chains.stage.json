@@ -6,13 +6,13 @@
     "chainSelector": 84532,
     "name": "baseSepolia",
     "rpcUrls": [
-      "https://base-sepolia.gateway.tenderly.co",
+      "https://rpc.sentio.xyz/base-sepolia",
       "https://base-sepolia.drpc.org",
+      "https://base-sepolia-public.nodies.app",
+      "https://base-sepolia.gateway.tenderly.co",
       "https://base-sepolia-rpc.publicnode.com",
       "https://base-sepolia.api.onfinality.io/public",
-      "https://rpc.sentio.xyz/base-sepolia",
-      "https://sepolia.base.org",
-      "https://base-sepolia-public.nodies.app"
+      "https://sepolia.base.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -34,8 +34,8 @@
     "rpcUrls": [
       "https://arbitrum-sepolia-rpc.publicnode.com",
       "https://arbitrum-sepolia.gateway.tenderly.co",
-      "https://sepolia-rollup.arbitrum.io/rpc",
       "https://arbitrum-sepolia-testnet.api.pocket.network",
+      "https://sepolia-rollup.arbitrum.io/rpc",
       "https://arbitrum-sepolia.drpc.org",
       "https://arbitrum-sepolia.api.onfinality.io/public"
     ],
