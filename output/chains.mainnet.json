@@ -4147,7 +4147,11 @@
       "decimals": 18,
       "symbol": "ETH"
     },
-    "deployments": {}
+    "deployments": {
+      "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
+      "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
+      "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
+    }
   },
   "42161": {
     "id": "42161",
