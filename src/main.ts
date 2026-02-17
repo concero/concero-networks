@@ -206,7 +206,7 @@ const main = async () => {
         compressedMainnetChains[chain] = { ...mainnetChains[chain], ...{ name: undefined, nativeCurrency: undefined } };
     }
 
-    fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.compressed.json`, JSON.stringify(mainnetChains));
+    fs.writeFileSync(`${process.cwd()}/output/chains.mainnet.compressed.json`, JSON.stringify(compressedMainnetChains));
 
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.json`, JSON.stringify(testnetChains, null, 2));
     fs.writeFileSync(`${process.cwd()}/output/chains.testnet.minified.json`, JSON.stringify(testnetChains));
