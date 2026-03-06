@@ -5,7 +5,7 @@ import { Chain, DeploymentAddress, DeploymentType } from './types';
 import { calcHash } from './hash';
 
 const v2ContractsBranch = 'master';
-const rpcsBranch = 'master';
+const rpcsBranch = 'feature/optimize-cre-requests';
 const networksBranch = 'master';
 
 type OldNetwork = {
@@ -32,6 +32,8 @@ type OldRPCs = {
     chainSelector: number;
     chainId: string;
     finalityTagEnabled?: boolean;
+    getLogsBlockDepth?: number;
+    batchRequestLimit?: number;
 };
 
 type ChainType = 'testnet' | 'mainnet' | 'stage';
@@ -119,10 +121,10 @@ const main = async () => {
             `https://raw.githubusercontent.com/concero/messaging-contracts-v2/refs/heads/${v2ContractsBranch}/.env.deployments.stage`,
         ),
         axios.get<Record<string, OldRPCs>>(
-            `https://raw.githubusercontent.com/concero/rpcs/refs/heads/${rpcsBranch}/output/mainnet.json`,
+            `https://raw.githubusercontent.com/concero/rpcs/refs/heads/${rpcsBranch}/output/cre.mainnet.json`,
         ),
         axios.get<Record<string, OldRPCs>>(
-            `https://raw.githubusercontent.com/concero/rpcs/refs/heads/${rpcsBranch}/output/testnet.json`,
+            `https://raw.githubusercontent.com/concero/rpcs/refs/heads/${rpcsBranch}/output/cre.testnet.json`,
         ),
         axios.get<Record<string, OldNetwork>>(
             `https://raw.githubusercontent.com/concero/v2-networks/refs/heads/${networksBranch}/dist/networks/mainnet.json`,
@@ -133,6 +135,7 @@ const main = async () => {
     ]);
 
     const enrich = (chainSelector: Chain['chainSelector'], rawChain: OldNetwork, type: ChainType) => {
+        const rpcEntry = mainnetRPCs?.[rawChain.name] ?? testnetRPCs?.[rawChain.name];
         const rpcUrls = [
             ...(mainnetRPCs?.[rawChain.name]?.rpcUrls?.length ? mainnetRPCs?.[rawChain.name]?.rpcUrls : []),
             ...(testnetRPCs?.[rawChain.name]?.rpcUrls?.length ? testnetRPCs?.[rawChain.name]?.rpcUrls : []),
@@ -160,6 +163,8 @@ const main = async () => {
                 symbol: rawChain.nativeCurrency.symbol,
             },
             ...(rawChain.minBlockConfirmations && { minBlockConfirmations: rawChain.minBlockConfirmations }),
+            ...(rpcEntry?.getLogsBlockDepth && { getLogsBlockDepth: rpcEntry.getLogsBlockDepth }),
+            ...(rpcEntry?.batchRequestLimit && { batchRequestLimit: rpcEntry.batchRequestLimit }),
             deployments: targetDeployments ?? {},
         };
 

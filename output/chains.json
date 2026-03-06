@@ -6,44 +6,17 @@
     "chainSelector": 1,
     "name": "ethereum",
     "rpcUrls": [
-      "https://go.getblock.io/aefd01aa907c4805ba3c00a9e5b48c6b",
-      "https://rpc.eth.gateway.fm",
-      "https://gateway.tenderly.co/public/mainnet",
+      "https://eth.blockrazor.xyz",
+      "https://eth.api.pocket.network",
       "https://eth-mainnet.public.blastapi.io",
-      "https://ethereum-mainnet.gateway.tatum.io",
-      "https://eth1.lava.build",
+      "https://rpc.sentio.xyz/mainnet",
+      "https://rpc.mevblocker.io/fast",
+      "https://rpc.mevblocker.io/noreverts",
+      "https://rpc.mevblocker.io/fullprivacy",
+      "https://rpc.mevblocker.io",
       "https://ethereum-json-rpc.stakely.io",
       "https://0xrpc.io/eth",
-      "https://1rpc.io/eth",
-      "https://rpc.flashbots.net/fast",
-      "https://public-eth.nownodes.io",
-      "https://mainnet.gateway.tenderly.co",
-      "https://eth.drpc.org",
-      "https://eth.api.pocket.network",
-      "https://cloudflare-eth.com",
-      "https://eth.api.onfinality.io/public",
-      "https://eth.meowrpc.com",
-      "https://eth-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
-      "https://eth.merkle.io",
-      "https://eth.blockrazor.xyz",
-      "https://ethereum.rpc.subquery.network/public",
-      "https://eth.rpc.blxrbdn.com",
-      "https://ethereum-public.nodies.app",
-      "https://virginia.rpc.blxrbdn.com",
-      "https://ethereum-rpc.publicnode.com",
-      "https://uk.rpc.blxrbdn.com",
-      "https://eth.llamarpc.com",
-      "https://singapore.rpc.blxrbdn.com",
-      "https://rpc.fullsend.to",
-      "https://ethereum.public.blockpi.network/v1/rpc/public",
-      "https://rpc.mevblocker.io/fast",
-      "https://rpc.flashbots.net",
-      "https://rpc.mevblocker.io/fullprivacy",
-      "https://rpc.mevblocker.io/noreverts",
-      "https://rpc.sentio.xyz/mainnet",
-      "https://rpc.mevblocker.io",
-      "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7",
-      "https://openapi.bitstack.com/v1/wNFxbiJyQsSeLrX8RRCHi7NpRxrlErZk/DjShIqLishPCTB9HiMkPHXjUM9CNM9Na/ETH/mainnet"
+      "https://ethereum-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "Ethereum",
@@ -51,6 +24,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
       "relayerLib": "0xf7f8021c7b97efcbbcd488b35d73a04a102332c8",
@@ -64,21 +39,12 @@
     "chainSelector": 10,
     "name": "optimism",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/optimism",
       "https://go.getblock.io/e8a75f8dcf614861becfbcb185be6eb4",
-      "https://1rpc.io/op",
-      "https://api-optimism-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://optimism-public.nodies.app",
-      "https://mainnet.optimism.io",
-      "https://optimism-rpc.publicnode.com",
-      "https://public-op-mainnet.fastnode.io",
-      "https://optimism.public.blockpi.network/v1/rpc/public",
-      "https://optimism-mainnet.gateway.tatum.io",
-      "https://optimism.gateway.tenderly.co",
-      "https://optimism.drpc.org",
       "https://rpc.sentio.xyz/optimism",
-      "https://optimism.meowrpc.com",
+      "https://optimism-rpc.publicnode.com",
       "https://optimism.api.onfinality.io/public",
+      "https://optimism.gateway.tenderly.co",
+      "https://gateway.tenderly.co/public/optimism",
       "https://optimism.rpc.subquery.network/public"
     ],
     "nativeCurrency": {
@@ -86,6 +52,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -99,17 +67,17 @@
     "chainSelector": 14,
     "name": "flareNetwork",
     "rpcUrls": [
-      "https://rpc.ankr.com/flare",
-      "https://flare-api.flare.network/ext/C/rpc",
-      "https://flare-mainnet.gateway.tatum.io",
+      "https://rpc.au.cc/flare",
       "https://flare.rpc.thirdweb.com",
-      "https://rpc.au.cc/flare"
+      "https://flare-api.flare.network/ext/C/rpc"
     ],
     "nativeCurrency": {
       "name": "Flare",
       "decimals": 18,
       "symbol": "FLR"
     },
+    "getLogsBlockDepth": 10,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -121,15 +89,17 @@
     "chainSelector": 19,
     "name": "sgb",
     "rpcUrls": [
-      "https://songbird-api.flare.network/ext/C/rpc",
+      "https://rpc.ftso.au/songbird",
       "https://rpc.au.cc/songbird",
-      "https://rpc.ftso.au/songbird"
+      "https://songbird-api.flare.network/ext/C/rpc"
     ],
     "nativeCurrency": {
       "name": "Songbird",
       "decimals": 18,
       "symbol": "SGB"
     },
+    "getLogsBlockDepth": 10,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -141,17 +111,18 @@
     "chainSelector": 20,
     "name": "elastos",
     "rpcUrls": [
-      "https://api2.elastos.io/eth",
-      "https://api2.elastos.io/esc",
+      "https://api.elastos.io/eth",
       "https://api.elastos.io/esc",
-      "https://rpc.glidefinance.io",
-      "https://api.elastos.io/eth"
+      "https://api2.elastos.io/esc",
+      "https://rpc.glidefinance.io"
     ],
     "nativeCurrency": {
       "name": "Elastos",
       "decimals": 18,
       "symbol": "ELA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "21": {
@@ -166,6 +137,8 @@
       "decimals": 18,
       "symbol": "tELA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "25": {
@@ -175,18 +148,19 @@
     "chainSelector": 25,
     "name": "cronos",
     "rpcUrls": [
-      "https://api-cronos-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://evm.cronos.org",
-      "https://cronos-evm-rpc.publicnode.com",
       "https://rpc.sentio.xyz/cronos",
-      "https://cronos.drpc.org",
-      "https://rpc.vvs.finance"
+      "https://cronos-evm-rpc.publicnode.com",
+      "https://evm.cronos.org",
+      "https://rpc.vvs.finance",
+      "https://cronos.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Cronos",
       "decimals": 18,
       "symbol": "CRO"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -200,9 +174,9 @@
     "chainSelector": 30,
     "name": "rootstock",
     "rpcUrls": [
-      "https://rootstock.drpc.org",
       "https://public-node.rsk.co",
-      "https://mycrypto.rsk.co"
+      "https://mycrypto.rsk.co",
+      "https://rootstock.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Smart Bitcoin",
@@ -210,6 +184,7 @@
       "symbol": "RBTC"
     },
     "minBlockConfirmations": 5,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
       "relayerLib": "0x00ce0fd747e7d4c27bdce653c3ed531ef906deff",
@@ -221,15 +196,16 @@
     "chainSelector": 31,
     "name": "rootstockTestnet",
     "rpcUrls": [
-      "https://rootstock-testnet.drpc.org",
       "https://mycrypto.testnet.rsk.co",
-      "https://public-node.testnet.rsk.co"
+      "https://public-node.testnet.rsk.co",
+      "https://rootstock-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Testnet Smart Bitcoin",
       "decimals": 18,
       "symbol": "tRBTC"
     },
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "37": {
@@ -244,6 +220,8 @@
       "decimals": 18,
       "symbol": "XPLA"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -262,6 +240,8 @@
       "decimals": 18,
       "symbol": "U2U"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -273,16 +253,16 @@
     "chainSelector": 40,
     "name": "telos",
     "rpcUrls": [
-      "https://rpc.ankr.com/telos",
-      "https://1rpc.io/telos/evm",
-      "https://telos.drpc.org",
-      "https://rpc.telos.net"
+      "https://rpc.telos.net",
+      "https://telos.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Telos",
       "decimals": 18,
       "symbol": "TLOS"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -303,6 +283,8 @@
       "decimals": 18,
       "symbol": "LYX"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -314,14 +296,16 @@
     "chainSelector": 46,
     "name": "darwinia",
     "rpcUrls": [
-      "https://darwinia.rpc.subquery.network/public",
-      "https://rpc.darwinia.network"
+      "https://rpc.darwinia.network",
+      "https://darwinia.rpc.subquery.network/public"
     ],
     "nativeCurrency": {
       "name": "Darwinia Network Native Token",
       "decimals": 18,
       "symbol": "RING"
     },
+    "getLogsBlockDepth": 306152,
+    "batchRequestLimit": 50,
     "deployments": {}
   },
   "50": {
@@ -331,15 +315,10 @@
     "chainSelector": 50,
     "name": "xdcNetwork",
     "rpcUrls": [
-      "https://rpc.ankr.com/xdc",
-      "https://api-xdc-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://rpc.xinfin.network",
-      "https://rpc.xdcrpc.com",
-      "https://erpc.xinfin.network",
-      "https://earpc.xinfin.network",
-      "https://erpc.xdcrpc.com",
       "https://rpc.xdc.network",
+      "https://erpc.xinfin.network",
       "https://rpc1.xinfin.network",
+      "https://earpc.xinfin.network",
       "https://rpc.xdc.org"
     ],
     "nativeCurrency": {
@@ -347,6 +326,8 @@
       "decimals": 18,
       "symbol": "XDC"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -360,16 +341,17 @@
     "chainSelector": 51,
     "name": "xdcNetworkTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/xdc_testnet",
       "https://rpc.apothem.network",
-      "https://erpc.apothem.network",
-      "https://earpc.apothem.network"
+      "https://earpc.apothem.network",
+      "https://erpc.apothem.network"
     ],
     "nativeCurrency": {
       "name": "XinFin",
       "decimals": 18,
       "symbol": "TXDC"
     },
+    "getLogsBlockDepth": 49921,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "52": {
@@ -377,17 +359,19 @@
     "chainSelector": 52,
     "name": "csc",
     "rpcUrls": [
-      "https://rpc.coinex.net",
       "https://rpc1.coinex.net",
+      "https://rpc3.coinex.net",
+      "https://rpc.coinex.net",
       "https://rpc4.coinex.net",
-      "https://rpc2.coinex.net",
-      "https://rpc3.coinex.net"
+      "https://rpc2.coinex.net"
     ],
     "nativeCurrency": {
       "name": "CoinEx Chain Native Token",
       "decimals": 18,
       "symbol": "cet"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -406,6 +390,8 @@
       "decimals": 18,
       "symbol": "cett"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "56": {
@@ -415,41 +401,12 @@
     "chainSelector": 56,
     "name": "bsc",
     "rpcUrls": [
-      "https://1rpc.io/bnb",
-      "https://go.getblock.io/cc778cdbdf5c4b028ec9456e0e6c0cf3",
-      "https://bsc.drpc.org",
-      "https://api-bsc-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://bsc-rpc.publicnode.com",
-      "https://bsc-mainnet.public.blastapi.io",
-      "https://bsc-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
-      "https://public-bsc-mainnet.fastnode.io",
-      "https://bsc.blockrazor.xyz",
-      "https://bsc.rpc.blxrbdn.com",
       "https://rpc.sentio.xyz/bsc",
-      "https://public-bsc.nownodes.io",
-      "https://rpc-bsc.48.club",
       "https://bsc.api.pocket.network",
-      "https://0.48.club",
-      "https://binance-smart-chain-public.nodies.app",
-      "https://bsc-dataseed3.bnbchain.org",
-      "https://bsc.meowrpc.com",
-      "https://bnb.rpc.subquery.network/public",
-      "https://bnb.api.onfinality.io/public",
-      "https://bsc-dataseed.bnbchain.org",
-      "https://bsc-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
-      "https://bsc-dataseed2.bnbchain.org",
-      "https://bsc-dataseed1.bnbchain.org",
-      "https://binance.nodereal.io",
-      "https://bsc-dataseed3.defibit.io",
-      "https://bsc-dataseed4.ninicoin.io",
-      "https://bsc-dataseed4.defibit.io",
-      "https://bsc-dataseed1.defibit.io",
-      "https://bsc-dataseed2.ninicoin.io",
-      "https://binance.llamarpc.com",
-      "https://bsc-dataseed2.defibit.io",
-      "https://bsc-dataseed3.ninicoin.io",
-      "https://bsc-dataseed4.bnbchain.org",
-      "https://bsc-dataseed1.ninicoin.io"
+      "https://bsc.blockrazor.xyz",
+      "https://bsc-rpc.publicnode.com",
+      "https://bsc.rpc.blxrbdn.com",
+      "https://public-bsc.nownodes.io"
     ],
     "nativeCurrency": {
       "name": "BNB Chain Native Token",
@@ -457,6 +414,8 @@
       "symbol": "BNB"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -468,16 +427,18 @@
     "chainSelector": 58,
     "name": "ontologymainnet",
     "rpcUrls": [
-      "https://dappnode4.ont.io:10339",
       "https://dappnode2.ont.io:10339",
-      "https://dappnode3.ont.io:10339",
-      "https://dappnode1.ont.io:10339"
+      "https://dappnode4.ont.io:10339",
+      "https://dappnode1.ont.io:10339",
+      "https://dappnode3.ont.io:10339"
     ],
     "nativeCurrency": {
       "name": "ONG",
       "decimals": 18,
       "symbol": "ONG"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -496,6 +457,8 @@
       "decimals": 18,
       "symbol": "GO"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "61": {
@@ -503,17 +466,17 @@
     "chainSelector": 61,
     "name": "ethereumClassic",
     "rpcUrls": [
-      "https://0xrpc.io/etc",
       "https://geth-at.etc-network.info",
       "https://etc.etcdesktop.com",
-      "https://etc.rivet.link",
-      "https://besu-at.etc-network.info"
+      "https://etc.rivet.link"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETC"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 128,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -525,15 +488,17 @@
     "chainSelector": 63,
     "name": "ethereumClassicTestnet",
     "rpcUrls": [
-      "https://0xrpc.io/mordor",
       "https://rpc.mordor.etccooperative.org",
-      "https://geth-mordor.etc-network.info"
+      "https://geth-mordor.etc-network.info",
+      "https://0xrpc.io/mordor"
     ],
     "nativeCurrency": {
       "name": "Mordor Ether",
       "decimals": 18,
       "symbol": "METC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "71": {
@@ -548,20 +513,8 @@
       "decimals": 18,
       "symbol": "CFX"
     },
-    "deployments": {}
-  },
-  "81": {
-    "id": "81",
-    "chainSelector": 81,
-    "name": "joc",
-    "rpcUrls": [
-      "https://evm.shibuya.astar.network"
-    ],
-    "nativeCurrency": {
-      "name": "Japan Open Chain Token",
-      "decimals": 18,
-      "symbol": "JOC"
-    },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "82": {
@@ -569,14 +522,16 @@
     "chainSelector": 82,
     "name": "meter",
     "rpcUrls": [
-      "https://meter.blockpi.network/v1/rpc/public",
-      "https://rpc.meter.io"
+      "https://rpc.meter.io",
+      "https://meter.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "Meter",
       "decimals": 18,
       "symbol": "MTR"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 5,
     "deployments": {}
   },
   "86": {
@@ -591,6 +546,8 @@
       "decimals": 18,
       "symbol": "GT"
     },
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "88": {
@@ -598,15 +555,17 @@
     "chainSelector": 88,
     "name": "viction",
     "rpcUrls": [
+      "https://rpc.viction.xyz",
       "https://viction.blockpi.network/v1/rpc/public",
-      "https://viction.drpc.org",
-      "https://rpc.viction.xyz"
+      "https://viction.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Viction",
       "decimals": 18,
       "symbol": "VIC"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "89": {
@@ -614,14 +573,16 @@
     "chainSelector": 89,
     "name": "victionTestnet",
     "rpcUrls": [
-      "https://viction-testnet.drpc.org",
-      "https://rpc-testnet.viction.xyz"
+      "https://rpc-testnet.viction.xyz",
+      "https://viction-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Viction",
       "decimals": 18,
       "symbol": "VIC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "96": {
@@ -636,6 +597,8 @@
       "decimals": 18,
       "symbol": "KUB"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -649,10 +612,8 @@
     "chainSelector": 97,
     "name": "bnbTestnet",
     "rpcUrls": [
-      "https://bsc-testnet-rpc.publicnode.com",
-      "https://bsc-testnet.drpc.org",
-      "https://bnb-testnet.api.onfinality.io/public",
-      "https://rpc.sentio.xyz/bsc-testnet"
+      "https://rpc.sentio.xyz/bsc-testnet",
+      "https://bsc-testnet-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "BNB",
@@ -660,6 +621,8 @@
       "symbol": "tBNB"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
       "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
@@ -673,17 +636,11 @@
     "chainSelector": 100,
     "name": "gnosis",
     "rpcUrls": [
-      "https://1rpc.io/gnosis",
-      "https://public-gno-mainnet.fastnode.io",
-      "https://rpc.gnosischain.com",
-      "https://gnosis-rpc.publicnode.com",
-      "https://gnosis.drpc.org",
       "https://rpc.gnosis.gateway.fm",
+      "https://rpc.gnosischain.com",
       "https://rpc.ap-southeast-1.gateway.fm/v4/gnosis/non-archival/mainnet",
-      "https://gnosis.oat.farm",
-      "https://gnosis.api.pocket.network",
-      "https://gnosis-public.nodies.app",
-      "https://gnosis.api.onfinality.io/public"
+      "https://gnosis-rpc.publicnode.com",
+      "https://gnosis.oat.farm"
     ],
     "nativeCurrency": {
       "name": "xDAI",
@@ -691,6 +648,8 @@
       "symbol": "XDAI"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x00ce0fd747e7d4c27bdce653c3ed531ef906deff",
@@ -702,16 +661,17 @@
     "chainSelector": 108,
     "name": "tt",
     "rpcUrls": [
-      "https://thundercore.drpc.org",
+      "https://mainnet-rpc.thundercore.com",
       "https://mainnet-rpc.thundertoken.net",
-      "https://mainnet-rpc.thundercore.io",
-      "https://mainnet-rpc.thundercore.com"
+      "https://mainnet-rpc.thundercore.io"
     ],
     "nativeCurrency": {
       "name": "ThunderCore Token",
       "decimals": 18,
       "symbol": "TT"
     },
+    "getLogsBlockDepth": 172753,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -725,9 +685,8 @@
     "chainSelector": 109,
     "name": "shibarium",
     "rpcUrls": [
-      "https://shibarium.drpc.org",
-      "https://www.shibrpc.com",
-      "https://rpc.shibrpc.com"
+      "https://rpc.shibarium.shib.io",
+      "https://shibarium.drpc.org"
     ],
     "nativeCurrency": {
       "name": "BONE Shibarium",
@@ -735,6 +694,8 @@
       "symbol": "BONE"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -748,15 +709,17 @@
     "chainSelector": 114,
     "name": "flareNetworkTestnet",
     "rpcUrls": [
+      "https://flare-testnet-coston2.rpc.thirdweb.com",
       "https://coston2.enosys.global/ext/C/rpc",
-      "https://coston2-api.flare.network/ext/C/rpc",
-      "https://flare-testnet-coston2.rpc.thirdweb.com"
+      "https://coston2-api.flare.network/ext/C/rpc"
     ],
     "nativeCurrency": {
       "name": "Coston2 Flare",
       "decimals": 18,
       "symbol": "C2FLR"
     },
+    "getLogsBlockDepth": 10,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "119": {
@@ -764,14 +727,16 @@
     "chainSelector": 119,
     "name": "enuls",
     "rpcUrls": [
-      "https://evmapi.nuls.io",
-      "https://evmapi2.nuls.io"
+      "https://evmapi2.nuls.io",
+      "https://evmapi.nuls.io"
     ],
     "nativeCurrency": {
       "name": "NULS",
       "decimals": 18,
       "symbol": "NULS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -785,10 +750,8 @@
     "chainSelector": 122,
     "name": "fuse",
     "rpcUrls": [
-      "https://fuse.api.pocket.network",
-      "https://fuse-public.nodies.app",
-      "https://fuse.drpc.org",
       "https://fuse.liquify.com",
+      "https://fuse.api.pocket.network",
       "https://rpc.fuse.io"
     ],
     "nativeCurrency": {
@@ -796,6 +759,8 @@
       "decimals": 18,
       "symbol": "FUSE"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -816,6 +781,8 @@
       "decimals": 18,
       "symbol": "SPARK"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "130": {
@@ -825,12 +792,10 @@
     "chainSelector": 130,
     "name": "unichain",
     "rpcUrls": [
-      "https://api-unichain-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://unichain-rpc.publicnode.com",
-      "https://unichain.drpc.org",
       "https://rpc.sentio.xyz/unichain-mainnet",
-      "https://unichain.api.onfinality.io/public",
-      "https://mainnet.unichain.org"
+      "https://unichain-rpc.publicnode.com",
+      "https://mainnet.unichain.org",
+      "https://unichain.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -838,6 +803,7 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -852,21 +818,10 @@
     "name": "polygon",
     "rpcUrls": [
       "https://gateway.tenderly.co/public/polygon",
-      "https://go.getblock.io/02667b699f05444ab2c64f9bff28f027",
-      "https://1rpc.io/matic",
       "https://polygon.gateway.tenderly.co",
-      "https://polygon-mainnet.rpcfast.com?api_key=xbhWBI1Wkguk8SNMu1bvvLurPGLXmgwYeC4S6g2H7WdwFigZSmPWVZRxrskEQwIf",
-      "https://polygon-bor-rpc.publicnode.com",
-      "https://polygon-rpc.com",
-      "https://polygon.drpc.org",
-      "https://poly.api.pocket.network",
       "https://rpc.sentio.xyz/matic",
-      "https://polygon-public.nodies.app",
-      "https://polygon.meowrpc.com",
-      "https://polygon.rpc.subquery.network/public",
-      "https://rpc-mainnet.matic.quiknode.pro",
-      "https://polygon.api.onfinality.io/public",
-      "https://polygon.lava.build"
+      "https://poly.api.pocket.network",
+      "https://polygon-bor-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "POL",
@@ -874,6 +829,8 @@
       "symbol": "POL"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 3937,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4b198972ba7e35382aacf3a60ac7c81409b4b606",
       "relayerLib": "0x8a070db2dd3f9cb56ecdd020123762df67aab3b6",
@@ -887,24 +844,18 @@
     "chainSelector": 143,
     "name": "monad",
     "rpcUrls": [
-      "https://rpc-mainnet.monadinfra.com",
-      "https://rpc.monad.xyz",
-      "https://rpc2.monad.xyz",
-      "https://rpc3.monad.xyz",
       "https://rpc.sentio.xyz/monad-mainnet",
-      "https://monad-mainnet.drpc.org",
-      "https://monad-mainnet-rpc.spidernode.net",
-      "https://monad-mainnet.api.onfinality.io/public",
+      "https://rpc2.monad.xyz",
       "https://monad.rpc.blxrbdn.com",
-      "https://rpc1.monad.xyz",
-      "https://rpc4.monad.xyz",
-      "https://infra.originstake.com/monad/evm"
+      "https://rpc1.monad.xyz"
     ],
     "nativeCurrency": {
       "name": "Monad",
       "decimals": 18,
       "symbol": "MON"
     },
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -918,13 +869,10 @@
     "chainSelector": 146,
     "name": "sonic",
     "rpcUrls": [
-      "https://sonic-rpc.publicnode.com",
-      "https://sonic.drpc.org",
-      "https://sonic-json-rpc.stakely.io",
-      "https://sonic.api.pocket.network",
+      "https://rpc.soniclabs.com",
       "https://rpc.sentio.xyz/sonic-mainnet",
-      "https://sonic.api.onfinality.io/public",
-      "https://rpc.soniclabs.com"
+      "https://sonic-rpc.publicnode.com",
+      "https://sonic-json-rpc.stakely.io"
     ],
     "nativeCurrency": {
       "name": "Sonic",
@@ -932,6 +880,8 @@
       "symbol": "S"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 39921,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -950,6 +900,8 @@
       "decimals": 18,
       "symbol": "SMR"
     },
+    "getLogsBlockDepth": 1437,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "151": {
@@ -964,6 +916,8 @@
       "decimals": 18,
       "symbol": "RBNT"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "157": {
@@ -981,6 +935,7 @@
       "symbol": "BONE"
     },
     "minBlockConfirmations": 5,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -999,6 +954,8 @@
       "decimals": 18,
       "symbol": "AIOZ"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1010,11 +967,8 @@
     "chainSelector": 169,
     "name": "mantapacific",
     "rpcUrls": [
-      "https://1rpc.io/manta",
-      "https://manta-pacific.drpc.org",
       "https://pacific-rpc.manta.network/http",
       "https://manta-pacific.calderachain.xyz/http",
-      "https://manta.nirvanalabs.xyz/mantapublic",
       "https://manta-pacific-gascap.calderachain.xyz/http",
       "https://r1.pacific.manta.systems/http"
     ],
@@ -1023,6 +977,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1035,17 +991,19 @@
     "name": "eni",
     "rpcUrls": [
       "https://enirpc.com",
-      "https://rpc.eniac.network",
-      "https://jp.enirpc.com",
+      "https://rpc1.eniac.network",
       "https://jp.eniacrpc.net",
       "https://rpc2.eniac.network",
-      "https://rpc1.eniac.network"
+      "https://jp.enirpc.com",
+      "https://rpc.eniac.network"
     ],
     "nativeCurrency": {
       "name": "EGAS",
       "decimals": 18,
       "symbol": "EGAS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1086,6 +1044,8 @@
       "decimals": 18,
       "symbol": "tABEY"
     },
+    "getLogsBlockDepth": 493,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "179": {
@@ -1100,6 +1060,8 @@
       "decimals": 18,
       "symbol": "ABEY"
     },
+    "getLogsBlockDepth": 493,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1118,6 +1080,8 @@
       "decimals": 18,
       "symbol": "AME"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1136,6 +1100,8 @@
       "decimals": 18,
       "symbol": "WATER"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1154,6 +1120,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1165,14 +1133,15 @@
     "chainSelector": 185,
     "name": "mint",
     "rpcUrls": [
-      "https://rpc.mintchain.io",
-      "https://global.rpc.mintchain.io"
+      "https://rpc.mintchain.io"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1186,20 +1155,18 @@
     "chainSelector": 196,
     "name": "xlayer",
     "rpcUrls": [
-      "https://rpc.ankr.com/xlayer",
-      "https://rpc.sentio.xyz/xlayer-mainnet",
-      "https://xlayer.drpc.org",
-      "https://flap-xlayer.rpc.blxrbdn.com",
-      "https://okx-xlayer.rpc.blxrbdn.com",
       "https://xlayer.rpc.blxrbdn.com",
-      "https://rpc.xlayer.tech",
-      "https://xlayerrpc.okx.com"
+      "https://okx-xlayer.rpc.blxrbdn.com",
+      "https://flap-xlayer.rpc.blxrbdn.com",
+      "https://rpc.sentio.xyz/xlayer-mainnet"
     ],
     "nativeCurrency": {
       "name": "X Layer Global Utility Token",
       "decimals": 18,
       "symbol": "OKB"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 10,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1211,15 +1178,17 @@
     "chainSelector": 199,
     "name": "bittorrent",
     "rpcUrls": [
-      "https://bittorrent.drpc.org",
+      "https://rpc.bittorrentchain.io",
       "https://rpc.bt.io",
-      "https://rpc.bittorrentchain.io"
+      "https://bittorrent.drpc.org"
     ],
     "nativeCurrency": {
       "name": "BitTorrent",
       "decimals": 18,
       "symbol": "BTT"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1233,12 +1202,8 @@
     "chainSelector": 204,
     "name": "opBnb",
     "rpcUrls": [
-      "https://1rpc.io/opbnb",
-      "https://opbnb.drpc.org",
-      "https://opbnb-rpc.publicnode.com",
       "https://opbnb.api.pocket.network",
-      "https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
-      "https://opbnb-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
+      "https://opbnb-rpc.publicnode.com",
       "https://opbnb-mainnet-rpc.bnbchain.org"
     ],
     "nativeCurrency": {
@@ -1247,6 +1212,8 @@
       "symbol": "BNB"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 49843,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1265,6 +1232,8 @@
       "decimals": 18,
       "symbol": "BTN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "223": {
@@ -1274,10 +1243,9 @@
     "chainSelector": 223,
     "name": "bsquared",
     "rpcUrls": [
-      "https://rpc.ankr.com/b2",
+      "https://rpc.bsquared.network",
       "https://mainnet.b2-rpc.com",
-      "https://b2-mainnet.alt.technology",
-      "https://rpc.bsquared.network"
+      "https://b2-mainnet.alt.technology"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
@@ -1285,6 +1253,8 @@
       "symbol": "BTC"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1303,6 +1273,8 @@
       "decimals": 18,
       "symbol": "PROM"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 150,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1321,6 +1293,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1335,7 +1309,6 @@
     "name": "lens",
     "rpcUrls": [
       "https://light-icy-dinghy.lens-mainnet.quiknode.pro",
-      "https://rpc.lens.xyz",
       "https://lens.drpc.org"
     ],
     "nativeCurrency": {
@@ -1344,6 +1317,8 @@
       "symbol": "GHO"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -1381,6 +1356,8 @@
       "decimals": 18,
       "symbol": "EWT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "248": {
@@ -1389,14 +1366,16 @@
     "name": "oas",
     "rpcUrls": [
       "https://oasys.api.pocket.network",
-      "https://oasys.blockpi.network/v1/rpc/public",
-      "https://rpc.mainnet.oasys.games"
+      "https://rpc.mainnet.oasys.games",
+      "https://oasys.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "OAS",
       "decimals": 18,
       "symbol": "OAS"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 5,
     "deployments": {}
   },
   "252": {
@@ -1406,11 +1385,9 @@
     "chainSelector": 252,
     "name": "fraxtal",
     "rpcUrls": [
-      "https://rpc.frax.com",
-      "https://fraxtal.drpc.org",
       "https://fraxtal-rpc.publicnode.com",
-      "https://fraxtal.gateway.tenderly.co",
-      "https://fraxtal.api.pocket.network"
+      "https://rpc.frax.com",
+      "https://fraxtal.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Frax",
@@ -1418,6 +1395,8 @@
       "symbol": "FRAX"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -1430,16 +1409,18 @@
     "name": "swan",
     "rpcUrls": [
       "https://mainnet-rpc-03.swanchain.org",
+      "https://mainnet-rpc-01.swanchain.org",
       "https://mainnet-rpc-02.swanchain.org",
-      "https://mainnet-rpc.swanchain.org",
       "https://mainnet-rpc-04.swanchain.org",
-      "https://mainnet-rpc-01.swanchain.org"
+      "https://mainnet-rpc.swanchain.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1460,6 +1441,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "269": {
@@ -1474,6 +1457,8 @@
       "decimals": 18,
       "symbol": "HPB"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "288": {
@@ -1484,12 +1469,9 @@
     "name": "bobaNetwork",
     "rpcUrls": [
       "https://gateway.tenderly.co/public/boba-ethereum",
-      "https://1rpc.io/boba/eth",
-      "https://api-boba-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "https://boba-ethereum.gateway.tenderly.co",
-      "https://boba-eth.drpc.org",
-      "https://boba.api.pocket.network",
-      "https://mainnet.boba.network"
+      "https://mainnet.boba.network",
+      "https://boba-eth.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -1497,6 +1479,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1515,6 +1499,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 165,
     "deployments": {}
   },
   "295": {
@@ -1525,14 +1511,16 @@
     "name": "hedera",
     "rpcUrls": [
       "https://hedera.linkpool.pro",
-      "https://mainnet.hashio.io/api",
-      "https://295.rpc.thirdweb.com"
+      "https://295.rpc.thirdweb.com",
+      "https://mainnet.hashio.io/api"
     ],
     "nativeCurrency": {
       "name": "hbar",
       "decimals": 18,
       "symbol": "HBAR"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
       "relayerLib": "0x00ce0fd747e7d4c27bdce653c3ed531ef906deff",
@@ -1546,14 +1534,16 @@
     "chainSelector": 296,
     "name": "hederaTestnet",
     "rpcUrls": [
-      "https://testnet.hashio.io/api",
-      "https://296.rpc.thirdweb.com"
+      "https://296.rpc.thirdweb.com",
+      "https://testnet.hashio.io/api"
     ],
     "nativeCurrency": {
       "name": "HBAR",
       "decimals": 18,
       "symbol": "HBAR"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "300": {
@@ -1563,15 +1553,17 @@
     "chainSelector": 300,
     "name": "zksyncSepolia",
     "rpcUrls": [
-      "https://rpc.ankr.com/zksync_era_sepolia",
-      "https://zksync-sepolia.drpc.org",
-      "https://sepolia.era.zksync.dev"
+      "https://sepolia.era.zksync.dev",
+      "https://zksync-sepolia.api.onfinality.io/public",
+      "https://zksync-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0xBd5EC2962802123f6D8d0092dC485C98e23D1394",
       "relayerLib": "0x06942a1E6A73069a58306d9E154051b85b32D071",
@@ -1585,13 +1577,10 @@
     "chainSelector": 314,
     "name": "filecoin",
     "rpcUrls": [
-      "https://rpc.ankr.com/filecoin",
-      "https://filecoin.drpc.org",
-      "https://filecoin.lava.build",
       "https://filecoin.chainup.net/rpc/v1",
+      "https://filfox.info/rpc/v1",
       "https://api.node.glif.io",
-      "https://api.chain.love/rpc/v1",
-      "https://filfox.info/rpc/v1"
+      "https://api.chain.love/rpc/v1"
     ],
     "nativeCurrency": {
       "name": "filecoin",
@@ -1599,6 +1588,8 @@
       "symbol": "FIL"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "320": {
@@ -1613,6 +1604,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 500,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1624,14 +1617,16 @@
     "chainSelector": 321,
     "name": "kcs",
     "rpcUrls": [
-      "https://kcc-rpc.com",
-      "https://rpc-mainnet.kcc.network"
+      "https://rpc-mainnet.kcc.network",
+      "https://kcc-rpc.com"
     ],
     "nativeCurrency": {
       "name": "KuCoin Token",
       "decimals": 18,
       "symbol": "KCS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1645,22 +1640,17 @@
     "chainSelector": 324,
     "name": "zksync",
     "rpcUrls": [
-      "https://go.getblock.io/f76c09905def4618a34946bf71851542",
-      "https://1rpc.io/zksync2-era",
-      "https://rpc.ankr.com/zksync_era",
-      "https://api-zksync-era-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://zksync.drpc.org",
-      "https://zksync.meowrpc.com",
       "https://rpc.sentio.xyz/zksync-era",
-      "https://mainnet.era.zksync.io",
-      "https://zksync.api.onfinality.io/public",
-      "https://zksync-era.api.pocket.network"
+      "https://zksync-era.api.pocket.network",
+      "https://mainnet.era.zksync.io"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1679,25 +1669,9 @@
       "decimals": 18,
       "symbol": "JEWEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 25,
     "deployments": {}
-  },
-  "337": {
-    "id": "337",
-    "chainSelector": 337,
-    "name": "r5",
-    "rpcUrls": [
-      "https://rpc.r5.network"
-    ],
-    "nativeCurrency": {
-      "name": "R5",
-      "decimals": 18,
-      "symbol": "R5"
-    },
-    "deployments": {
-      "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
-      "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
-      "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
-    }
   },
   "338": {
     "id": "338",
@@ -1706,14 +1680,16 @@
     "chainSelector": 338,
     "name": "cronosTestnet",
     "rpcUrls": [
-      "https://cronos-testnet.drpc.org",
-      "https://evm-t3.cronos.org"
+      "https://evm-t3.cronos.org",
+      "https://cronos-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "CRO",
       "decimals": 18,
       "symbol": "tCRO"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "360": {
@@ -1721,14 +1697,16 @@
     "chainSelector": 360,
     "name": "shape",
     "rpcUrls": [
-      "https://shape-mainnet.g.alchemy.com/public",
-      "https://mainnet.shape.network"
+      "https://mainnet.shape.network",
+      "https://shape-mainnet.g.alchemy.com/public"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1747,6 +1725,8 @@
       "decimals": 18,
       "symbol": "TFUEL"
     },
+    "getLogsBlockDepth": 1937,
+    "batchRequestLimit": 104,
     "deployments": {}
   },
   "369": {
@@ -1754,19 +1734,18 @@
     "chainSelector": 369,
     "name": "pulseChain",
     "rpcUrls": [
-      "https://pulsechain-rpc.publicnode.com",
-      "https://rpc-pulsechain.g4mm4.io",
       "https://rpc.pulsechain.com",
+      "https://rpc-pulsechain.g4mm4.io",
       "https://rpc.pulsechainrpc.com",
-      "https://rpc.pulsechainstats.com",
-      "https://rpc.gigatheminter.com",
-      "https://rpc.hairylabs.io/rpc"
+      "https://rpc.gigatheminter.com"
     ],
     "nativeCurrency": {
       "name": "Pulse",
       "decimals": 18,
       "symbol": "PLS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "388": {
@@ -1774,15 +1753,17 @@
     "chainSelector": 388,
     "name": "cronoszkevm",
     "rpcUrls": [
-      "https://cronos-zkevm.drpc.org",
+      "https://rpc.sentio.xyz/cronos-zkevm",
       "https://mainnet.zkevm.cronos.org",
-      "https://rpc.sentio.xyz/cronos-zkevm"
+      "https://cronos-zkevm.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Cronos zkEVM CRO",
       "decimals": 18,
       "symbol": "zkCRO"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "397": {
@@ -1797,6 +1778,7 @@
       "decimals": 18,
       "symbol": "NEAR"
     },
+    "batchRequestLimit": 104,
     "deployments": {}
   },
   "463": {
@@ -1804,22 +1786,24 @@
     "chainSelector": 463,
     "name": "areon",
     "rpcUrls": [
-      "https://mainnet-rpc5.areum.network",
-      "https://mainnet-rpc3.areum.network",
-      "https://mainnet-rpc4.areum.network",
       "https://mainnet-rpc.areon.network",
-      "https://mainnet-rpc2.areum.network",
-      "https://mainnet-rpc5.areon.network",
       "https://mainnet-rpc4.areon.network",
-      "https://mainnet-rpc.areum.network",
       "https://mainnet-rpc3.areon.network",
-      "https://mainnet-rpc2.areon.network"
+      "https://mainnet-rpc2.areon.network",
+      "https://mainnet-rpc.areum.network",
+      "https://mainnet-rpc5.areum.network",
+      "https://mainnet-rpc2.areum.network",
+      "https://mainnet-rpc4.areum.network",
+      "https://mainnet-rpc3.areum.network",
+      "https://mainnet-rpc5.areon.network"
     ],
     "nativeCurrency": {
       "name": "Areon",
       "decimals": 18,
       "symbol": "TAREA"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1838,6 +1822,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1852,10 +1838,8 @@
     "name": "worldchain",
     "rpcUrls": [
       "https://worldchain-mainnet.g.alchemy.com/public",
-      "https://worldchain.drpc.org",
       "https://worldchain-mainnet.gateway.tenderly.co",
-      "https://sparkling-autumn-dinghy.worldchain-mainnet.quiknode.pro",
-      "https://480.rpc.thirdweb.com"
+      "https://worldchain.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -1863,6 +1847,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1881,6 +1867,8 @@
       "decimals": 18,
       "symbol": "CAMP"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1899,6 +1887,8 @@
       "decimals": 18,
       "symbol": "BXN"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "500": {
@@ -1913,6 +1903,8 @@
       "decimals": 18,
       "symbol": "CAM"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "520": {
@@ -1921,14 +1913,16 @@
     "name": "xt",
     "rpcUrls": [
       "https://datarpc2.xsc.pub",
-      "https://datarpc1.xsc.pub",
-      "https://datarpc3.xsc.pub"
+      "https://datarpc3.xsc.pub",
+      "https://datarpc1.xsc.pub"
     ],
     "nativeCurrency": {
       "name": "XT Smart Chain Native Token",
       "decimals": 18,
       "symbol": "XT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -1947,6 +1941,8 @@
       "decimals": 18,
       "symbol": "PUNDAI"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "545": {
@@ -1963,6 +1959,8 @@
       "decimals": 18,
       "symbol": "FLOW"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0xf6BBdC1fD89E554639D7A683909338802B05F160",
       "relayerLib": "0x3a4EA7fd0CeA70a4B2Cf72c5AC966225C98eE48d",
@@ -1974,14 +1972,16 @@
     "chainSelector": 550,
     "name": "river",
     "rpcUrls": [
-      "https://mainnet.rpc.river.build",
-      "https://towns-mainnet.calderachain.xyz/http"
+      "https://towns-mainnet.calderachain.xyz/http",
+      "https://mainnet.rpc.river.build"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2000,6 +2000,7 @@
       "decimals": 18,
       "symbol": "DOGE"
     },
+    "getLogsBlockDepth": 500000,
     "deployments": {}
   },
   "592": {
@@ -2009,11 +2010,9 @@
     "chainSelector": 592,
     "name": "astar",
     "rpcUrls": [
-      "https://1rpc.io/astr",
       "https://astar.public.curie.radiumblock.co/ws",
-      "https://evm.astar.network",
-      "https://astar.api.onfinality.io/public",
-      "https://astar.public.curie.radiumblock.co/http"
+      "https://astar.public.curie.radiumblock.co/http",
+      "https://evm.astar.network"
     ],
     "nativeCurrency": {
       "name": "Astar",
@@ -2021,6 +2020,8 @@
       "symbol": "ASTR"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2039,6 +2040,8 @@
       "decimals": 18,
       "symbol": "GLQ"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x62b7cdde0f115666f8ab18b4c007545ab0c1563c",
       "relayerLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
@@ -2057,6 +2060,8 @@
       "decimals": 18,
       "symbol": "ACE"
     },
+    "getLogsBlockDepth": 299902,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2075,6 +2080,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2114,6 +2121,8 @@
       "decimals": 18,
       "symbol": "FLOW"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 50,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2132,6 +2141,8 @@
       "decimals": 18,
       "symbol": "ACA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 27,
     "deployments": {}
   },
   "813": {
@@ -2139,19 +2150,21 @@
     "chainSelector": 813,
     "name": "meer",
     "rpcUrls": [
-      "https://qng.rpc.qitmeer.io",
       "https://rpc.dimai.ai",
-      "https://rpc.woowow.io",
+      "https://qng.rpc.qitmeer.io",
       "https://evm-dataseed1.meerscan.io",
       "https://evm-dataseed.meerscan.com",
+      "https://evm-dataseed2.meerscan.io",
       "https://evm-dataseed3.meerscan.io",
-      "https://evm-dataseed2.meerscan.io"
+      "https://rpc.woowow.io"
     ],
     "nativeCurrency": {
       "name": "Qitmeer",
       "decimals": 18,
       "symbol": "MEER"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2170,6 +2183,8 @@
       "decimals": 18,
       "symbol": "CLO"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "841": {
@@ -2184,6 +2199,8 @@
       "decimals": 18,
       "symbol": "TARA"
     },
+    "getLogsBlockDepth": 29921,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "888": {
@@ -2191,14 +2208,16 @@
     "chainSelector": 888,
     "name": "wan",
     "rpcUrls": [
-      "https://gwan2-ssl.wandevs.org",
-      "https://gwan-ssl.wandevs.org:56891"
+      "https://gwan-ssl.wandevs.org:56891",
+      "https://gwan2-ssl.wandevs.org"
     ],
     "nativeCurrency": {
       "name": "Wancoin",
       "decimals": 18,
       "symbol": "WAN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "919": {
@@ -2208,8 +2227,8 @@
     "chainSelector": 919,
     "name": "modeTestnet",
     "rpcUrls": [
-      "https://mode-testnet.drpc.org",
-      "https://sepolia.mode.network"
+      "https://sepolia.mode.network",
+      "https://mode-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -2217,6 +2236,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "943": {
@@ -2226,15 +2247,17 @@
     "chainSelector": 943,
     "name": "pulsechainTestnet",
     "rpcUrls": [
-      "https://pulsechain-testnet-rpc.publicnode.com",
+      "https://rpc.v4.testnet.pulsechain.com",
       "https://rpc-testnet-pulsechain.g4mm4.io",
-      "https://rpc.v4.testnet.pulsechain.com"
+      "https://pulsechain-testnet-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "V4 Pulse",
       "decimals": 18,
       "symbol": "v4PLS"
     },
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -2246,14 +2269,16 @@
     "chainSelector": 964,
     "name": "subtensorevm",
     "rpcUrls": [
-      "https://bittensor-lite-public.nodies.app",
-      "https://lite.chain.opentensor.ai"
+      "https://lite.chain.opentensor.ai",
+      "https://bittensor-lite-public.nodies.app"
     ],
     "nativeCurrency": {
       "name": "TAO",
       "decimals": 18,
       "symbol": "TAO"
     },
+    "getLogsBlockDepth": 493,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8"
     }
@@ -2272,6 +2297,8 @@
       "decimals": 18,
       "symbol": "GUSDT"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2290,6 +2317,8 @@
       "decimals": 18,
       "symbol": "WETH"
     },
+    "getLogsBlockDepth": 137304,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "998": {
@@ -2300,14 +2329,15 @@
     "name": "hyperevmTestnet",
     "rpcUrls": [
       "https://rpcs.chain.link/hyperevm/testnet",
-      "https://rpc.hyperliquid-testnet.xyz/evm",
-      "https://spectrum-01.simplystaking.xyz/hyperliquid-tn-rpc/evm"
+      "https://spectrum-01.simplystaking.xyz/hyperliquid-tn-rpc/evm",
+      "https://rpc.hyperliquid-testnet.xyz/evm"
     ],
     "nativeCurrency": {
       "name": "HYPE",
       "decimals": 18,
       "symbol": "HYPE"
     },
+    "getLogsBlockDepth": 100,
     "deployments": {}
   },
   "999": {
@@ -2317,20 +2347,20 @@
     "chainSelector": 999,
     "name": "hyperevm",
     "rpcUrls": [
-      "https://hyperliquid.drpc.org",
       "https://rpc.hyperlend.finance",
-      "https://hyperliquid.api.onfinality.io/evm/public",
       "https://hyperliquid-json-rpc.stakely.io",
-      "https://rpc.hyperliquid.xyz/evm",
-      "https://gwan-ssl.wandevs.org:46891",
+      "https://rpc.hypurrscan.io",
       "https://hyperliquid.rpc.blxrbdn.com",
-      "https://rpc.hypurrscan.io"
+      "https://rpc.countzero.xyz/evm",
+      "https://hyperliquid.drpc.org"
     ],
     "nativeCurrency": {
       "name": "HYPE",
       "decimals": 18,
       "symbol": "HYPE"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "1001": {
@@ -2340,16 +2370,16 @@
     "chainSelector": 1001,
     "name": "kaiaKairos",
     "rpcUrls": [
-      "https://rpc.ankr.com/kaia_testnet",
-      "https://klaytn-baobab.drpc.org",
       "https://public-en-kairos.node.kaia.io",
-      "https://kaia-kairos.blockpi.network/v1/rpc/public"
+      "https://responsive-green-emerald.kaia-kairos.quiknode.pro"
     ],
     "nativeCurrency": {
       "name": "KAIA",
       "decimals": 18,
       "symbol": "KAIA"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 5,
     "deployments": {}
   },
   "1029": {
@@ -2364,6 +2394,8 @@
       "decimals": 18,
       "symbol": "BTT"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1030": {
@@ -2371,15 +2403,17 @@
     "chainSelector": 1030,
     "name": "conflux",
     "rpcUrls": [
+      "https://evm.confluxrpc.com",
       "https://conflux-espace-public.unifra.io",
-      "https://conflux-espace.blockpi.network/v1/rpc/public",
-      "https://evm.confluxrpc.com"
+      "https://conflux-espace.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "CFX",
       "decimals": 18,
       "symbol": "CFX"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 5,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2398,6 +2432,8 @@
       "decimals": 18,
       "symbol": "OGPU"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2411,19 +2447,18 @@
     "chainSelector": 1088,
     "name": "metis",
     "rpcUrls": [
-      "https://metis-andromeda.gateway.tenderly.co",
-      "https://metis-rpc.publicnode.com",
-      "https://metis-public.nodies.app",
-      "https://metis.drpc.org",
       "https://andromeda.metis.io/?owner=1088",
-      "https://metis.api.onfinality.io/public",
-      "https://metis-andromeda.rpc.thirdweb.com"
+      "https://metis-rpc.publicnode.com",
+      "https://metis-andromeda.rpc.thirdweb.com",
+      "https://metis-andromeda.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Metis",
       "decimals": 18,
       "symbol": "METIS"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2435,18 +2470,19 @@
     "chainSelector": 1100,
     "name": "dymension",
     "rpcUrls": [
-      "https://dymension-evm-rpc.publicnode.com",
-      "https://dymension.drpc.org",
-      "https://dymension.api.onfinality.io/public",
       "https://evm.rpc.mainnet.dymension.aviaone.com",
+      "https://dymension-evm-rpc.publicnode.com",
       "https://jsonrpc.dymension.nodestake.org",
-      "https://rollapp.jrpc.cumulo.com.es"
+      "https://rollapp.jrpc.cumulo.com.es",
+      "https://dymension.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "DYM",
       "decimals": 18,
       "symbol": "DYM"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 60,
     "deployments": {}
   },
   "1101": {
@@ -2456,17 +2492,16 @@
     "chainSelector": 1101,
     "name": "polygonZkevm",
     "rpcUrls": [
-      "https://1rpc.io/polygon/zkevm",
-      "https://polygon-zkevm.drpc.org",
-      "https://zkevm-rpc.com",
       "https://rpc.sentio.xyz/polygon-zkevm",
-      "https://polygon-zkevm-public.nodies.app"
+      "https://zkevm-rpc.com"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -2480,14 +2515,16 @@
     "chainSelector": 1111,
     "name": "wemix",
     "rpcUrls": [
-      "https://wemix.drpc.org",
-      "https://api.wemix.com"
+      "https://api.wemix.com",
+      "https://wemix.drpc.org"
     ],
     "nativeCurrency": {
       "name": "WEMIX",
       "decimals": 18,
       "symbol": "WEMIX"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2501,14 +2538,16 @@
     "chainSelector": 1112,
     "name": "wemixTestnet",
     "rpcUrls": [
-      "https://wemix-testnet.drpc.org",
-      "https://api.test.wemix.com"
+      "https://api.test.wemix.com",
+      "https://wemix-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "WEMIX",
       "decimals": 18,
       "symbol": "tWEMIX"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "1114": {
@@ -2526,6 +2565,8 @@
       "symbol": "tCORE2"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -2539,11 +2580,9 @@
     "chainSelector": 1116,
     "name": "core",
     "rpcUrls": [
-      "https://rpc.ankr.com/core",
-      "https://1rpc.io/core",
-      "https://core.drpc.org",
+      "https://rpc-core.icecreamswap.com",
       "https://rpc.coredao.org",
-      "https://rpc-core.icecreamswap.com"
+      "https://core.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Core Blockchain Native Token",
@@ -2551,28 +2590,13 @@
       "symbol": "CORE"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
-  },
-  "1123": {
-    "id": "1123",
-    "finalityTagEnabled": true,
-    "isFinalitySupported": true,
-    "chainSelector": 1123,
-    "name": "b2Testnet",
-    "rpcUrls": [
-      "https://rpc.ankr.com/b2_testnet"
-    ],
-    "nativeCurrency": {
-      "name": "Bitcoin",
-      "decimals": 18,
-      "symbol": "BTC"
-    },
-    "minBlockConfirmations": 3,
-    "deployments": {}
   },
   "1130": {
     "id": "1130",
@@ -2587,6 +2611,8 @@
       "decimals": 18,
       "symbol": "DFI"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1131": {
@@ -2602,6 +2628,8 @@
       "decimals": 18,
       "symbol": "DFI"
     },
+    "getLogsBlockDepth": 10,
+    "batchRequestLimit": 66,
     "deployments": {}
   },
   "1135": {
@@ -2611,9 +2639,9 @@
     "chainSelector": 1135,
     "name": "lisk",
     "rpcUrls": [
+      "https://rpc.api.lisk.com",
       "https://lisk.gateway.tenderly.co",
-      "https://lisk.drpc.org",
-      "https://rpc.api.lisk.com"
+      "https://lisk.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -2621,6 +2649,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2639,6 +2669,7 @@
       "decimals": 18,
       "symbol": "LTH"
     },
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1234": {
@@ -2653,6 +2684,8 @@
       "decimals": 18,
       "symbol": "FITFI"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2664,13 +2697,16 @@
     "chainSelector": 1270,
     "name": "irysTestnet",
     "rpcUrls": [
-      "https://testnet-rpc.irys.xyz/v1/execution-rpc"
+      "https://testnet-rpc.irys.xyz/v1/execution-rpc",
+      "https://testnet-rpc-2.irys.xyz/v1/execution-rpc"
     ],
     "nativeCurrency": {
       "name": "mIRYS",
       "decimals": 18,
       "symbol": "mIRYS"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1284": {
@@ -2680,13 +2716,10 @@
     "chainSelector": 1284,
     "name": "moonbeam",
     "rpcUrls": [
-      "https://1rpc.io/glmr",
-      "https://rpc.api.moonbeam.network",
       "https://moonbeam-rpc.publicnode.com",
-      "https://moonbeam.drpc.org",
+      "https://rpc.api.moonbeam.network",
       "https://moonbeam.api.onfinality.io/public",
-      "https://moonbeam.public.curie.radiumblock.co/ws",
-      "https://moonbeam.unitedbloc.com",
+      "https://moonbeam.drpc.org",
       "https://moonbeam.api.pocket.network"
     ],
     "nativeCurrency": {
@@ -2694,6 +2727,8 @@
       "decimals": 18,
       "symbol": "GLMR"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -2706,17 +2741,16 @@
     "name": "moonriver",
     "rpcUrls": [
       "https://moonriver-rpc.publicnode.com",
-      "https://rpc.api.moonriver.moonbeam.network",
-      "https://moonriver.drpc.org",
       "https://moonriver.api.onfinality.io/public",
-      "https://moonriver.unitedbloc.com",
-      "https://moonriver.api.pocket.network"
+      "https://rpc.api.moonriver.moonbeam.network"
     ],
     "nativeCurrency": {
       "name": "Moonriver",
       "decimals": 18,
       "symbol": "MOVR"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -2730,8 +2764,6 @@
     "chainSelector": 1287,
     "name": "moonbeamTestnet",
     "rpcUrls": [
-      "https://moonbase-alpha.drpc.org",
-      "https://rpc.api.moonbase.moonbeam.network",
       "https://moonbase.unitedbloc.com",
       "https://moonbeam-alpha.api.onfinality.io/public"
     ],
@@ -2740,6 +2772,8 @@
       "decimals": 18,
       "symbol": "DEV"
     },
+    "getLogsBlockDepth": 550,
+    "batchRequestLimit": 18,
     "deployments": {}
   },
   "1300": {
@@ -2754,6 +2788,8 @@
       "decimals": 18,
       "symbol": "GLUE"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1301": {
@@ -2765,7 +2801,6 @@
     "rpcUrls": [
       "https://unichain-sepolia-rpc.publicnode.com",
       "https://sepolia.unichain.org",
-      "https://unichain-sepolia.api.onfinality.io/public",
       "https://unichain-sepolia.drpc.org"
     ],
     "nativeCurrency": {
@@ -2774,6 +2809,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -2785,21 +2822,22 @@
     "chainSelector": 1315,
     "name": "storyTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/story_aeneid_testnet",
-      "https://aeneid.storyrpc.io",
-      "https://story-aeneid-rpc.spidernode.net",
       "https://evmrpc-t.story.nodestake.org",
+      "https://lightnode-json-rpc-story.grandvalleys.com",
       "https://aeneid-evm-rpc.krews.xyz",
       "https://story-testnet-evm.itrocket.net",
-      "https://evm-rpc.story.testnet.node75.org",
-      "https://lightnode-json-rpc-story.grandvalleys.com",
-      "https://json-rpc.story-aeneid.cumulo.me"
+      "https://story-aeneid-rpc.spidernode.net",
+      "https://json-rpc.story-aeneid.cumulo.me",
+      "https://aeneid.storyrpc.io",
+      "https://evm-rpc.story.testnet.node75.org"
     ],
     "nativeCurrency": {
       "name": "IP Token",
       "decimals": 18,
       "symbol": "IP"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1328": {
@@ -2809,15 +2847,16 @@
     "chainSelector": 1328,
     "name": "seiTestnet",
     "rpcUrls": [
-      "https://sei-testnet-public.nodies.app",
       "https://evm-rpc-testnet.sei-apis.com",
-      "https://sei-testnet.drpc.org"
+      "https://sei-testnet-public.nodies.app"
     ],
     "nativeCurrency": {
       "name": "Sei",
       "decimals": 18,
       "symbol": "SEI"
     },
+    "getLogsBlockDepth": 493,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x122947C8c3529DCa006aeE65832D3C3fED6bf3C0",
       "relayerLib": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
@@ -2831,17 +2870,17 @@
     "chainSelector": 1329,
     "name": "sei",
     "rpcUrls": [
-      "https://sei-public.nodies.app",
       "https://evm-rpc.sei-apis.com",
       "https://sei-evm-rpc.stakeme.pro",
-      "https://sei.drpc.org",
-      "https://sei.api.pocket.network"
+      "https://sei-public.nodies.app"
     ],
     "nativeCurrency": {
       "name": "Sei",
       "decimals": 18,
       "symbol": "SEI"
     },
+    "getLogsBlockDepth": 268,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2861,6 +2900,8 @@
       "decimals": 18,
       "symbol": "ELY"
     },
+    "getLogsBlockDepth": 27578,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2879,6 +2920,8 @@
       "decimals": 18,
       "symbol": "VFY"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "1424": {
@@ -2893,6 +2936,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 156,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2911,6 +2956,8 @@
       "decimals": 18,
       "symbol": "ONI"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2931,6 +2978,8 @@
       "decimals": 18,
       "symbol": "INJ"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1480": {
@@ -2948,6 +2997,8 @@
       "symbol": "VANA"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 25,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -2967,6 +3018,8 @@
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1514": {
@@ -2974,24 +3027,26 @@
     "chainSelector": 1514,
     "name": "story",
     "rpcUrls": [
-      "https://rpc.ankr.com/story_mainnet",
-      "https://story-evm-rpc.spidernode.net",
       "https://mainnet.storyrpc.io",
+      "https://evmrpc.story.nodestake.org",
+      "https://lightnode-json-rpc-mainnet-story.grandvalleys.com",
+      "https://evm-rpc-archive.story.node75.org",
       "https://story-evm-rpc.krews.xyz",
       "https://evm-rpc.story.silentvalidator.com",
-      "https://evm-rpc-archive.story.node75.org",
-      "https://evmrpc.story.nodestake.org",
-      "https://story-mainnet-evm.itrocket.net",
       "https://rpc.evm.mainnet.story.despreadlabs.io",
-      "https://lightnode-json-rpc-mainnet-story.grandvalleys.com",
-      "https://evm-rpc.story.mainnet.dteam.tech",
-      "https://infra.originstake.com/story/evm"
+      "https://story-mainnet-evm.itrocket.net",
+      "https://story-json-rpc.stakely.io",
+      "https://evm.story.cumulo.me",
+      "https://infra.originstake.com/story/evm",
+      "https://evm-rpc.story.mainnet.dteam.tech"
     ],
     "nativeCurrency": {
       "name": "IP Token",
       "decimals": 18,
       "symbol": "IP"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3003,7 +3058,6 @@
     "chainSelector": 1559,
     "name": "tenet",
     "rpcUrls": [
-      "https://rpc.ankr.com/tenet_evm",
       "https://tenet-evm.publicnode.com",
       "https://rpc.tenet.org"
     ],
@@ -3012,6 +3066,7 @@
       "decimals": 18,
       "symbol": "TENET"
     },
+    "getLogsBlockDepth": 10000,
     "deployments": {}
   },
   "1597": {
@@ -3026,6 +3081,8 @@
       "decimals": 18,
       "symbol": "REACT"
     },
+    "getLogsBlockDepth": 29921,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3044,6 +3101,8 @@
       "decimals": 18,
       "symbol": "OPEN"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "1625": {
@@ -3053,8 +3112,8 @@
     "chainSelector": 1625,
     "name": "gravity",
     "rpcUrls": [
-      "https://rpc.ankr.com/gravity",
-      "https://rpc.gravity.xyz"
+      "https://rpc.gravity.xyz",
+      "https://rpc.ankr.com/gravity"
     ],
     "nativeCurrency": {
       "name": "Gravity",
@@ -3080,6 +3139,8 @@
       "decimals": 18,
       "symbol": "PROS"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 794,
     "deployments": {}
   },
   "1689": {
@@ -3094,6 +3155,8 @@
       "decimals": 18,
       "symbol": "NERO"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3112,6 +3175,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 18,
     "deployments": {
       "router": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
       "relayerLib": "0x0e4ad6e7aa9930aae8ce032ceb90b47e51562e81",
@@ -3164,14 +3229,15 @@
     "name": "soneium",
     "rpcUrls": [
       "https://rpc.soneium.org",
-      "https://soneium.drpc.org",
-      "https://rpc.sentio.xyz/soneium-mainnet"
+      "https://rpc.sentio.xyz/soneium-mainnet",
+      "https://soneium.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -3190,6 +3256,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3201,7 +3269,6 @@
     "chainSelector": 1923,
     "name": "swellchain",
     "rpcUrls": [
-      "https://rpc.ankr.com/swell",
       "https://rpc.sentio.xyz/swell-mainnet",
       "https://swell-mainnet.alt.technology"
     ],
@@ -3210,6 +3277,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3221,15 +3290,16 @@
     "chainSelector": 1924,
     "name": "swellchainTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/swell_sepolia",
-      "https://swell-testnet.drpc.org",
-      "https://swell-testnet.alt.technology"
+      "https://swell-testnet.alt.technology",
+      "https://swell-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "1946": {
@@ -3239,8 +3309,8 @@
     "chainSelector": 1946,
     "name": "soneiumMinato",
     "rpcUrls": [
-      "https://rpc.minato.soneium.org",
       "https://rpc.sentio.xyz/soneium-minato",
+      "https://rpc.minato.soneium.org",
       "https://soneium-minato.drpc.org"
     ],
     "nativeCurrency": {
@@ -3248,6 +3318,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "1993": {
@@ -3262,25 +3334,9 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
-  },
-  "1996": {
-    "id": "1996",
-    "chainSelector": 1996,
-    "name": "sanko",
-    "rpcUrls": [
-      "https://mainnet.sanko.xyz"
-    ],
-    "nativeCurrency": {
-      "name": "DMT",
-      "decimals": 18,
-      "symbol": "DMT"
-    },
-    "deployments": {
-      "router": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
-      "relayerLib": "0x00ce0fd747e7d4c27bdce653c3ed531ef906deff",
-      "validatorLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c"
-    }
   },
   "2000": {
     "id": "2000",
@@ -3288,17 +3344,19 @@
     "name": "dogechain",
     "rpcUrls": [
       "https://rpc.dogechain.dog",
+      "https://rpc-us.dogechain.dog",
       "https://rpc02-sg.dogechain.dog",
-      "https://rpc01-sg.dogechain.dog",
       "https://rpc03-sg.dogechain.dog",
       "https://rpc-sg.dogechain.dog",
-      "https://rpc-us.dogechain.dog"
+      "https://rpc01-sg.dogechain.dog"
     ],
     "nativeCurrency": {
       "name": "Dogecoin",
       "decimals": 18,
       "symbol": "DOGE"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 10,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3312,11 +3370,8 @@
     "chainSelector": 2020,
     "name": "ronin",
     "rpcUrls": [
-      "https://api-ronin-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://ronin.drpc.org",
       "https://ronin.lgns.net/rpc",
-      "https://api.roninchain.com/rpc",
-      "https://api-gateway.skymavis.com/rpc?apikey=9aqYLBbxSC6LROynQJBvKkEIsioqwHmr"
+      "https://ronin.drpc.org"
     ],
     "nativeCurrency": {
       "name": "RON",
@@ -3324,6 +3379,8 @@
       "symbol": "RON"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3342,6 +3399,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 153,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3360,6 +3419,8 @@
       "decimals": 18,
       "symbol": "VANRY"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "2048": {
@@ -3374,6 +3435,8 @@
       "decimals": 18,
       "symbol": "STOS"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3392,6 +3455,8 @@
       "decimals": 18,
       "symbol": "FRA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "2201": {
@@ -3408,6 +3473,8 @@
       "decimals": 18,
       "symbol": "gUSDT"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "2221": {
@@ -3417,14 +3484,16 @@
     "chainSelector": 2221,
     "name": "kavaTestnet",
     "rpcUrls": [
-      "https://kava-testnet.drpc.org",
-      "https://evm.testnet.kava.io"
+      "https://evm.testnet.kava.io",
+      "https://kava-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Kava",
       "decimals": 18,
       "symbol": "KAVA"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "2222": {
@@ -3434,14 +3503,10 @@
     "chainSelector": 2222,
     "name": "kava",
     "rpcUrls": [
-      "https://rpc.ankr.com/kava_evm",
       "https://kava-evm-rpc.publicnode.com",
-      "https://kava.drpc.org",
       "https://evm.kava-rpc.com",
-      "https://kava.api.pocket.network",
-      "https://kava-public.nodies.app",
       "https://evm.kava.io",
-      "https://kava.api.onfinality.io/public"
+      "https://kava.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Kava",
@@ -3449,6 +3514,8 @@
       "symbol": "KAVA"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 2812,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3460,15 +3527,17 @@
     "chainSelector": 2310,
     "name": "cratd2c",
     "rpcUrls": [
-      "https://node1.cratd2csmartchain.io",
       "https://node2.cratd2csmartchain.io",
-      "https://node3.cratd2csmartchain.io"
+      "https://node3.cratd2csmartchain.io",
+      "https://node1.cratd2csmartchain.io"
     ],
     "nativeCurrency": {
       "name": "CRATD2C",
       "decimals": 18,
       "symbol": "CRAT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3480,15 +3549,16 @@
     "chainSelector": 2345,
     "name": "goat",
     "rpcUrls": [
-      "https://rpc.ankr.com/goat_mainnet",
-      "https://goat-mainnet-alpha.drpc.org",
-      "https://rpc.goat.network"
+      "https://rpc.goat.network",
+      "https://goat-mainnet-alpha.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3508,6 +3578,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x33b8e353a16dfdb0566970e39cfebbd0f4d83195",
@@ -3526,6 +3598,8 @@
       "decimals": 18,
       "symbol": "KITE"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "2391": {
@@ -3555,6 +3629,8 @@
       "decimals": 18,
       "symbol": "ELON"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3566,7 +3642,6 @@
     "chainSelector": 2440,
     "name": "atla",
     "rpcUrls": [
-      "https://rpc.ankr.com/atleta_mainnet",
       "https://rpc.atleta.mainnet.dteam.tech",
       "https://rpc.mainnet.atleta.network"
     ],
@@ -3575,6 +3650,8 @@
       "decimals": 18,
       "symbol": "ATLA"
     },
+    "getLogsBlockDepth": 25000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3588,28 +3665,16 @@
     "chainSelector": 2442,
     "name": "polygonZkevmCardona",
     "rpcUrls": [
-      "https://polygon-zkevm-cardona.drpc.org",
-      "https://rpc.cardona.zkevm-rpc.com"
+      "https://rpc.cardona.zkevm-rpc.com",
+      "https://polygon-zkevm-cardona.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
-    "deployments": {}
-  },
-  "2525": {
-    "id": "2525",
-    "chainSelector": 2525,
-    "name": "inevm",
-    "rpcUrls": [
-      "https://mainnet.rpc.inevm.com/http"
-    ],
-    "nativeCurrency": {
-      "name": "Injective",
-      "decimals": 18,
-      "symbol": "INJ"
-    },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "2649": {
@@ -3624,6 +3689,8 @@
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3638,8 +3705,8 @@
     "name": "abstract",
     "rpcUrls": [
       "https://api.mainnet.abs.xyz",
-      "https://abstract.drpc.org",
-      "https://abstract.api.onfinality.io/public"
+      "https://abstract.api.onfinality.io/public",
+      "https://abstract.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -3647,6 +3714,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3665,6 +3734,8 @@
       "decimals": 18,
       "symbol": "APTM"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3676,14 +3747,16 @@
     "chainSelector": 2818,
     "name": "morph",
     "rpcUrls": [
-      "https://rpc-quicknode.morphl2.io",
-      "https://rpc.morphl2.io"
+      "https://rpc.morphl2.io",
+      "https://rpc-quicknode.morphl2.io"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 10,
     "deployments": {}
   },
   "2999": {
@@ -3700,6 +3773,8 @@
       "decimals": 18,
       "symbol": "BTY"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3718,6 +3793,8 @@
       "decimals": 18,
       "symbol": "CAU"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "3011": {
@@ -3732,6 +3809,8 @@
       "decimals": 18,
       "symbol": "3ULL"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "3068": {
@@ -3739,14 +3818,16 @@
     "chainSelector": 3068,
     "name": "bfc",
     "rpcUrls": [
-      "https://public-01.mainnet.bifrostnetwork.com/rpc",
-      "https://public-02.mainnet.bifrostnetwork.com/rpc"
+      "https://public-02.mainnet.bifrostnetwork.com/rpc",
+      "https://public-01.mainnet.bifrostnetwork.com/rpc"
     ],
     "nativeCurrency": {
       "name": "Bifrost",
       "decimals": 18,
       "symbol": "BFC"
     },
+    "getLogsBlockDepth": 31171,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3758,13 +3839,16 @@
     "chainSelector": 3282,
     "name": "irysMainnetBeta",
     "rpcUrls": [
-      "https://mainnet-beta-rpc.irys.xyz/v1/execution-rpc"
+      "https://mainnet-beta-rpc.irys.xyz/v1/execution-rpc",
+      "https://mainnet-beta-rpc-2.irys.xyz/v1/execution-rpc"
     ],
     "nativeCurrency": {
       "name": "Irys",
       "decimals": 18,
       "symbol": "IRYS"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3776,8 +3860,8 @@
     "chainSelector": 3338,
     "name": "peaq",
     "rpcUrls": [
-      "https://quicknode2.peaq.xyz",
       "https://quicknode1.peaq.xyz",
+      "https://quicknode2.peaq.xyz",
       "https://quicknode3.peaq.xyz"
     ],
     "nativeCurrency": {
@@ -3785,6 +3869,8 @@
       "decimals": 18,
       "symbol": "PEAQ"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3798,8 +3884,8 @@
     "chainSelector": 3636,
     "name": "botanixTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/botanix_testnet",
-      "https://node.botanixlabs.dev"
+      "https://node.botanixlabs.dev",
+      "https://rpc.ankr.com/botanix_testnet"
     ],
     "nativeCurrency": {
       "name": "Botanix",
@@ -3816,8 +3902,8 @@
     "chainSelector": 3637,
     "name": "botanix",
     "rpcUrls": [
-      "https://rpc.ankr.com/botanix_mainnet",
-      "https://rpc.botanixlabs.com"
+      "https://rpc.botanixlabs.com",
+      "https://rpc.ankr.com/botanix_mainnet"
     ],
     "nativeCurrency": {
       "name": "Botanix",
@@ -3837,6 +3923,7 @@
     "name": "alvey",
     "rpcUrls": [
       "https://elves-core2.alvey.io",
+      "https://elves-core1.alvey.io",
       "https://elves-core3.alvey.io"
     ],
     "nativeCurrency": {
@@ -3844,6 +3931,8 @@
       "decimals": 18,
       "symbol": "ALV"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "4002": {
@@ -3851,14 +3940,16 @@
     "chainSelector": 4002,
     "name": "fantomTestnet",
     "rpcUrls": [
-      "https://fantom-testnet.drpc.org",
-      "https://rpc.testnet.fantom.network"
+      "https://rpc.testnet.fantom.network",
+      "https://fantom-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Fantom",
       "decimals": 18,
       "symbol": "FTM"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "4114": {
@@ -3873,6 +3964,8 @@
       "decimals": 18,
       "symbol": "cBTC"
     },
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3891,6 +3984,8 @@
       "decimals": 18,
       "symbol": "XFI"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "4158": {
@@ -3905,24 +4000,8 @@
       "decimals": 18,
       "symbol": "XFI"
     },
-    "deployments": {
-      "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
-      "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
-      "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
-    }
-  },
-  "4162": {
-    "id": "4162",
-    "chainSelector": 4162,
-    "name": "sxr",
-    "rpcUrls": [
-      "https://rpc.sx-rollup.gelato.digital"
-    ],
-    "nativeCurrency": {
-      "name": "SX Network",
-      "decimals": 18,
-      "symbol": "SX"
-    },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3936,15 +4015,16 @@
     "chainSelector": 4200,
     "name": "merlin",
     "rpcUrls": [
-      "https://merlin.drpc.org",
-      "https://merlin.blockpi.network/v1/rpc/public",
-      "https://rpc.merlinchain.io"
+      "https://rpc.merlinchain.io",
+      "https://merlin.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "BTC",
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -3967,6 +4047,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "4326": {
@@ -3974,14 +4056,17 @@
     "chainSelector": 4326,
     "name": "megaeth",
     "rpcUrls": [
+      "https://rpc-megaeth-mainnet.globalstake.io",
       "https://mainnet.megaeth.com/rpc",
-      "https://rpc-megaeth-mainnet.globalstake.io"
+      "https://megaeth.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -3993,14 +4078,16 @@
     "chainSelector": 4337,
     "name": "beam",
     "rpcUrls": [
-      "https://subnets.avax.network/beam/mainnet/rpc",
-      "https://build.onbeam.com/rpc"
+      "https://build.onbeam.com/rpc",
+      "https://subnets.avax.network/beam/mainnet/rpc"
     ],
     "nativeCurrency": {
       "name": "Beam",
       "decimals": 18,
       "symbol": "BEAM"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 25,
     "deployments": {}
   },
   "4352": {
@@ -4015,6 +4102,8 @@
       "decimals": 18,
       "symbol": "M"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "4460": {
@@ -4029,6 +4118,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {}
   },
   "4488": {
@@ -4043,6 +4134,8 @@
       "decimals": 18,
       "symbol": "HYDRA"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "4545": {
@@ -4057,6 +4150,8 @@
       "decimals": 18,
       "symbol": "EMYC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "4689": {
@@ -4064,10 +4159,9 @@
     "chainSelector": 4689,
     "name": "ioTex",
     "rpcUrls": [
-      "https://iotex.api.onfinality.io/public",
-      "https://babel-api.fastblocks.io",
-      "https://babel-api.mainnet.iotex.io",
       "https://babel-api.mainnet.iotex.one",
+      "https://babel-api.mainnet.iotex.io",
+      "https://babel-api.fastblocks.io",
       "https://iotex-network.rpc.thirdweb.com"
     ],
     "nativeCurrency": {
@@ -4075,6 +4169,7 @@
       "decimals": 18,
       "symbol": "IOTX"
     },
+    "getLogsBlockDepth": 1000,
     "deployments": {
       "router": "0x62B7CdDe0f115666F8AB18b4C007545aB0C1563C",
       "relayerLib": "0x0E4ad6e7aa9930aAe8Ce032ceB90b47e51562E81",
@@ -4093,6 +4188,8 @@
       "decimals": 18,
       "symbol": "IOTX"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "4801": {
@@ -4103,9 +4200,7 @@
     "name": "worldchainTestnet",
     "rpcUrls": [
       "https://worldchain-sepolia.g.alchemy.com/public",
-      "https://worldchain-sepolia.drpc.org",
-      "https://worldchain-sepolia.gateway.tenderly.co",
-      "https://4801.rpc.thirdweb.com"
+      "https://worldchain-sepolia.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -4113,6 +4208,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0xea73Bc856EdD980912Fb8FE4CFC7bba52D980F6A",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -4126,18 +4223,18 @@
     "chainSelector": 5000,
     "name": "mantle",
     "rpcUrls": [
-      "https://1rpc.io/mantle",
-      "https://mantle-public.nodies.app",
       "https://mantle-rpc.publicnode.com",
-      "https://mantle.drpc.org",
       "https://rpc.mantle.xyz",
-      "https://mantle.api.onfinality.io/public"
+      "https://mantle.api.onfinality.io/public",
+      "https://mantle.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Mantle",
       "decimals": 18,
       "symbol": "MNT"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4151,14 +4248,16 @@
     "chainSelector": 5003,
     "name": "mantleSepolia",
     "rpcUrls": [
-      "https://mantle-sepolia.drpc.org",
-      "https://rpc.sepolia.mantle.xyz"
+      "https://rpc.sepolia.mantle.xyz",
+      "https://mantle-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "MNT",
       "decimals": 18,
       "symbol": "MNT"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "5031": {
@@ -4166,15 +4265,16 @@
     "chainSelector": 5031,
     "name": "somniaNetwork",
     "rpcUrls": [
-      "https://rpc.ankr.com/somnia_mainnet",
-      "https://somnia-rpc.publicnode.com",
-      "https://api.infra.mainnet.somnia.network"
+      "https://api.infra.mainnet.somnia.network",
+      "https://somnia-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "Somnia Mainnet",
       "decimals": 18,
       "symbol": "SOMI"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4193,6 +4293,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4211,6 +4313,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "5165": {
@@ -4218,7 +4322,6 @@
     "chainSelector": 5165,
     "name": "bahamut",
     "rpcUrls": [
-      "https://rpc.ankr.com/bahamut",
       "https://rpc1.bahamut.io",
       "https://rpc2.bahamut.io"
     ],
@@ -4227,6 +4330,8 @@
       "decimals": 18,
       "symbol": "FTN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4245,6 +4350,8 @@
       "decimals": 18,
       "symbol": "eHMND"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4256,14 +4363,16 @@
     "chainSelector": 5330,
     "name": "sseed",
     "rpcUrls": [
-      "https://superseed.drpc.org",
-      "https://mainnet.superseed.xyz"
+      "https://mainnet.superseed.xyz",
+      "https://superseed.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4282,11 +4391,29 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
+  },
+  "5464": {
+    "id": "5464",
+    "chainSelector": 5464,
+    "name": "sagaevm",
+    "rpcUrls": [
+      "https://sagaevm.jsonrpc.sagarpc.io"
+    ],
+    "nativeCurrency": {
+      "name": "gas",
+      "decimals": 18,
+      "symbol": "GAS"
+    },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 300,
+    "deployments": {}
   },
   "5545": {
     "id": "5545",
@@ -4301,6 +4428,7 @@
       "decimals": 18,
       "symbol": "TON"
     },
+    "getLogsBlockDepth": 500000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4314,17 +4442,17 @@
     "chainSelector": 5611,
     "name": "opBnbTestnet",
     "rpcUrls": [
+      "https://opbnb-testnet-rpc.bnbchain.org",
       "https://opbnb-testnet-rpc.publicnode.com",
-      "https://opbnb-testnet.drpc.org",
       "https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5",
-      "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3",
-      "https://opbnb-testnet-rpc.bnbchain.org"
+      "https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3"
     ],
     "nativeCurrency": {
       "name": "tBNB",
       "decimals": 18,
       "symbol": "tBNB"
     },
+    "getLogsBlockDepth": 50000,
     "deployments": {}
   },
   "5888": {
@@ -4339,6 +4467,8 @@
       "decimals": 18,
       "symbol": "OM"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4357,6 +4487,8 @@
       "decimals": 18,
       "symbol": "BB"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4375,6 +4507,8 @@
       "decimals": 18,
       "symbol": "STEAMX"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "6322": {
@@ -4389,6 +4523,8 @@
       "decimals": 18,
       "symbol": "AURA"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4407,6 +4543,8 @@
       "decimals": 18,
       "symbol": "NIBI"
     },
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "6911": {
@@ -4421,6 +4559,8 @@
       "decimals": 18,
       "symbol": "NIBI"
     },
+    "getLogsBlockDepth": 9218,
+    "batchRequestLimit": 650,
     "deployments": {}
   },
   "7000": {
@@ -4428,17 +4568,17 @@
     "chainSelector": 7000,
     "name": "zetachainMainnet",
     "rpcUrls": [
-      "https://zetachain-evm.blockpi.network/v1/rpc/public",
-      "https://api-zetachain-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://zeta-chain.drpc.org",
       "https://zetachain-mainnet.g.allthatnode.com/archive/evm",
-      "https://7000.rpc.thirdweb.com"
+      "https://7000.rpc.thirdweb.com",
+      "https://zetachain-evm.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "Zeta",
       "decimals": 18,
       "symbol": "ZETA"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 5,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4457,6 +4597,8 @@
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -4475,6 +4617,8 @@
       "decimals": 18,
       "symbol": "NXRA"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "7332": {
@@ -4496,14 +4640,16 @@
     "chainSelector": 7560,
     "name": "cyber",
     "rpcUrls": [
-      "https://rpc.cyber.co",
-      "https://cyber.alt.technology"
+      "https://cyber.alt.technology",
+      "https://rpc.cyber.co"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4522,6 +4668,8 @@
       "decimals": 18,
       "symbol": "CARR"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4541,6 +4689,8 @@
       "decimals": 18,
       "symbol": "CANTO"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 179,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4559,6 +4709,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4577,6 +4729,8 @@
       "decimals": 18,
       "symbol": "DOS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "8008": {
@@ -4591,6 +4745,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4609,6 +4765,8 @@
       "decimals": 18,
       "symbol": "SHM"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8"
     }
@@ -4620,21 +4778,18 @@
     "chainSelector": 8217,
     "name": "kaia",
     "rpcUrls": [
-      "https://rpc.ankr.com/kaia",
-      "https://1rpc.io/klay",
       "https://go.getblock.io/d7094dbd80ab474ba7042603fe912332",
-      "https://klaytn.drpc.org",
-      "https://kaia.blockpi.network/v1/rpc/public",
-      "https://kaia.api.pocket.network",
-      "https://kaia-public.nodies.app",
       "https://public-en.node.kaia.io",
-      "https://klaytn.api.onfinality.io/public"
+      "https://alpha-hardworking-orb.kaia-mainnet.quiknode.pro",
+      "https://kaia.blockpi.network/v1/rpc/public"
     ],
     "nativeCurrency": {
       "name": "KAIA",
       "decimals": 18,
       "symbol": "KAIA"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 5,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4653,6 +4808,8 @@
       "decimals": 18,
       "symbol": "FUEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 118,
     "deployments": {}
   },
   "8333": {
@@ -4667,6 +4824,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4685,6 +4844,8 @@
       "decimals": 18,
       "symbol": "ZTC"
     },
+    "getLogsBlockDepth": 43437,
+    "batchRequestLimit": 150,
     "deployments": {}
   },
   "8453": {
@@ -4694,29 +4855,22 @@
     "chainSelector": 8453,
     "name": "base",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/base",
-      "https://1rpc.io/base",
       "https://rpc.sentio.xyz/base",
-      "https://base.public.blockpi.network/v1/rpc/public",
-      "https://base.meowrpc.com",
-      "https://base.gateway.tenderly.co",
-      "https://base.lava.build",
       "https://base-mainnet.public.blastapi.io",
-      "https://base-public.nodies.app",
+      "https://base.rpc.blxrbdn.com",
       "https://base-rpc.publicnode.com",
-      "https://base.drpc.org",
-      "https://base.api.pocket.network",
-      "https://base.llamarpc.com",
-      "https://developer-access-mainnet.base.org",
-      "https://mainnet.base.org",
-      "https://base.rpc.subquery.network/public",
-      "https://base.rpc.blxrbdn.com"
+      "https://api-base-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
+      "https://gateway.tenderly.co/public/base",
+      "https://base.gateway.tenderly.co",
+      "https://base.rpc.subquery.network/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x60858bc719c7136996505F35759BB7118321ff6a",
       "relayerLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
@@ -4735,6 +4889,8 @@
       "decimals": 18,
       "symbol": "HLUSD"
     },
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4F5D34525D8bee8DEe3cf8188473E76B442E45D8",
       "relayerLib": "0xb01b9D286b780cddFcCdD4C50278554B1D747C3F",
@@ -4746,8 +4902,8 @@
     "chainSelector": 8822,
     "name": "iotaevm",
     "rpcUrls": [
-      "https://rpc.ankr.com/iota_evm",
-      "https://json-rpc.evm.iotaledger.net"
+      "https://json-rpc.evm.iotaledger.net",
+      "https://rpc.ankr.com/iota_evm"
     ],
     "nativeCurrency": {
       "name": "IOTA",
@@ -4772,6 +4928,8 @@
       "decimals": 18,
       "symbol": "tEVMOS"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "9001": {
@@ -4781,7 +4939,6 @@
     "rpcUrls": [
       "https://evmos-evm-rpc.publicnode.com",
       "https://evmos.drpc.org",
-      "https://evmos-json-rpc.stakely.io",
       "https://evmos.api.onfinality.io/public"
     ],
     "nativeCurrency": {
@@ -4803,6 +4960,8 @@
       "decimals": 18,
       "symbol": "AP3X"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4816,14 +4975,17 @@
     "chainSelector": 9745,
     "name": "plasma",
     "rpcUrls": [
-      "https://plasma.drpc.org",
-      "https://rpc.plasma.to"
+      "https://rpc.plasma.to",
+      "https://plasma.api.onfinality.io/public",
+      "https://plasma.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Plasma",
       "decimals": 18,
       "symbol": "XPL"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4844,6 +5006,8 @@
       "decimals": 18,
       "symbol": "XPL"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 15,
     "deployments": {}
   },
   "9790": {
@@ -4858,6 +5022,8 @@
       "decimals": 18,
       "symbol": "SWTH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "9792": {
@@ -4872,6 +5038,8 @@
       "decimals": 18,
       "symbol": "SWTH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "10001": {
@@ -4886,6 +5054,8 @@
       "decimals": 18,
       "symbol": "BCHT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "10088": {
@@ -4900,6 +5070,8 @@
       "decimals": 18,
       "symbol": "GT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 104,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4913,11 +5085,10 @@
     "chainSelector": 10143,
     "name": "monadTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/monad_testnet",
-      "https://rpc-testnet.monadinfra.com",
-      "https://testnet-rpc.monad.xyz",
+      "https://monad-testnet-rpc.huginn.tech",
       "https://monad-testnet.drpc.org",
-      "https://monad-testnet.api.onfinality.io/public"
+      "https://testnet-rpc.monad.xyz",
+      "https://rpc.ankr.com/monad_testnet"
     ],
     "nativeCurrency": {
       "name": "Testnet MON Token",
@@ -4925,6 +5096,8 @@
       "symbol": "MON"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 10,
     "deployments": {
       "router": "0x3E2Ee768D9fADdd3673a69ED4d0D1d9147FA1054",
       "relayerLib": "0x9900a9E38E8695eE9109962b9f4671cF977c265a",
@@ -4938,10 +5111,10 @@
     "chainSelector": 10200,
     "name": "gnosisChiado",
     "rpcUrls": [
-      "https://rpc.chiadochain.net",
       "https://gnosis-chiado-rpc.publicnode.com",
+      "https://rpc.chiado.gnosis.gateway.fm",
       "https://gnosis-chiado.drpc.org",
-      "https://rpc.chiado.gnosis.gateway.fm"
+      "https://rpc.chiadochain.net"
     ],
     "nativeCurrency": {
       "name": "Gnosis",
@@ -4962,14 +5135,16 @@
     "chainSelector": 11124,
     "name": "abstractSepolia",
     "rpcUrls": [
-      "https://abstract-sepolia.drpc.org",
-      "https://api.testnet.abs.xyz"
+      "https://api.testnet.abs.xyz",
+      "https://abstract-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "11235": {
@@ -4977,17 +5152,17 @@
     "chainSelector": 11235,
     "name": "haqq",
     "rpcUrls": [
-      "https://rpc.eth.haqq.network",
       "https://haqq-evm.publicnode.com",
-      "https://evm.haqq.sh",
-      "https://haqq.drpc.org",
-      "https://haqq-evm-rpc.publicnode.com"
+      "https://haqq-evm-rpc.publicnode.com",
+      "https://evm.haqq.sh"
     ],
     "nativeCurrency": {
       "name": "Islamic Coin",
       "decimals": 18,
       "symbol": "ISLM"
     },
+    "getLogsBlockDepth": 4500,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -4999,14 +5174,16 @@
     "chainSelector": 11501,
     "name": "geb",
     "rpcUrls": [
-      "https://rpc-mainnet-1.geb.network",
-      "https://rpc-mainnet-2.geb.network"
+      "https://rpc-mainnet-2.geb.network",
+      "https://rpc-mainnet-1.geb.network"
     ],
     "nativeCurrency": {
       "name": "BTC",
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 39921,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "12323": {
@@ -5021,6 +5198,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5034,9 +5213,9 @@
     "chainSelector": 13371,
     "name": "immutable",
     "rpcUrls": [
-      "https://immutable-zkevm.drpc.org",
+      "https://rpc.immutable.com",
       "https://immutable.gateway.tenderly.co",
-      "https://rpc.immutable.com"
+      "https://immutable-zkevm.drpc.org"
     ],
     "nativeCurrency": {
       "name": "IMX",
@@ -5044,6 +5223,8 @@
       "symbol": "IMX"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5057,8 +5238,8 @@
     "chainSelector": 13473,
     "name": "immutableTestnet",
     "rpcUrls": [
-      "https://immutable-zkevm-testnet.drpc.org",
-      "https://rpc.testnet.immutable.com"
+      "https://rpc.testnet.immutable.com",
+      "https://immutable-zkevm-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Test IMX",
@@ -5066,6 +5247,8 @@
       "symbol": "tIMX"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "14800": {
@@ -5083,6 +5266,8 @@
       "symbol": "VANA"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "16507": {
@@ -5097,6 +5282,8 @@
       "decimals": 18,
       "symbol": "GSYS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5115,6 +5302,8 @@
       "decimals": 18,
       "symbol": "0G"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 36,
     "deployments": {}
   },
   "16661": {
@@ -5129,6 +5318,8 @@
       "decimals": 18,
       "symbol": "0G"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 48,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5140,15 +5331,17 @@
     "chainSelector": 18880,
     "name": "expchainTestnet",
     "rpcUrls": [
-      "https://rpc1-testnet.expchain.ai",
+      "https://expchain.polyhedra.network/rpc1-testnet",
       "https://expchain.polyhedra.network/rpc0-testnet",
-      "https://expchain.polyhedra.network/rpc1-testnet"
+      "https://rpc1-testnet.expchain.ai"
     ],
     "nativeCurrency": {
       "name": "tZKJ",
       "decimals": 18,
       "symbol": "tZKJ"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "19011": {
@@ -5163,6 +5356,8 @@
       "decimals": 18,
       "symbol": "OAS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "19515": {
@@ -5177,6 +5372,8 @@
       "decimals": 18,
       "symbol": "SEP"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "23294": {
@@ -5184,7 +5381,6 @@
     "chainSelector": 23294,
     "name": "sapphire",
     "rpcUrls": [
-      "https://1rpc.io/oasis/sapphire",
       "https://sapphire.oasis.io"
     ],
     "nativeCurrency": {
@@ -5192,6 +5388,8 @@
       "decimals": 18,
       "symbol": "ROSE"
     },
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4F5D34525D8bee8DEe3cf8188473E76B442E45D8",
       "relayerLib": "0xb01b9D286b780cddFcCdD4C50278554B1D747C3F",
@@ -5212,6 +5410,8 @@
       "decimals": 18,
       "symbol": "TEST"
     },
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0xcc9D0438ac3b90fB8291f4f3C1c420E215f36585",
       "relayerLib": "0x8510C780097cA53aeF8e3527a5107C4629b21f0C",
@@ -5223,14 +5423,16 @@
     "chainSelector": 25327,
     "name": "everclear",
     "rpcUrls": [
-      "https://everclear.drpc.org",
-      "https://rpc.everclear.raas.gelato.cloud"
+      "https://rpc.everclear.raas.gelato.cloud",
+      "https://everclear.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "25925": {
@@ -5245,6 +5447,8 @@
       "decimals": 18,
       "symbol": "tKUB"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "26514": {
@@ -5259,6 +5463,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5277,6 +5483,8 @@
       "decimals": 18,
       "symbol": "AB"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "28882": {
@@ -5296,6 +5504,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 10,
     "deployments": {}
   },
   "31611": {
@@ -5303,14 +5513,16 @@
     "chainSelector": 31611,
     "name": "mezoTestnet",
     "rpcUrls": [
-      "https://mezo-testnet.drpc.org",
-      "https://rpc.test.mezo.org"
+      "https://rpc.test.mezo.org",
+      "https://mezo-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "31612": {
@@ -5318,16 +5530,17 @@
     "chainSelector": 31612,
     "name": "mezo",
     "rpcUrls": [
-      "https://mezo.drpc.org",
-      "https://rpc-internal.mezo.org",
       "https://mainnet.mezo.public.validationcloud.io",
-      "https://rpc-http.mezo.boar.network"
+      "https://rpc-http.mezo.boar.network",
+      "https://rpc-internal.mezo.org"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
       "decimals": 18,
       "symbol": "BTC"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5339,13 +5552,17 @@
     "chainSelector": 32520,
     "name": "bitgert",
     "rpcUrls": [
-      "https://rpc-bitgert.icecreamswap.com"
+      "https://rpc-bitgert.icecreamswap.com",
+      "https://node2.serverrpc.com",
+      "https://serverrpc.com"
     ],
     "nativeCurrency": {
       "name": "Bitrise Token",
       "decimals": 18,
       "symbol": "Brise"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5357,17 +5574,20 @@
     "finalityTagEnabled": true,
     "isFinalitySupported": true,
     "chainSelector": 33111,
-    "name": "apechainCurtis",
+    "name": "apeChainTestnet",
     "rpcUrls": [
-      "https://apechain-curtis.drpc.org",
       "https://rpc.curtis.apechain.com",
-      "https://curtis.rpc.caldera.xyz/http"
+      "https://curtis.rpc.caldera.xyz/http",
+      "https://apechain-curtis.drpc.org"
     ],
     "nativeCurrency": {
-      "name": "APE",
+      "name": "ApeCoin",
       "decimals": 18,
       "symbol": "APE"
     },
+    "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "33139": {
@@ -5377,8 +5597,8 @@
     "chainSelector": 33139,
     "name": "apeChain",
     "rpcUrls": [
-      "https://apechain.drpc.org",
-      "https://rpc.apechain.com"
+      "https://rpc.apechain.com",
+      "https://apechain.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ApeCoin",
@@ -5386,6 +5606,8 @@
       "symbol": "APE"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5404,6 +5626,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5417,10 +5641,9 @@
     "chainSelector": 34443,
     "name": "mode",
     "rpcUrls": [
-      "https://1rpc.io/mode",
-      "https://mode.drpc.org",
       "https://rpc.sentio.xyz/mode-mainnet",
-      "https://mainnet.mode.network"
+      "https://mainnet.mode.network",
+      "https://mode.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -5428,6 +5651,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5446,6 +5671,8 @@
       "decimals": 18,
       "symbol": "QGOV"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5465,6 +5692,8 @@
       "decimals": 18,
       "symbol": "AB"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "37111": {
@@ -5474,8 +5703,8 @@
     "chainSelector": 37111,
     "name": "lensSepolia",
     "rpcUrls": [
-      "https://lens-testnet.drpc.org",
-      "https://rpc.testnet.lens.dev"
+      "https://rpc.testnet.lens.dev",
+      "https://lens-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "GRASS",
@@ -5483,6 +5712,8 @@
       "symbol": "GRASS"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "39797": {
@@ -5498,6 +5729,8 @@
       "decimals": 18,
       "symbol": "NRG"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 5,
     "deployments": {}
   },
   "41923": {
@@ -5512,6 +5745,8 @@
       "decimals": 18,
       "symbol": "EDU"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "42000": {
@@ -5526,6 +5761,8 @@
       "decimals": 18,
       "symbol": "HLS"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "42018": {
@@ -5553,21 +5790,10 @@
     "chainSelector": 42161,
     "name": "arbitrum",
     "rpcUrls": [
-      "https://1rpc.io/arb",
-      "https://arbitrum.public.blockpi.network/v1/rpc/public",
-      "https://arbitrum.drpc.org",
-      "https://arbitrum.gateway.tenderly.co",
-      "https://arbitrum-one-rpc.publicnode.com",
-      "https://public-arb-mainnet.fastnode.io",
-      "https://arb1.lava.build",
-      "https://arbitrum.meowrpc.com",
       "https://rpc.sentio.xyz/arbitrum-one",
-      "https://arb1.arbitrum.io/rpc",
-      "https://arbitrum-one-public.nodies.app",
-      "https://arbitrum.rpc.subquery.network/public",
       "https://arbitrum-one.public.blastapi.io",
-      "https://arb-one.api.pocket.network",
-      "https://arbitrum.api.onfinality.io/public"
+      "https://arbitrum-one-rpc.publicnode.com",
+      "https://arb1.arbitrum.io/rpc"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -5575,6 +5801,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 66,
     "deployments": {
       "router": "0x60858bc719c7136996505F35759BB7118321ff6a",
       "relayerLib": "0x0e4ad6e7aa9930aae8ce032ceb90b47e51562e81",
@@ -5586,10 +5814,9 @@
     "chainSelector": 42170,
     "name": "arbitrumNova",
     "rpcUrls": [
-      "https://arbitrum-nova.gateway.tenderly.co",
       "https://arbitrum-nova-rpc.publicnode.com",
+      "https://arbitrum-nova.gateway.tenderly.co",
       "https://arbitrum-nova.drpc.org",
-      "https://nova.arbitrum.io/rpc",
       "https://docs-demo.nova-mainnet.quiknode.pro"
     ],
     "nativeCurrency": {
@@ -5597,6 +5824,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5610,18 +5839,16 @@
     "chainSelector": 42220,
     "name": "celo",
     "rpcUrls": [
-      "https://rpc.ankr.com/celo",
-      "https://forno.celo.org",
-      "https://celo.drpc.org",
-      "https://celo.api.onfinality.io/public",
       "https://celo-json-rpc.stakely.io",
-      "https://rpc.celocolombia.org"
+      "https://forno.celo.org",
+      "https://api-celo-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c"
     ],
     "nativeCurrency": {
       "name": "CELO",
       "decimals": 18,
       "symbol": "CELO"
     },
+    "getLogsBlockDepth": 500000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5640,6 +5867,8 @@
       "decimals": 18,
       "symbol": "TEST"
     },
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "42262": {
@@ -5647,7 +5876,6 @@
     "chainSelector": 42262,
     "name": "oasisEmerald",
     "rpcUrls": [
-      "https://1rpc.io/oasis/emerald",
       "https://emerald.oasis.io"
     ],
     "nativeCurrency": {
@@ -5655,6 +5883,8 @@
       "decimals": 18,
       "symbol": "ROSE"
     },
+    "getLogsBlockDepth": 100,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4F5D34525D8bee8DEe3cf8188473E76B442E45D8",
       "relayerLib": "0xb01b9D286b780cddFcCdD4C50278554B1D747C3F",
@@ -5697,6 +5927,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5710,8 +5942,8 @@
     "chainSelector": 43113,
     "name": "avalancheFuji",
     "rpcUrls": [
-      "https://api.avax-test.network/ext/bc/C/rpc",
       "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+      "https://api.avax-test.network/ext/bc/C/rpc",
       "https://avalanche-fuji.drpc.org"
     ],
     "nativeCurrency": {
@@ -5719,6 +5951,8 @@
       "decimals": 18,
       "symbol": "AVAX"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0xe965dEBDfa6365CFb9e643ccdCBADE424a2eC381",
       "relayerLib": "0x6EDCB27Aaf312938FA3C1C631C18A0635bD34E1a",
@@ -5732,23 +5966,19 @@
     "chainSelector": 43114,
     "name": "avalanche",
     "rpcUrls": [
-      "https://1rpc.io/avax/c",
-      "https://avalanche-c-chain-rpc.publicnode.com",
-      "https://avalanche-mainnet.gateway.tenderly.co",
       "https://rpc.sentio.xyz/avalanche",
-      "https://avalanche.drpc.org",
-      "https://avalanche-public.nodies.app/ext/bc/C/rpc",
+      "https://avalanche-c-chain-rpc.publicnode.com",
+      "https://spectrum-01.simplystaking.xyz/avalanche-mn-rpc/ext/bc/C/rpc",
       "https://avax.api.pocket.network",
-      "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
-      "https://api.avax.network/ext/bc/C/rpc",
-      "https://avax.meowrpc.com",
-      "https://spectrum-01.simplystaking.xyz/avalanche-mn-rpc/ext/bc/C/rpc"
+      "https://avalanche-mainnet.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Avalanche",
       "decimals": 18,
       "symbol": "AVAX"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4b198972ba7e35382aacf3a60ac7c81409b4b606",
       "relayerLib": "0x8a070db2dd3f9cb56ecdd020123762df67aab3b6",
@@ -5767,24 +5997,8 @@
       "decimals": 18,
       "symbol": "GUN"
     },
-    "deployments": {}
-  },
-  "48899": {
-    "id": "48899",
-    "finalityTagEnabled": true,
-    "isFinalitySupported": true,
-    "chainSelector": 48899,
-    "name": "zircuitTestnet",
-    "rpcUrls": [
-      "https://testnet.zircuit.com",
-      "https://zircuit1-testnet.p2pify.com"
-    ],
-    "nativeCurrency": {
-      "name": "ETH",
-      "decimals": 18,
-      "symbol": "ETH"
-    },
-    "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "48900": {
@@ -5803,6 +6017,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5822,6 +6038,8 @@
       "decimals": 18,
       "symbol": "BFC"
     },
+    "getLogsBlockDepth": 49921,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "49797": {
@@ -5836,6 +6054,8 @@
       "decimals": 18,
       "symbol": "NRG"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "50104": {
@@ -5854,6 +6074,8 @@
       "symbol": "SOPH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 15,
     "deployments": {}
   },
   "50312": {
@@ -5868,6 +6090,8 @@
       "decimals": 18,
       "symbol": "STT"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "52014": {
@@ -5901,6 +6125,8 @@
       "decimals": 18,
       "symbol": "METIS"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5919,6 +6145,8 @@
       "decimals": 18,
       "symbol": "JEWEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 25,
     "deployments": {}
   },
   "54211": {
@@ -5926,14 +6154,16 @@
     "chainSelector": 54211,
     "name": "haqqTestnet",
     "rpcUrls": [
-      "https://haqq-testnet.drpc.org",
-      "https://rpc.eth.testedge2.haqq.network"
+      "https://rpc.eth.testedge2.haqq.network",
+      "https://haqq-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Islamic Coin",
       "decimals": 18,
       "symbol": "ISLMT"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "55244": {
@@ -5951,6 +6181,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -5964,9 +6196,9 @@
     "chainSelector": 57054,
     "name": "sonicBlaze",
     "rpcUrls": [
+      "https://rpc.blaze.soniclabs.com",
       "https://sonic-blaze-rpc.publicnode.com",
-      "https://sonic-testnet.drpc.org",
-      "https://rpc.blaze.soniclabs.com"
+      "https://sonic-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "S",
@@ -5974,6 +6206,8 @@
       "symbol": "S"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0xAEBaacfa9CaC6B8486Ae77843728c863c909E7d0",
       "relayerLib": "0x13187bb1d2f100F84770a848A1374bf745Ea4cF6",
@@ -5987,11 +6221,10 @@
     "chainSelector": 57073,
     "name": "ink",
     "rpcUrls": [
-      "https://ink-public.nodies.app",
       "https://rpc-gel.inkonchain.com",
+      "https://ink.api.pocket.network",
       "https://rpc-qnd.inkonchain.com",
-      "https://ink.drpc.org",
-      "https://ink.api.pocket.network"
+      "https://ink.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -5999,6 +6232,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6012,9 +6247,9 @@
     "chainSelector": 59141,
     "name": "lineaSepolia",
     "rpcUrls": [
-      "https://linea-sepolia.drpc.org",
+      "https://rpc.sepolia.linea.build",
       "https://linea-sepolia-rpc.publicnode.com",
-      "https://rpc.sepolia.linea.build"
+      "https://linea-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -6022,6 +6257,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "59144": {
@@ -6031,12 +6268,10 @@
     "chainSelector": 59144,
     "name": "linea",
     "rpcUrls": [
-      "https://1rpc.io/linea",
-      "https://linea-rpc.publicnode.com",
-      "https://linea.drpc.org",
-      "https://rpc.sentio.xyz/linea",
       "https://linea.api.pocket.network",
-      "https://rpc.linea.build"
+      "https://rpc.sentio.xyz/linea",
+      "https://rpc.linea.build",
+      "https://linea-rpc.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "Linea Ether",
@@ -6044,6 +6279,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
@@ -6057,15 +6294,17 @@
     "chainSelector": 59902,
     "name": "metisSepolia",
     "rpcUrls": [
+      "https://sepolia.metisdevops.link",
       "https://metis-sepolia-rpc.publicnode.com",
-      "https://metis-sepolia.gateway.tenderly.co",
-      "https://sepolia.metisdevops.link"
+      "https://metis-sepolia.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "tMETIS",
       "decimals": 18,
       "symbol": "tMETIS"
     },
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 20,
     "deployments": {}
   },
   "60808": {
@@ -6075,10 +6314,9 @@
     "chainSelector": 60808,
     "name": "bob",
     "rpcUrls": [
-      "https://bob.gateway.tenderly.co",
-      "https://bob.drpc.org",
       "https://rpc.sentio.xyz/bob",
-      "https://rpc.gobob.xyz"
+      "https://rpc.gobob.xyz",
+      "https://bob.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -6086,6 +6324,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6104,6 +6344,8 @@
       "decimals": 18,
       "symbol": "VT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "80002": {
@@ -6113,12 +6355,10 @@
     "chainSelector": 80002,
     "name": "polygonAmoy",
     "rpcUrls": [
-      "https://polygon-amoy.gateway.tenderly.co",
+      "https://rpc-amoy.polygon.technology",
       "https://polygon-amoy-bor-rpc.publicnode.com",
-      "https://polygon-amoy.drpc.org",
-      "https://polygon-amoy-public.nodies.app",
-      "https://polygon-amoy.api.onfinality.io/public",
-      "https://rpc-amoy.polygon.technology"
+      "https://polygon-amoy.gateway.tenderly.co",
+      "https://polygon-amoy.api.onfinality.io/public"
     ],
     "nativeCurrency": {
       "name": "POL",
@@ -6126,6 +6366,8 @@
       "symbol": "POL"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 5390,
+    "batchRequestLimit": 5,
     "deployments": {
       "router": "0x6FF322BC8da39bC87A056d4052aa763f7BDeE836",
       "relayerLib": "0x81365cc081dF5fdF6cbD47a34fF4acBcA2B35F0d",
@@ -6147,6 +6389,7 @@
       "symbol": "BERA"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 4937,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -6160,11 +6403,9 @@
     "chainSelector": 80094,
     "name": "berachain",
     "rpcUrls": [
-      "https://api-berachain-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
-      "https://rpc.berachain-apis.com",
-      "https://berachain-rpc.publicnode.com",
-      "https://rpc.berachain.com",
       "https://rpc.sentio.xyz/berachain",
+      "https://berachain-rpc.publicnode.com",
+      "https://rpc.berachain-apis.com",
       "https://berachain.drpc.org"
     ],
     "nativeCurrency": {
@@ -6173,6 +6414,8 @@
       "symbol": "BERA"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89",
       "relayerLib": "0x00ce0fd747e7d4c27bdce653c3ed531ef906deff",
@@ -6191,6 +6434,8 @@
       "decimals": 18,
       "symbol": "XCN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6209,6 +6454,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 165,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6222,14 +6469,9 @@
     "chainSelector": 81457,
     "name": "blast",
     "rpcUrls": [
-      "https://rpc.blast.io",
-      "https://blast.gateway.tenderly.co",
-      "https://blast.drpc.org",
-      "https://blast-rpc.publicnode.com",
       "https://rpc.sentio.xyz/blast-mainnet",
-      "https://blast-public.nodies.app",
-      "https://blast.api.pocket.network",
-      "https://blast.din.dev/rpc"
+      "https://blast-rpc.publicnode.com",
+      "https://blast.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Ether",
@@ -6237,6 +6479,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 20,
     "deployments": {}
   },
   "84532": {
@@ -6246,19 +6490,18 @@
     "chainSelector": 84532,
     "name": "baseSepolia",
     "rpcUrls": [
-      "https://base-sepolia-public.nodies.app",
       "https://base-sepolia-rpc.publicnode.com",
-      "https://base-sepolia.gateway.tenderly.co",
-      "https://base-sepolia.api.onfinality.io/public",
       "https://rpc.sentio.xyz/base-sepolia",
-      "https://base-sepolia.drpc.org",
-      "https://sepolia.base.org"
+      "https://sepolia.base.org",
+      "https://base-sepolia.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0xE3d861a49bc5903499fB5Bb411B83d980422c31B",
       "relayerLib": "0x429E6875Ba6A13cc015e9Eba594e8b42936244C4",
@@ -6277,6 +6520,8 @@
       "decimals": 18,
       "symbol": "CHZ"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "88888": {
@@ -6284,35 +6529,21 @@
     "chainSelector": 88888,
     "name": "chiliz",
     "rpcUrls": [
-      "https://rpc.ankr.com/chiliz",
       "https://rpc.chiliz.com",
-      "https://chiliz.publicnode.com",
-      "https://api-chiliz-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c"
+      "https://chiliz.publicnode.com"
     ],
     "nativeCurrency": {
       "name": "Chiliz",
       "decimals": 18,
       "symbol": "CHZ"
     },
+    "getLogsBlockDepth": 4937,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
       "validatorLib": "0x86b8f29c2247838e298f0729d54d9ea07f02cf89"
     }
-  },
-  "90001": {
-    "id": "90001",
-    "chainSelector": 90001,
-    "name": "functionxTestnet",
-    "rpcUrls": [
-      "https://testnet-fx-json-web3.functionx.io:8545"
-    ],
-    "nativeCurrency": {
-      "name": "Pundi AIFX",
-      "decimals": 18,
-      "symbol": "PUNDAI"
-    },
-    "deployments": {}
   },
   "97477": {
     "id": "97477",
@@ -6345,6 +6576,8 @@
       "decimals": 18,
       "symbol": "PEPU"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6358,8 +6591,8 @@
     "chainSelector": 98866,
     "name": "plume",
     "rpcUrls": [
-      "https://plume.drpc.org",
-      "https://rpc.plume.org"
+      "https://rpc.plume.org",
+      "https://plume.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Plume",
@@ -6367,6 +6600,8 @@
       "symbol": "PLUME"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6388,6 +6623,8 @@
       "symbol": "PLUME"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {}
   },
   "98985": {
@@ -6404,6 +6641,8 @@
       "decimals": 18,
       "symbol": "SPN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {}
   },
   "105105": {
@@ -6418,6 +6657,8 @@
       "decimals": 18,
       "symbol": "STRAX"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6436,6 +6677,8 @@
       "decimals": 18,
       "symbol": "MITO"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6454,6 +6697,8 @@
       "decimals": 18,
       "symbol": "DIONE"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6467,20 +6712,18 @@
     "chainSelector": 167000,
     "name": "taiko",
     "rpcUrls": [
-      "https://rpc.ankr.com/taiko",
-      "https://taiko.drpc.org",
-      "https://taiko-mainnet.gateway.tenderly.co",
-      "https://taiko-rpc.publicnode.com",
-      "https://taiko-json-rpc.stakely.io",
+      "https://taiko.api.pocket.network",
       "https://rpc.taiko.xyz",
       "https://rpc.mainnet.taiko.xyz",
-      "https://taiko.api.pocket.network"
+      "https://taiko-json-rpc.stakely.io"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 74218,
+    "batchRequestLimit": 571,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6499,6 +6742,8 @@
       "decimals": 18,
       "symbol": "LITKEY"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6517,6 +6762,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 25,
     "deployments": {}
   },
   "200810": {
@@ -6526,9 +6773,8 @@
     "chainSelector": 200810,
     "name": "bitlayerTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/bitlayer_testnet",
-      "https://testnet-rpc.bitlayer.org",
-      "https://testnet-rpc.bitlayer-rpc.com"
+      "https://testnet-rpc.bitlayer-rpc.com",
+      "https://testnet-rpc.bitlayer.org"
     ],
     "nativeCurrency": {
       "name": "Bitcoin",
@@ -6536,6 +6782,8 @@
       "symbol": "BTC"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "200901": {
@@ -6545,10 +6793,9 @@
     "chainSelector": 200901,
     "name": "bitlayer",
     "rpcUrls": [
-      "https://rpc.ankr.com/bitlayer",
+      "https://rpc-bitlayer.rockx.com",
       "https://rpc.bitlayer-rpc.com",
-      "https://rpc.bitlayer.org",
-      "https://rpc-bitlayer.rockx.com"
+      "https://rpc.bitlayer.org"
     ],
     "nativeCurrency": {
       "name": "BTC",
@@ -6556,6 +6803,8 @@
       "symbol": "BTC"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6574,6 +6823,8 @@
       "decimals": 18,
       "symbol": "DGAS"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 98,
     "deployments": {}
   },
   "222222": {
@@ -6582,21 +6833,21 @@
     "name": "hydration",
     "rpcUrls": [
       "https://hydration.ibp.network",
-      "https://rpc.zipp.hydration.cloud",
       "https://hydration-rpc.n.dwellir.com",
-      "https://rpc.roach.hydration.cloud",
-      "https://rpc.parm.hydration.cloud",
-      "https://rpc.hydradx.cloud",
-      "https://hydration.dotters.network",
       "https://rpc.coke.hydration.cloud",
+      "https://rpc.roach.hydration.cloud",
       "https://rpc.sin.hydration.cloud",
-      "https://rpc.helikon.io/hydradx"
+      "https://rpc.zipp.hydration.cloud",
+      "https://rpc.parm.hydration.cloud",
+      "https://rpc.hydradx.cloud"
     ],
     "nativeCurrency": {
       "name": "Wrapped ETH",
       "decimals": 18,
       "symbol": "WETH"
     },
+    "getLogsBlockDepth": 94433,
+    "batchRequestLimit": 10,
     "deployments": {}
   },
   "271828": {
@@ -6604,8 +6855,8 @@
     "chainSelector": 271828,
     "name": "datachain",
     "rpcUrls": [
-      "https://ws.datachain.network",
       "https://erpc.rope.network",
+      "https://ws.datachain.network",
       "https://erpc.datachain.network"
     ],
     "nativeCurrency": {
@@ -6613,6 +6864,8 @@
       "decimals": 18,
       "symbol": "FAT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "314159": {
@@ -6622,10 +6875,9 @@
     "chainSelector": 314159,
     "name": "filecoinTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/filecoin_testnet",
-      "https://filecoin-calibration.drpc.org",
+      "https://calibration.filfox.info/rpc/v1",
       "https://api.calibration.node.glif.io/rpc/v1",
-      "https://calibration.filfox.info/rpc/v1"
+      "https://filecoin-calibration.drpc.org"
     ],
     "nativeCurrency": {
       "name": "testnet filecoin",
@@ -6633,6 +6885,8 @@
       "symbol": "tFIL"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "322202": {
@@ -6647,6 +6901,8 @@
       "decimals": 18,
       "symbol": "PRX"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6658,7 +6914,6 @@
     "chainSelector": 344100,
     "name": "mantapacificSepolia",
     "rpcUrls": [
-      "https://manta-pacific-sepolia.drpc.org",
       "https://pacific-rpc.sepolia-testnet.manta.network/http",
       "https://manta-sepolia.rpc.caldera.xyz/http"
     ],
@@ -6667,6 +6922,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "421614": {
@@ -6676,12 +6933,10 @@
     "chainSelector": 421614,
     "name": "arbitrumSepolia",
     "rpcUrls": [
-      "https://arbitrum-sepolia.gateway.tenderly.co",
       "https://arbitrum-sepolia-rpc.publicnode.com",
-      "https://arbitrum-sepolia.drpc.org",
       "https://sepolia-rollup.arbitrum.io/rpc",
-      "https://arbitrum-sepolia-testnet.api.pocket.network",
-      "https://arbitrum-sepolia.api.onfinality.io/public"
+      "https://arbitrum-sepolia.gateway.tenderly.co",
+      "https://arbitrum-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -6689,6 +6944,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x6c99cC0FCC985fF175787BD2565AfD15781C99d0",
       "relayerLib": "0x622b5FeBf5Fd44Ab2E7636398F2621FC4E956304",
@@ -6707,6 +6964,8 @@
       "decimals": 18,
       "symbol": "ALOT"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 25,
     "deployments": {}
   },
   "432204": {
@@ -6721,6 +6980,8 @@
       "decimals": 18,
       "symbol": "ALOT"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 25,
     "deployments": {}
   },
   "534351": {
@@ -6730,16 +6991,16 @@
     "chainSelector": 534351,
     "name": "scrollSepolia",
     "rpcUrls": [
-      "https://sepolia-rpc.scroll.io",
-      "https://scroll-sepolia-public.nodies.app",
       "https://scroll-sepolia-rpc.publicnode.com",
-      "https://scroll-sepolia.drpc.org"
+      "https://sepolia-rpc.scroll.io"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 10,
     "deployments": {
       "router": "0x5E3607995Cc65dB53A5A20725237eDb9f91d5CE5",
       "relayerLib": "0x54B8d67AA64CF8A59F604cA6e98c643C64920b03",
@@ -6753,12 +7014,9 @@
     "chainSelector": 534352,
     "name": "scroll",
     "rpcUrls": [
-      "https://1rpc.io/scroll",
-      "https://rpc.scroll.io",
-      "https://scroll.drpc.org",
-      "https://scroll-rpc.publicnode.com",
-      "https://scroll-public.nodies.app",
       "https://scroll.api.pocket.network",
+      "https://scroll-rpc.publicnode.com",
+      "https://rpc.scroll.io",
       "https://scroll.api.onfinality.io/public"
     ],
     "nativeCurrency": {
@@ -6766,6 +7024,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 9921,
+    "batchRequestLimit": 5,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6777,14 +7037,16 @@
     "chainSelector": 543210,
     "name": "zeroNetwork",
     "rpcUrls": [
-      "https://zero.drpc.org",
-      "https://rpc.zerion.io/v1/zero"
+      "https://rpc.zerion.io/v1/zero",
+      "https://zero.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -6804,6 +7066,8 @@
       "decimals": 18,
       "symbol": "EDU"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "660279": {
@@ -6837,6 +7101,8 @@
       "decimals": 18,
       "symbol": "PHRS"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 800,
     "deployments": {}
   },
   "743111": {
@@ -6863,16 +7129,17 @@
     "chainSelector": 747474,
     "name": "katana",
     "rpcUrls": [
+      "https://rpc.katanarpc.com",
       "https://rpc.katana.network",
-      "https://katana.drpc.org",
-      "https://katana.gateway.tenderly.co",
-      "https://rpc.katanarpc.com"
+      "https://katana.gateway.tenderly.co"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 29921,
+    "batchRequestLimit": 20,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6895,6 +7162,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "808813": {
@@ -6904,8 +7173,8 @@
     "chainSelector": 808813,
     "name": "bobSepolia",
     "rpcUrls": [
-      "https://bob-testnet.drpc.org",
-      "https://bob-sepolia.rpc.gobob.xyz"
+      "https://bob-sepolia.rpc.gobob.xyz",
+      "https://bob-testnet.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -6913,6 +7182,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "810180": {
@@ -6927,6 +7198,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 500,
     "deployments": {}
   },
   "984122": {
@@ -6941,6 +7214,8 @@
       "decimals": 18,
       "symbol": "TIA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -6975,6 +7250,8 @@
       "decimals": 18,
       "symbol": "ORAI"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x62b7cdde0f115666f8ab18b4c007545ab0c1563c",
       "relayerLib": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
@@ -6993,6 +7270,8 @@
       "decimals": 18,
       "symbol": "CAMP"
     },
+    "getLogsBlockDepth": 100000,
+    "batchRequestLimit": 100,
     "deployments": {}
   },
   "1313161": {
@@ -7000,7 +7279,6 @@
     "chainSelector": 1313161,
     "name": "aurora",
     "rpcUrls": [
-      "https://1rpc.io/aurora",
       "https://mainnet.aurora.dev",
       "https://aurora.drpc.org"
     ],
@@ -7009,6 +7287,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7028,6 +7308,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "1440000": {
@@ -7037,15 +7319,16 @@
     "chainSelector": 1440000,
     "name": "xrplevm",
     "rpcUrls": [
-      "https://xrpl.drpc.org",
       "https://rpc.xrplevm.org",
-      "https://xrplevm.buildintheshade.com"
+      "https://xrpl.drpc.org"
     ],
     "nativeCurrency": {
       "name": "XRP",
       "decimals": 18,
       "symbol": "XRP"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x2841b10374c6d947939e2dffc218384bb011a3d2",
       "relayerLib": "0x3cbaa422b5d00fee5dca012dada37f10cb6d3f3c",
@@ -7059,7 +7342,6 @@
     "chainSelector": 1449000,
     "name": "xrplevmTestnet",
     "rpcUrls": [
-      "https://xrplevm-testnet.buildintheshade.com",
       "https://rpc.testnet.xrplevm.org"
     ],
     "nativeCurrency": {
@@ -7067,6 +7349,8 @@
       "decimals": 18,
       "symbol": "XRP"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1666600": {
@@ -7076,11 +7360,9 @@
     "chainSelector": 1666600,
     "name": "harmony",
     "rpcUrls": [
-      "https://1rpc.io/one",
-      "https://harmony-0.drpc.org",
-      "https://a.api.s0.t.hmny.io",
       "https://api.s0.t.hmny.io",
       "https://api.harmony.one",
+      "https://a.api.s0.t.hmny.io",
       "https://harmony.api.pocket.network"
     ],
     "nativeCurrency": {
@@ -7088,6 +7370,8 @@
       "decimals": 18,
       "symbol": "ONE"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 59,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7108,6 +7392,8 @@
       "decimals": 18,
       "symbol": "ONE"
     },
+    "getLogsBlockDepth": 1000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "1685877": {
@@ -7117,9 +7403,9 @@
     "chainSelector": 1685877,
     "name": "blastSepolia",
     "rpcUrls": [
-      "https://blast-sepolia.drpc.org",
       "https://blast-testnet-public.nodies.app",
-      "https://sepolia.blast.io"
+      "https://sepolia.blast.io",
+      "https://blast-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -7127,6 +7413,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 493,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "2024060": {
@@ -7141,6 +7429,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7159,6 +7449,8 @@
       "decimals": 18,
       "symbol": "sFUEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 128,
     "deployments": {}
   },
   "2100000": {
@@ -7168,9 +7460,8 @@
     "chainSelector": 2100000,
     "name": "corn",
     "rpcUrls": [
-      "https://rpc.ankr.com/corn_maizenet",
-      "https://mainnet.corn-rpc.com",
-      "https://maizenet-rpc.usecorn.com"
+      "https://maizenet-rpc.usecorn.com",
+      "https://mainnet.corn-rpc.com"
     ],
     "nativeCurrency": {
       "name": "Bitcorn",
@@ -7178,6 +7469,7 @@
       "symbol": "BTCN"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 943,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7191,7 +7483,6 @@
     "chainSelector": 2100001,
     "name": "cornTestnet",
     "rpcUrls": [
-      "https://rpc.ankr.com/corn_testnet",
       "https://testnet-rpc.usecorn.com",
       "https://testnet.corn-rpc.com"
     ],
@@ -7201,6 +7492,8 @@
       "symbol": "BTCN"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 943,
+    "batchRequestLimit": 10,
     "deployments": {}
   },
   "2450229": {
@@ -7208,15 +7501,17 @@
     "chainSelector": 2450229,
     "name": "neonevmMainnet",
     "rpcUrls": [
-      "https://neon-evm.drpc.org",
+      "https://neon-proxy-mainnet.solana.p2p.org",
       "https://neon-mainnet.everstake.one",
-      "https://neon-proxy-mainnet.solana.p2p.org"
+      "https://neon-evm.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Neon",
       "decimals": 18,
       "symbol": "NEON"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "2632500": {
@@ -7224,16 +7519,17 @@
     "chainSelector": 2632500,
     "name": "coti",
     "rpcUrls": [
-      "https://virginia.fullnode.mainnet.coti.io/rpc",
-      "https://coti-rpc.Hyperflow.finance",
       "https://mainnet.coti.io/rpc",
-      "https://tokyo.fullnode.mainnet.coti.io/rpc"
+      "https://tokyo.fullnode.mainnet.coti.io/rpc",
+      "https://virginia.fullnode.mainnet.coti.io/rpc"
     ],
     "nativeCurrency": {
       "name": "COTI",
       "decimals": 18,
       "symbol": "COTI"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x37daf06ecb97b32ceaf77f7925362a9516df150d",
       "relayerLib": "0x4b198972ba7e35382aacf3a60ac7c81409b4b606",
@@ -7252,6 +7548,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 200,
     "deployments": {}
   },
   "5064014": {
@@ -7266,24 +7564,8 @@
       "decimals": 18,
       "symbol": "USDe"
     },
-    "deployments": {}
-  },
-  "5310501": {
-    "id": "531050104",
-    "finalityConfirmations": 80,
-    "isFinalitySupported": true,
-    "chainSelector": 5310501,
-    "name": "sophonTestnet",
-    "rpcUrls": [
-      "https://rpc.testnet.sophon.xyz",
-      "https://rpc-quicknode.testnet.sophon.xyz"
-    ],
-    "nativeCurrency": {
-      "name": "Sophon",
-      "decimals": 18,
-      "symbol": "SOPH"
-    },
-    "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 249902,
+    "batchRequestLimit": 200,
     "deployments": {}
   },
   "6666666": {
@@ -7298,6 +7580,8 @@
       "decimals": 18,
       "symbol": "DEGEN"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7316,6 +7600,8 @@
       "decimals": 18,
       "symbol": "H"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "7082400": {
@@ -7323,7 +7609,6 @@
     "chainSelector": 7082400,
     "name": "cotiTestnet",
     "rpcUrls": [
-      "https://testnet-minor-validator.coti.io/rpc",
       "https://testnet.coti.io/rpc",
       "https://testnet-magnus-validator.coti.io/rpc"
     ],
@@ -7332,6 +7617,8 @@
       "decimals": 18,
       "symbol": "COTI"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "7225878": {
@@ -7346,6 +7633,8 @@
       "decimals": 18,
       "symbol": "OAS"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "7777777": {
@@ -7353,14 +7642,16 @@
     "chainSelector": 7777777,
     "name": "zora",
     "rpcUrls": [
-      "https://zora.drpc.org",
-      "https://rpc.zora.energy"
+      "https://rpc.zora.energy",
+      "https://zora.drpc.org"
     ],
     "nativeCurrency": {
       "name": "Ether",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7379,6 +7670,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 165,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7397,6 +7690,8 @@
       "decimals": 18,
       "symbol": "LUMIA"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 150,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7415,6 +7710,8 @@
       "decimals": 18,
       "symbol": "FLT"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 100,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7433,6 +7730,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "11142220": {
@@ -7442,9 +7741,8 @@
     "chainSelector": 11142220,
     "name": "celoSepolia",
     "rpcUrls": [
-      "https://rpc.ankr.com/celo_sepolia",
-      "https://celo-sepolia.drpc.org",
-      "https://forno.celo-sepolia.celo-testnet.org"
+      "https://forno.celo-sepolia.celo-testnet.org",
+      "https://celo-sepolia.drpc.org"
     ],
     "nativeCurrency": {
       "name": "CELO",
@@ -7452,6 +7750,8 @@
       "symbol": "CELO"
     },
     "minBlockConfirmations": 5,
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 3,
     "deployments": {}
   },
   "11155111": {
@@ -7461,18 +7761,12 @@
     "chainSelector": 11155111,
     "name": "ethereumSepolia",
     "rpcUrls": [
-      "https://gateway.tenderly.co/public/sepolia",
-      "https://1rpc.io/sepolia",
-      "https://0xrpc.io/sep",
-      "https://ethereum-sepolia-rpc.publicnode.com",
-      "https://sepolia.gateway.tenderly.co",
-      "https://sepolia.drpc.org",
-      "https://eth-sepolia.api.onfinality.io/public",
       "https://rpc.sentio.xyz/sepolia",
-      "https://ethereum-sepolia.rpc.subquery.network/public",
-      "https://ethereum-sepolia-public.nodies.app",
+      "https://ethereum-sepolia-rpc.publicnode.com",
       "https://eth-sepolia-testnet.api.pocket.network",
-      "https://rpc.sepolia.ethpandaops.io"
+      "https://0xrpc.io/sep",
+      "https://eth-sepolia.api.onfinality.io/public",
+      "https://ethereum-sepolia.rpc.subquery.network/public"
     ],
     "nativeCurrency": {
       "name": "ETH",
@@ -7480,6 +7774,8 @@
       "symbol": "ETH"
     },
     "minBlockConfirmations": 3,
+    "getLogsBlockDepth": 50000,
+    "batchRequestLimit": 50,
     "deployments": {
       "router": "0x3E0aAA63fFb51169B9aE9b7Dc3616b43362124D6",
       "relayerLib": "0x8338A0B9c83C0d7E67C267432DF4C8b7cA98e11C",
@@ -7493,17 +7789,17 @@
     "chainSelector": 11155420,
     "name": "optimismSepolia",
     "rpcUrls": [
-      "https://sepolia.optimism.io",
-      "https://optimism-sepolia-public.nodies.app",
+      "https://optimism-sepolia.api.onfinality.io/public",
       "https://optimism-sepolia.gateway.tenderly.co",
-      "https://optimism-sepolia.drpc.org",
-      "https://optimism-sepolia.api.onfinality.io/public"
+      "https://sepolia.optimism.io"
     ],
     "nativeCurrency": {
       "name": "ETH",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 10000,
+    "batchRequestLimit": 10,
     "deployments": {
       "router": "0x25c2037546Bf5B525DfAfe85A662DB519c07bDdB",
       "relayerLib": "0x6E0b96885Ab0A58e82f2D1ce4df29AF6F5a40089",
@@ -7522,6 +7818,8 @@
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 5000,
+    "batchRequestLimit": 1000,
     "deployments": {}
   },
   "13502162": {
@@ -7536,6 +7834,8 @@
       "decimals": 18,
       "symbol": "sFUEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 128,
     "deployments": {}
   },
   "13800126": {
@@ -7543,14 +7843,15 @@
     "chainSelector": 13800126,
     "name": "rarible",
     "rpcUrls": [
-      "https://mainnet.rpc.rarichain.org/http",
-      "https://rari.calderachain.xyz/http"
+      "https://mainnet.rpc.rarichain.org/http"
     ],
     "nativeCurrency": {
       "name": "Ethereum",
       "decimals": 18,
       "symbol": "ETH"
     },
+    "getLogsBlockDepth": 500000,
+    "batchRequestLimit": 1000,
     "deployments": {
       "router": "0x4f5d34525d8bee8dee3cf8188473e76b442e45d8",
       "relayerLib": "0xb01b9d286b780cddfccdd4c50278554b1d747c3f",
@@ -7569,6 +7870,8 @@
       "decimals": 18,
       "symbol": "sFUEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 128,
     "deployments": {}
   },
   "15648308": {
@@ -7583,6 +7886,8 @@
       "decimals": 18,
       "symbol": "sFUEL"
     },
+    "getLogsBlockDepth": 2000,
+    "batchRequestLimit": 128,
     "deployments": {}
   }
 }

@@ -26,4 +26,6 @@ export type Chain = {
         decimals: number;
     };
     deployments: Partial<Record<DeploymentType, DeploymentAddress>>;
+    getLogsBlockDepth?: number;
+    batchRequestLimit?: number;
 };
